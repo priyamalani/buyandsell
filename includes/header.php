@@ -3,7 +3,7 @@
 		<!-- Title here -->
 		<title>Buy and Sell Online</title>
 		<!-- Description, Keywords and Author -->
-		<meta name="description" content="Your description">
+		<meta name="description" content="Buy and sell online">
 		<meta name="keywords" content="Your,Keywords">
 		<meta name="author" content="ResponsiveWebInc">
 		
