@@ -3,7 +3,7 @@
 		<!-- Title here -->
 		<title>Buy and Sell Online</title>
 		<!-- Description, Keywords and Author -->
-		<meta name="description" content="Buy and sell new and used goods online">
+		<meta name="description" content="Buy and sell electronics, home decors, fashion apparel, sporting goods, digital items, coupons, and many more on BuyAndSell, the world's online classifieds.">
 		<meta name="keywords" content="Buy, Sell, Online selling, Online Buying, India, Used goods, Used stuff">
 		<meta name="author" content="Priya malani">
 		
