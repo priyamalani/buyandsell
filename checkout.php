@@ -127,21 +127,7 @@
                                <a style="display: inline-block;" class="next" id="car_next" href="#"><i class="icon-chevron-right"></i></a>
                            </div>
                           
-                           <div style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1020px; height: 343px; margin: 0px; overflow: hidden;" class="caroufredsel_wrapper"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: -870.624px; margin: 0px; width: 4080px; height: 343px;" id="carousel_container"><li style="width: 245px;">
-                                 <a href="#"><img src="files/2.png" alt="" class="img-responsive"></a>
-                                 <div class="carousel_caption">
-                                    <h5><a href="#">Duis estsum placerat</a></h5>
-                                    <p>Something about the product goes here. Not More than 2 lines.</p>
-                                    <a href="#" class="btn btn-info btn-sm"><i class="icon-shopping-cart"></i> Buy for $199</a>
-                                 </div>
-                              </li><li style="width: 245px;">
-                                 <a href="#"><img src="files/3.png" alt="" class="img-responsive"></a>
-                                 <div class="carousel_caption">
-                                     <h5><a href="#">Maecenas estsum odio</a></h5>
-                                     <p>Something about the product goes here. Not More than 2 lines.</p>
-                                     <a href="#" class="btn btn-info btn-sm"><i class="icon-shopping-cart"></i> Buy for $199</a>
-                                 </div>
-                              </li><li style="width: 245px;">
+                           <div style="display: block; text-align: start; float: none; position: relative; top: auto; right: auto; bottom: auto; left: auto; z-index: auto; width: 1020px; height: 343px; margin: 0px; overflow: hidden;" class="caroufredsel_wrapper"><ul style="text-align: left; float: none; position: absolute; top: 0px; right: auto; bottom: auto; left: 0px; margin: 0px; width: 4080px; height: 343px;" id="carousel_container"><li style="width: 245px;">
                                  <a href="#"><img src="files/4.png" alt="" class="img-responsive"></a>
                                  <div class="carousel_caption">
                                      <h5><a href="#">Proin estsum accumsan</a></h5>
@@ -171,27 +157,27 @@
                                  </div>
                               </li>
                               <!-- Carousel item -->
-                              
-                              
-                              
-                              
-                              
-                              
-                           <li style="width: 245px;">
+                              <li style="width: 245px;">
                                  <a href="#"><img src="files/2.png" alt="" class="img-responsive"></a>
                                  <div class="carousel_caption">
                                     <h5><a href="#">Duis estsum placerat</a></h5>
                                     <p>Something about the product goes here. Not More than 2 lines.</p>
                                     <a href="#" class="btn btn-info btn-sm"><i class="icon-shopping-cart"></i> Buy for $199</a>
                                  </div>
-                              </li><li style="width: 245px;">
+                              </li>
+                              <li style="width: 245px;">
                                  <a href="#"><img src="files/3.png" alt="" class="img-responsive"></a>
                                  <div class="carousel_caption">
                                      <h5><a href="#">Maecenas estsum odio</a></h5>
                                      <p>Something about the product goes here. Not More than 2 lines.</p>
                                      <a href="#" class="btn btn-info btn-sm"><i class="icon-shopping-cart"></i> Buy for $199</a>
                                  </div>
-                              </li></ul></div>
+                              </li>
+                              
+                              
+                              
+                              
+                           </ul></div>
                            <div class="clearfix"></div>
                         </div>
                      </div>
