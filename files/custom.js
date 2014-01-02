@@ -121,4 +121,9 @@ $('#myTab a').click(function (e) {
 
 $(document).ready(function() {
     $('.sidey .nav').navgoco();
+    
+    $('.navbar-toggle').click(function (e) {
+        e.preventDefault();
+        $('#navbar-collapse-1').toggleClass('collapse');
+      });
 });
