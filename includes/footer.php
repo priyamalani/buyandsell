@@ -63,7 +63,7 @@ sodales enim arcu quis turpis.</p>
             <hr>
             
             <div class="copy text-center">
-               Copyright 2013 <a href="index.html">BuyAndSell</a>
+               Copyright 2013 <a href="index.php">BuyAndSell</a>
             </div>
          </div>
       </footer>

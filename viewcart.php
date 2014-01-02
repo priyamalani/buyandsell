@@ -163,8 +163,8 @@
                     <div class="row">
                       <div class="span4 offset8">
                         <div class="pull-right">
-                          <a href="index.html" class="btn btn-info">Continue Shopping</a>
-                          <a href="checkout.html" class="btn btn-danger">CheckOut</a>
+                          <a href="index.php" class="btn btn-info">Continue Shopping</a>
+                          <a href="checkout.php" class="btn btn-danger">CheckOut</a>
                         </div>
                       </div>
                     </div>

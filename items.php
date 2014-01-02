@@ -30,8 +30,8 @@
                
                    <!-- Breadcrumb -->
                  <ul class="breadcrumb">
-                   <li><a href="index.html">Home</a> <span class="divider"></span></li>
-                   <li><a href="items.html">Smartphone</a> <span class="divider"></span></li>
+                   <li><a href="index.php">Home</a> <span class="divider"></span></li>
+                   <li><a href="items.php">Smartphone</a> <span class="divider"></span></li>
                    <li class="active">Apple</li>
                  </ul>
                
@@ -277,37 +277,37 @@
                <div class="col-md-3 col-md-pull-9">
                   <div class="sidey">
                      <ul class="nav">
-                         <li><a href="index.html"><i class="icon-home"></i> &nbsp;Home</a>
+                         <li><a href="index.php"><i class="icon-home"></i> &nbsp;Home</a>
                          </li><li><a href="#"><i class="icon-mobile-phone"></i> &nbsp;Smartphones<span class="caret"></span></a>
                              <ul style="display: none;" data-index="0">
-                                 <li><a href="items.html">Apple</a></li>
-                                 <li><a href="items.html">Samsung</a></li>
-                                 <li><a href="items.html">Motorola</a></li>
-                                 <li><a href="items.html">Nokia</a></li>
+                                 <li><a href="items.php">Apple</a></li>
+                                 <li><a href="items.php">Samsung</a></li>
+                                 <li><a href="items.php">Motorola</a></li>
+                                 <li><a href="items.php">Nokia</a></li>
                              </ul>
                          </li>
                          <li><a href="#"><i class="icon-laptop"></i> &nbsp;Laptops<span class="caret"></span></a>
                              <ul style="display: none;" data-index="1">
-                                 <li><a href="items.html">Apple</a></li>
-                                 <li><a href="items.html">Samsung</a></li>
-                                 <li><a href="items.html">Motorola</a></li>
-                                 <li><a href="items.html">Nokia</a></li>
+                                 <li><a href="items.php">Apple</a></li>
+                                 <li><a href="items.php">Samsung</a></li>
+                                 <li><a href="items.php">Motorola</a></li>
+                                 <li><a href="items.php">Nokia</a></li>
                              </ul>
                          </li>
                          <li><a href="#"><i class="icon-briefcase"></i> &nbsp;Office Items<span class="caret"></span></a>
                              <ul style="display: none;" data-index="2">
-                                 <li><a href="items.html">Apple</a></li>
-                                 <li><a href="items.html">Samsung</a></li>
-                                 <li><a href="items.html">Motorola</a></li>
-                                 <li><a href="items.html">Nokia</a></li>
+                                 <li><a href="items.php">Apple</a></li>
+                                 <li><a href="items.php">Samsung</a></li>
+                                 <li><a href="items.php">Motorola</a></li>
+                                 <li><a href="items.php">Nokia</a></li>
                              </ul>
                          </li>
                          <li><a href="#"><i class="icon-camera"></i> &nbsp;Camera<span class="caret"></span></a>
                              <ul style="display: none;" data-index="3">
-                                 <li><a href="items.html">Apple</a></li>
-                                 <li><a href="items.html">Samsung</a></li>
-                                 <li><a href="items.html">Motorola</a></li>
-                                 <li><a href="items.html">Nokia</a></li>
+                                 <li><a href="items.php">Apple</a></li>
+                                 <li><a href="items.php">Samsung</a></li>
+                                 <li><a href="items.php">Motorola</a></li>
+                                 <li><a href="items.php">Nokia</a></li>
                              </ul>
                          </li>
                      </ul>
