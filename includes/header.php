@@ -3,9 +3,9 @@
 		<!-- Title here -->
 		<title>Buy and Sell Online</title>
 		<!-- Description, Keywords and Author -->
-		<meta name="description" content="Buy and sell online">
-		<meta name="keywords" content="Your,Keywords">
-		<meta name="author" content="ResponsiveWebInc">
+		<meta name="description" content="Buy and sell new and used goods online">
+		<meta name="keywords" content="Buy, Sell, Online selling, Online Buying, India, Used goods, Used stuff">
+		<meta name="author" content="Priya malani">
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
       
