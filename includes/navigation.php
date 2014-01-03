@@ -107,6 +107,13 @@
            </form>
            <div class="nav navbar-nav navbar-right">
              <div class="kart-links">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
+                            <ul class="dropdown-menu">
+                              <li><a href="aboutus.php">About Us</a></li>
+                              <li><a href="contactus.php">Contact Us</a></li>
+                              <li><a href="support.php">Support</a></li>
+                              <li><a href="faq.php">FAQ</a></li>
+                            </ul>
                             <a href="login.php">Login</a> 
                             <a href="register.php">Signup</a>
                             <a data-toggle="modal" href="#shoppingcart"><i class="icon-shopping-cart"></i> 3</a>
