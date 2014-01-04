@@ -8,11 +8,14 @@
                            <div class="fwidget">
                            
                               <h4>About <span class="color">Us</span></h4>
+                              
                               <hr>
-                              <p>Duis leo risus, vehicula luctus nunc.  
-Quiue rhoncus, a sodales enim arcu quis turpis. Duis leo risus, 
-condimentum ut posuere ac, vehicula luctus nunc.  Quisque rhoncus, a 
-sodales enim arcu quis turpis.</p>
+                            <ul class="">
+                              <li><i class="icon-info color contact-icon"></i> <a href="aboutus.php">About Us</a></li>
+                              <li><i class="icon-phone color contact-icon"></i> <a href="contactus.php">Get In Touch With Us</a></li>
+                              <li><i class="icon-comment color contact-icon"></i> <a href="blog.php">Read Our Blog</a></li>
+                              <li><i class="icon-question color contact-icon"></i> <a href="faq.php">FAQ</a></li>
+                            </ul>
                               
                               <div class="social">
                                  <a href="#" class="facebook"><i class="icon-facebook"></i></a>
@@ -49,7 +52,7 @@ sodales enim arcu quis turpis.</p>
                               <p><i class="icon-home color contact-icon"></i> #12, Plot No.14, Raj Karmara Street, </p>
                               <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5th Stage, Koramangala, Madiwala,</p>
                               <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bangalore - 493922, Karananana.</p>
-                              <p><i class="icon-phone color contact-icon"></i> +94-948-323-5532</p>
+                              <p><i class="icon-mobile-phone color contact-icon"></i> +94-948-323-5532</p>
                               <p><i class="icon-envelope color contact-icon"></i> <a href="mailto:something@gmail.com">some.thing@gmail.com</a></p>
                            </div>
                            
@@ -63,7 +66,7 @@ sodales enim arcu quis turpis.</p>
             <hr>
             
             <div class="copy text-center">
-               Copyright 2013 <a href="index.php">BuyAndSell</a>
+               Copyright 2013 <a href="index.php">ShopAndSell</a>
             </div>
          </div>
       </footer>

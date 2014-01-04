@@ -6,7 +6,7 @@
                <div class="col-md-2 col-sm-2">
                    Logo 
                   <div class="logo">
-                     <h1><a href="index.php">BuyAndSell</a></h1>
+                     <h1><a href="index.php">ShopAndSell</a></h1>
                   </div>
                </div>
                <div class="col-md-6 col-sm-5">
@@ -54,7 +54,7 @@
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
            </button>
-           <a class="navbar-brand" href="index.php">BuyAndSell</a>
+           <a class="navbar-brand" href="index.php">ShopAndSell</a>
          </div>
 
          <!-- Collect the nav links, forms, and other content for toggling -->
@@ -104,13 +104,7 @@
            </form>
            <div class="nav navbar-nav navbar-right">
              <div class="kart-links">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">About Us <b class="caret"></b></a>
-                            <ul class="dropdown-menu">
-                              <li><a href="aboutus.php">About Us</a></li>
-                              <li><a href="contactus.php">Contact Us</a></li>
-                              <li><a href="support.php">Support</a></li>
-                              <li><a href="faq.php">FAQ</a></li>
-                            </ul>
+                            <a href="support.php">Support</a>
                             <a href="login.php">Login</a> 
                             <a href="register.php">Signup</a>
                             <a data-toggle="modal" href="#shoppingcart"><i class="icon-shopping-cart"></i> 3</a>
