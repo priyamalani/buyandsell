@@ -64,40 +64,37 @@
              <li class="dropdown">
                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fashion <b class="caret"></b></a>
                <ul class="dropdown-menu">
-                 <li><a href="#">Action</a></li>
-                 <li><a href="#">Another action</a></li>
-                 <li><a href="#">Something else here</a></li>
+                 <li><a href="items.php">Men Clothing</a></li>
+                 <li><a href="items.php">Women Clothing</a></li>
+                 <li><a href="items.php">Baby Clothing</a></li>
+                 <li><a href="items.php">Accessories</a></li>
+                 <li><a href="items.php">Beauty Products</a></li>
                  <li class="divider"></li>
-                 <li><a href="#">Separated link</a></li>
-                 <li class="divider"></li>
-                 <li><a href="#">One more separated link</a></li>
+                 <li><a href="items.php">Others</a></li>
                </ul>
              </li>
              <li class="dropdown">
                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home & Garden <b class="caret"></b></a>
                <ul class="dropdown-menu">
-                 <li><a href="#">Action</a></li>
-                 <li><a href="#">Another action</a></li>
-                 <li><a href="#">Something else here</a></li>
+                 <li><a href="items.php">Art & Crafts</a></li>
+                 <li><a href="items.php">Home Decor</a></li>
+                 <li><a href="items.php">Garden</a></li>
+                 <li><a href="items.php">Pet Supplies</a></li>
                  <li class="divider"></li>
-                 <li><a href="#">Separated link</a></li>
-                 <li class="divider"></li>
-                 <li><a href="#">One more separated link</a></li>
+                 <li><a href="items.php">Others</a></li>
                </ul>
              </li>
              <li class="dropdown">
                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Electronic <b class="caret"></b></a>
                <ul class="dropdown-menu">
-                 <li><a href="#">Action</a></li>
-                 <li><a href="#">Another action</a></li>
-                 <li><a href="#">Something else here</a></li>
+                 <li><a href="items.php">Phones</a></li>
+                 <li><a href="items.php">Cameras</a></li>
+                 <li><a href="items.php">Computers</a></li>
                  <li class="divider"></li>
-                 <li><a href="#">Separated link</a></li>
-                 <li class="divider"></li>
-                 <li><a href="#">One more separated link</a></li>
+                 <li><a href="items.php">Other</a></li>
                </ul>
              </li>
-             <li><a href="#">Other</a></li>
+             <li><a href="items.php">Other</a></li>
            </ul>
            <form class="navbar-form navbar-left" role="search">
              <div class="input-group">
