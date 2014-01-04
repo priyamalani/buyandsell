@@ -13,22 +13,41 @@
       <div class="blocky">
          <div class="container">
             <div class="row">
+               
                <div class="col-md-6">
-                  <div class="reg-login-info">
-                     <h2>Login to Access Amazing Benefits <span class="color">!!!</span></h2>
-                     <img src="files/back1.jpg" alt="" class="img-responsive img-thumbnail">
-                     <p>Duis leo risus, vehicula luctus nunc. Quiue 
-rhoncus, a sodales enim arcu quis turpis. Duis leo risus, condimentum ut
- posuere ac, vehicula luctus nunc. Quisque rhoncus, a sodales enim arcu 
-quis turpis.</p>
+                  <div class="register-login">
+                     <div class="">
+                        <div class="">
+                            <h3></h3>
+                           <h3 class="text-center">New to ShopAndSell</h3>
+                           <form class="form-horizontal" role="form">
+                             <div class="form-group">
+                                 <div class="col-lg-12">
+                               <label for="inputEmail2" class="col-lg-12 control-label" style="text-align: center;">Get started now. It's fast and easy!</label>
+                                 </div>
+                               <div class="col-lg-12">
+                                 <input class="form-control" id="inputEmail2" placeholder="Email" type="email">
+                               </div>
+                             </div>
+                            
+                             <div class="form-group text-center">
+                               <div class="col-lg-offset-1 col-lg-10">
+                                 <button type="submit" class="btn btn-info">Register Today!</button>
+                               </div>
+                             </div>
+                           </form>
+                           
+                        </div>
+                     </div>   
                   </div>
                </div>
-               <div class="col-md-6">
+                
+                <div class="col-md-6">
                   <div class="register-login">
                      <div class="cool-block">
                         <div class="cool-block-bor">
                         
-                           <h3>Login</h3>
+                           <h3 class="text-center">Login</h3>
                            <form class="form-horizontal" role="form">
                              <div class="form-group">
                                <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
@@ -40,15 +59,6 @@ quis turpis.</p>
                                <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
                                <div class="col-lg-10">
                                  <input class="form-control" id="inputPassword1" placeholder="Password" type="password">
-                               </div>
-                             </div>
-                             <div class="form-group">
-                               <div class="col-lg-offset-2 col-lg-10">
-                                 <div class="checkbox">
-                                   <label>
-                                     <input type="checkbox"> Remember me
-                                   </label>
-                                 </div>
                                </div>
                              </div>
                              <div class="form-group">

@@ -40,7 +40,7 @@ turpis.</p>
                      <div class="cool-block">
                         <div class="cool-block-bor">
                         
-                           <h3>Register</h3>
+                           <h3 class="text-center">Register</h3>
                            <form class="form-horizontal" role="form">
                              <div class="form-group">
                                <label for="inputName" class="col-lg-2 control-label">Name</label>
@@ -61,7 +61,7 @@ turpis.</p>
                                </div>
                              </div>
                              <div class="form-group">
-                               <label for="dropdown" class="col-lg-2 control-label">Dropdown</label>
+                               <label for="dropdown" class="col-lg-2 control-label">State</label>
                                <div class="col-lg-10">
                                  <select class="form-control">
                                    <option selected="selected">1</option>
@@ -71,13 +71,13 @@ turpis.</p>
                                    <option>5</option>
                                  </select>
                                </div>
-                             </div>    
+                             </div>
                              <div class="form-group">
-                               <label for="inputComment" class="col-lg-2 control-label">Comment</label>
+                               <label for="inputEmail1" class="col-lg-2 control-label">City</label>
                                <div class="col-lg-10">
-                                 <textarea class="form-control" rows="3"></textarea>
+                                 <input class="form-control" id="inputCity" placeholder="City" type="text">
                                </div>
-                             </div>                             
+                             </div>                              
                              <div class="form-group">
                                <div class="col-lg-offset-2 col-lg-10">
                                  <div class="checkbox">
