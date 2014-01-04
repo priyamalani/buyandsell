@@ -15,7 +15,7 @@
             <!-- Google maps -->
             <div class="gmap">
                <!-- Google Maps. Replace the below iframe with your Google Maps embed code -->
-               <iframe marginheight="0" marginwidth="0" src="files/maps.htm" frameborder="0" height="400" scrolling="no"></iframe>
+               <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.co.in/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Nagpur,+Maharashtra&amp;aq=0&amp;oq=nagpur&amp;sll=12.993518,77.660294&amp;sspn=0.02233,0.038581&amp;ie=UTF8&amp;hq=&amp;hnear=Nagpur,+Maharashtra&amp;t=m&amp;z=11&amp;ll=21.1458,79.088155&amp;output=embed"></iframe><br />
             </div>
             
             <div class="container">
