@@ -52,24 +52,14 @@
                             <p><strong>Shipping</strong> : Free</p>
                             <p><strong>Brand</strong> : Apple</p>
                             <p><strong>Modal</strong> : 5G</p>
-                            <p><strong>Availability</strong> : In Stock</p><br>
-                                 
-                                 <div class="form-group">
-                                    <!-- Dropdown menu -->
-                                    <select class="form-control">
-                                      <option selected="selected">Color</option>
-                                      <option>Red</option>
-                                      <option>Blue</option>
-                                      <option>Green</option>
-                                      <option>Orange</option>
-                                    </select>
-                                 </div>
+                            <p><strong>Availability</strong> : 1</p><br>
+                            
 
                                     
                                      <!-- Quantity and add to cart button -->
                                     
                                     <div class="input-group">
-                                       <input class="form-control" placeholder="2" type="text">
+                                       <input class="form-control" placeholder="1" type="text">
                                        <span class="input-group-btn">
                                          <button class="btn btn-info" type="button">Go!</button>
                                        </span>
@@ -90,27 +80,55 @@
 
                     <ul id="myTab" class="nav nav-tabs">
                       <!-- Use uniqe name for "href" in below anchor tags -->
-                      <li class="active"><a href="#tab1" data-toggle="tab">Description</a></li>
+                      <li class="active"><a href="#tab1" data-toggle="tab">Contact Seller</a></li>
+                      <li><a href="#tab2" data-toggle="tab">Description</a></li>
                       <li><a href="#tab2" data-toggle="tab">Specs</a></li>
                       <li><a href="#tab3" data-toggle="tab">Review (5)</a></li>
                     </ul>
 
                     <!-- Tab Content -->
                     <div id="myTabContent" class="tab-content">
+                        <!--contact -->
+                        <div class="tab-pane fade in active" id="tab1">
+                        <h5 class="text-left col-md-6"><strong>Seller Name</strong></h5>
+                       <span class="text-right col-md-6">
+                           <button class="btn btn-danger" type="submit">View seller's other Ads <i class='icon-double-angle-right'></i></button>
+                       </span>
+                        <form role="form" class="col-md-6 col-sm-12">
+                            <div class="form-group">
+                              <label for="name">Your Name</label>
+                              <input class="form-control" id="name" placeholder="Enter Name" type="text">
+                            </div>                                    
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Email address</label>
+                              <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                            </div>
+                            <div class="form-group">
+                              <label for="exampleInputEmail1">Message</label>
+                              <textarea class="form-control" rows="3"></textarea>
+                            </div>  
+                            <button type="submit" class="btn btn-info">Send</button>
+                            <button type="reset" class="btn btn-default">Reset</button>
+                          </form>
+                        <div class="col-md-6 col-sm-6">
+                            <label for="googleMap">Google Map</label><br>
+                            <iframe height="285px" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?q=naGPUR&amp;ie=UTF8&amp;hq=&amp;hnear=Nagpur,+Maharashtra,+India&amp;t=m&amp;z=11&amp;ll=21.1458,79.088155&amp;output=embed"></iframe>
+                        </div>
+                      </div>
                       <!-- Description -->
-                      <div class="tab-pane fade in active" id="tab1">
+                      <div class="tab-pane fade" id="tab2">
                         <h5><strong>Apple iPhone 5G</strong></h5>
                         <p>Nulla facilisi. Sed justo dui, scelerisque ut
- consectetur vel, eleifend id erat. Morbi auctor adipiscing tempor. 
-Phasellus condimentum rutrum aliquet. Quisque eu consectetur erat. Proin
- rutrum, erat eget posuere semper, <em>arcu mauris posuere tortor</em>, 
-in commodo enim magna id massa. Suspendisse potenti. Aliquam erat 
-volutpat. Maecenas quis tristique turpis. Nulla facilisi. Duis sed velit
- at <a href="#">magna sollicitudin cursus</a> ac ultrices magna. Aliquam
- consequat, purus vitae auctor ullamcorper, sem velit convallis quam, a 
-pharetra justo nunc et mauris. Vivamus diam diam, fermentum sed dapibus 
-eget, egestas sed eros. Lorem ipsum dolor sit amet, consectetur 
-adipiscing elit.</p>
+                        consectetur vel, eleifend id erat. Morbi auctor adipiscing tempor. 
+                       Phasellus condimentum rutrum aliquet. Quisque eu consectetur erat. Proin
+                        rutrum, erat eget posuere semper, <em>arcu mauris posuere tortor</em>, 
+                       in commodo enim magna id massa. Suspendisse potenti. Aliquam erat 
+                       volutpat. Maecenas quis tristique turpis. Nulla facilisi. Duis sed velit
+                        at <a href="#">magna sollicitudin cursus</a> ac ultrices magna. Aliquam
+                        consequat, purus vitae auctor ullamcorper, sem velit convallis quam, a 
+                       pharetra justo nunc et mauris. Vivamus diam diam, fermentum sed dapibus 
+                       eget, egestas sed eros. Lorem ipsum dolor sit amet, consectetur 
+                       adipiscing elit.</p>
                         <h6><strong>Features</strong></h6>
                         <ul>
                         <li>Etiam adipiscing posuere justo, nec iaculis justo dictum non</li>
@@ -172,9 +190,9 @@ adipiscing elit.</p>
                           <h5>Ravi Kumar - <span class="color">4/5</span></h5>
                           <p class="rmeta">27/1/2012</p>
                           <p>Suspendisse potenti. Morbi ac felis nec 
-mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed 
-rhoncus erat hendrerit. Vivamus vel ultricies elit. Curabitur lacinia 
-nulla vel tellus elementum non mollis justo aliquam.</p>
+                            mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed 
+                            rhoncus erat hendrerit. Vivamus vel ultricies elit. Curabitur lacinia 
+                            nulla vel tellus elementum non mollis justo aliquam.</p>
                         </div>
 
                         <hr>
