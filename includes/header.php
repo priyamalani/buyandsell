@@ -9,23 +9,23 @@
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-      <link href="files/css.css" rel="stylesheet" type="text/css">
-      <link href="files/css_002.css" rel="stylesheet" type="text/css">
+      <link href="css/css.css" rel="stylesheet" type="text/css">
+      <link href="css/css_002.css" rel="stylesheet" type="text/css">
 		
 		<!-- Styles -->
 		<!-- Bootstrap CSS -->
 		<link href="bootstrap-3/css/bootstrap.css" rel="stylesheet">
       <!-- Animate css -->
-      <link href="files/animate.css" rel="stylesheet">
+      <link href="css/animate.css" rel="stylesheet">
       <!-- Dropdown menu -->
-      <link href="files/ddlevelsmenu-base.css" rel="stylesheet">
-      <link href="files/ddlevelsmenu-topbar.css" rel="stylesheet">
+      <link href="css/ddlevelsmenu-base.css" rel="stylesheet">
+      <link href="css/ddlevelsmenu-topbar.css" rel="stylesheet">
       <!-- Countdown -->
-      <link href="files/jquery.css" rel="stylesheet">     
+      <link href="css/jquery.css" rel="stylesheet">     
 		<!-- Font awesome CSS -->
 		<link href="font-awesome/css/font-awesome.css" rel="stylesheet">		
 		<!-- Custom CSS -->
-		<link href="files/style.css" rel="stylesheet">
+		<link href="css/style.css" rel="stylesheet">
 		
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="#">
