@@ -17,15 +17,15 @@
          <div id="carousel-example-generic" class="carousel slide">
            <!-- Indicators -->
            <ol class="carousel-indicators">
-             <li data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
-             <li class="active" data-target="#carousel-example-generic" data-slide-to="1"></li>
+             <li class="active" data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
+             <li data-target="#carousel-example-generic" data-slide-to="1"></li>
              <li class="" data-target="#carousel-example-generic" data-slide-to="2"></li>
            </ol>
 
            <!-- Wrapper for slides -->
            <div class="carousel-inner">
              <!-- Item -->
-             <div class="item animated fadeInRight">
+             <div class="item animated fadeInRight active">
                <img src="files/back1.jpg" alt="" class="img-responsive">
                <div class="carousel-caption">
                  <h2 class="animated fadeInLeftBig">Lorem ipsum dolor sit amet</h2>
@@ -34,7 +34,7 @@
                </div>
              </div>
              
-             <div class="item animated fadeInRight active">
+             <div class="item animated fadeInRight">
                <img src="files/back2.jpg" alt="" class="img-responsive">
                <div class="carousel-caption">
                  <h2 class="animated fadeInLeftBig">Mauris semper tincidunt suscipit</h2>
