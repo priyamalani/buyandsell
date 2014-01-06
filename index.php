@@ -14,7 +14,7 @@
       
          <!-- Carousel starts -->
               
-         <div id="carousel-example-generic" class="carousel slide">
+         <div id="carousel-example-generic" class="carousel slide hidden-sm hidden-xs">
            <!-- Indicators -->
            <ol class="carousel-indicators">
              <li class="active" data-target="#carousel-example-generic" data-slide-to="0" class=""></li>
@@ -26,8 +26,8 @@
            <div class="carousel-inner">
              <!-- Item -->
              <div class="item animated fadeInRight active">
-               <img src="files/back1.jpg" alt="" class="img-responsive">
-               <div class="carousel-caption">
+               <img src="files/2.png" alt="" class="img-responsive col-md-2 col-md-offset-2">
+               <div class="carousel-caption col-md-4 col-md-offset-1" style='position: static'>
                  <h2 class="animated fadeInLeftBig">Lorem ipsum dolor sit amet</h2>
                  <p class="animated fadeInRightBig">Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. Donec tristique est sit amet diam interdum semper. </p>
                  <a href="#" class="animated fadeInLeftBig btn btn-info btn-lg">Buy Now - $199</a>
@@ -35,8 +35,8 @@
              </div>
              
              <div class="item animated fadeInRight">
-               <img src="files/back2.jpg" alt="" class="img-responsive">
-               <div class="carousel-caption">
+               <img src="files/2.png" alt="" class="img-responsive col-md-2 col-md-offset-2">
+               <div class="carousel-caption col-md-4 col-md-offset-1" style='position: static'>
                  <h2 class="animated fadeInLeftBig">Mauris semper tincidunt suscipit</h2>
                  <p class="animated fadeInRightBig">Donec tristique est sit amet diam interdum semper. Vestibulum <strong>condimentum ante urna</strong>, vel interdum odio accumsan id.</p>
                  <a href="#" class="animated fadeInLeftBig btn btn-info btn-lg">Buy Now - $299</a>
@@ -44,8 +44,8 @@
              </div>
 
              <div class="item animated fadeInRight">
-               <img src="files/back3.jpg" alt="" class="img-responsive">
-               <div class="carousel-caption">
+               <img src="files/2.png" alt="" class="img-responsive col-md-2 col-md-offset-2">
+               <div class="carousel-caption col-md-4 col-md-offset-1" style='position: static'>
                  <h2 class="animated fadeInLeftBig">Phasellus et nisi tincidunt</h2>
                  <p class="animated fadeInRightBig">Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipiscing elit. Vestibulum condimentum ante urna, vel interdum odio accumsan id.</p>
                  <a href="#" class="animated fadeInLeftBig btn btn-info btn-lg">Buy Now - $479</a>

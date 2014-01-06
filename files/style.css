@@ -229,6 +229,7 @@ strong{
 
 .carousel-inner{
    background:#222;
+   padding: 20px;
 }
 
 .carousel .item{
@@ -285,8 +286,8 @@ strong{
 
 .carousel .carousel-control span{
    display:inline-block;
-   background:#222;
-   border-radius:50px;
+   background:#1ABC9C;
+   border-radius:0px;
    height:50px;
    width:50px;
    line-height:45px;
@@ -299,15 +300,15 @@ strong{
 }
 
 .carousel .carousel-caption h2{
-   font-size:60px;
+   font-size:35px;
    text-transform:capitalize;
    font-family: 'Open Sans Condensed', sans-serif;
    font-weight:normal;
 }
 
 .carousel .carousel-caption p{
-   font-size:25px;
-   line-height:35px;
+   font-size:20px;
+   line-height:25px;
    font-family: 'Open Sans Condensed', sans-serif;
 }
 
