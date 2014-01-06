@@ -31,14 +31,14 @@ ul, ol{
 }
 
 a{
-   color:#16cbe6;
+   color:#1abc9c;
    text-decoration:none;
 }
 
 a:hover{
-   color:#0fa6bc;
+   color:#009e7e;
    text-decoration:none;
-   border-bottom:1px dotted #0fa6bc;
+   border-bottom:1px dotted #009e7e;
 }
 
 a:hover,a:active,a:focus {
@@ -68,8 +68,8 @@ strong{
 
 #myTab li.active a{
    color:#fff !important;
-   background:#16cbe6 !important;
-   border-color:#16cbe6 !important;
+   background:#1abc9c !important;
+   border-color:#1abc9c !important;
 }
 
 /* Basic CSS ends */
@@ -79,7 +79,7 @@ strong{
 }
 
 .color{
-   color:#16cbe6;
+   color:#1abc9c;
 }
 
 .sep-bor{
@@ -130,17 +130,17 @@ strong{
 
 .btn-blue{
    color:#fff !important;
-   background:#16cbe6;
-   border:1px solid #0fa6bc;
-   border-bottom:2px solid #0fa6bc;
+   background:#1abc9c;
+   border:1px solid #009e7e;
+   border-bottom:2px solid #009e7e;
    font-size:13px;
 }
 
 .btn-blue:hover{
    color:#fff !important;
    background:#14b9d1;
-   border:1px solid #0fa6bc;
-   border-bottom:2px solid #0fa6bc;
+   border:1px solid #009e7e;
+   border-bottom:2px solid #009e7e;
    font-size:13px;
 }
 
@@ -317,31 +317,31 @@ strong{
    font-size:14px;
    font-weight:bold;
    text-transform:uppercase;
-   border-bottom:2px solid #0fa6bc;
+   border-bottom:2px solid #009e7e;
 }
 
 .carousel-indicators .active{
-   background:#16cbe6;
-   border:1px solid #0fa6bc;
+   background:#1abc9c;
+   border:1px solid #009e7e;
 }
 
 .carousel-indicators li:hover{
-   background:#16cbe6;
-   border:1px solid #0fa6bc;
+   background:#1abc9c;
+   border:1px solid #009e7e;
 }
 
 /* Logo & Navigation */
 
 .header{
    height:70px;
-   background:#16cbe6;
-   border-top:4px solid #0fa6bc;
-   border-bottom:1px solid #0fa6bc;
+   background:#1abc9c;
+   border-top:4px solid #009e7e;
+   border-bottom:1px solid #009e7e;
 }
 
 .navbar-default{
    padding: 10px 20px;
-   background:#16cbe6;
+   background:#1abc9c;
    color: white;
    border: none;
 }
@@ -451,7 +451,7 @@ strong{
 
 .ddsubmenustyle li a:hover {
 	color: #fff;
-	background: #0fa6bc !important;
+	background: #009e7e !important;
 }
 
 /* SELECT MENU */
@@ -475,7 +475,7 @@ strong{
    display:inline-block;
    padding:2px 7px;
    border-radius:5px;
-   background:#0fa6bc;
+   background:#009e7e;
 }
 
 .kart-links a:hover{
@@ -526,7 +526,7 @@ strong{
 }  
 
 .hero .btn-info{
-   border-bottom:3px solid #0fa6bc;
+   border-bottom:3px solid #009e7e;
 }
 
 .hero .btn-danger{
@@ -632,7 +632,7 @@ strong{
    text-align:center;
    line-height:35px;
    border-radius:100px;
-   background:#16cbe6;
+   background:#1abc9c;
    font-size:25px;
    margin-right:5px;
 }
@@ -652,6 +652,14 @@ strong{
    text-transform:uppercase;
    padding:12px 20px;
    border-radius:4px;
+}
+
+.btn-info{
+    background: #1abc9c;
+}
+
+.btn-info:hover, .btn-info:active, .btn-info:focus{
+    background: #1abc9c;
 }
 
 .cta .btn-info{
@@ -835,11 +843,11 @@ strong{
 .recent-posts .recent-post-block .rp-right{
    width:50px;
    float:right;
-   background:#16cbe6;
+   background:#1abc9c;
    height:65px;
    border-top-right-radius:6px;
    border-bottom-right-radius:6px; 
-   border:1px solid #0fa6bc;
+   border:1px solid #009e7e;
    color:#fff;
    text-align:center;
    box-shadow: 0 2px 0 0 rgba(255,255,255,0.2) inset;
@@ -853,7 +861,7 @@ strong{
 }
 
 .recent-posts .recent-post-block .rp-right .label-custom{
-   background:#0fa6bc;
+   background:#009e7e;
 }
 
 .recent-posts .recent-post-block .rp-right .label{
@@ -868,7 +876,7 @@ strong{
 .recent-posts .my_carousel .carousel_nav a{
 	width:20px;
 	height:20px;
-	background:#16cbe6;
+	background:#1abc9c;
 	display:inline-block;
 	padding:0px;
 	text-align:center;
@@ -964,7 +972,7 @@ strong{
 .sidey .nav {
 	padding: 0px;
 	margin: 0px;
-   border-top:1px solid #0fa6bc;
+   border-top:1px solid #009e7e;
 }
 
 .sidey .nav > li {
@@ -984,10 +992,10 @@ strong{
 	line-height: 20px;
 	padding: 12px 15px;
 	color: #fff;
-   background:#16cbe6;
+   background:#1abc9c;
 	display: block;
 	text-decoration: none;
-   border:1px solid #0fa6bc;
+   border:1px solid #009e7e;
    border-top:0px;
    font-weight:bold;
 }
@@ -1005,9 +1013,9 @@ strong{
 }
 
 .sidey .nav a:hover, .sidey .nav li.active > a {
-	background: #0fa6bc;
+	background: #009e7e;
 	color: #fff;
-   border-bottom:1px solid #0fa6bc;
+   border-bottom:1px solid #009e7e;
 }
 
 .sidey .nav > li.active > a  {
@@ -1168,7 +1176,7 @@ strong{
 .shop-items .item-icon span{
    width:35px;
    height:20px;
-   background:#16cbe6;
+   background:#1abc9c;
    display:inline-block;
    color:#fff;
    text-align:center;
@@ -1224,7 +1232,7 @@ strong{
 	border-radius: 5px;
 	font-size: 13px;
 	font-weight: bold;
-   background:#16cbe6;
+   background:#1abc9c;
    color:#fff;
    width:40px;
    text-align:center;
@@ -1353,7 +1361,7 @@ strong{
    width: 25px;
    height: 25px;
    line-height:25px;
-   background:#16cbe6;
+   background:#1abc9c;
    display:inline-block;
 }
 
@@ -1859,7 +1867,7 @@ strong{
 	bottom: 0px;
 	right: 0px;
 	z-index: 104400;
-	background: #16cbe6; 
+	background: #1abc9c; 
 }
 
 .totop a, .totop a:visited{
@@ -1941,7 +1949,7 @@ footer .fwidget ul li{
 }
 
 footer  i.contact-icon{
-   background:#0fa6bc;
+   background:#009e7e;
    width:30px;
    height:30px;
    line-height:30px;
