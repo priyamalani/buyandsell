@@ -77,25 +77,25 @@
       
 		<!-- Javascript files -->
 		<!-- jQuery -->
-		<script src="files/jquery_003.js"></script>
+		<script src="js/jquery_003.js"></script>
 		<!-- Bootstrap JS -->
 		<script src="bootstrap-3/js/bootstrap.js"></script>
 		<!-- Dropdown menu -->
-		<script src="files/ddlevelsmenu.js"></script>      
+		<script src="js/ddlevelsmenu.js"></script>      
       <!-- CaroFredSel -->
-      <script src="files/jquery_004.js"></script> 
+      <script src="js/jquery_004.js"></script> 
       <!-- Countdown -->
-      <script src="files/jquery.js"></script>    
+      <script src="js/jquery.js"></script>    
       <!-- jQuery Navco -->
-      <script src="files/jquery_002.js"></script>
+      <script src="js/jquery_002.js"></script>
       <!-- Filter for support page -->
-      <script src="files/filter.js"></script>         
+      <script src="js/filter.js"></script>         
 		<!-- Respond JS for IE8 -->
-		<script src="files/respond.js"></script>
+		<script src="js/respond.js"></script>
 		<!-- HTML5 Support for IE -->
-		<script src="files/html5shiv.js"></script>
+		<script src="js/html5shiv.js"></script>
 		<!-- Custom JS -->
-		<script src="files/custom.js"></script>
+		<script src="js/custom.js"></script>
 		
 <iframe style="width: 0px; height: 0px; left: 0px; top: 0px;" src="files/a_002.htm" class="ddiframeshim" frameborder="0"></iframe><iframe style="width: 0px; height: 0px; left: 0px; top: 58px;" src="files/a_002.htm" class="ddiframeshim" frameborder="0"></iframe><div style="z-index: 2000; left: 0px; top: -1000px; visibility: hidden; height: 273px; width: 150px; overflow: visible; opacity: 1;" class="ddsubmenustyle"><ul style="visibility: hidden; top: 0px; left: 0px;" id="ddsubmenu1">
                                  <li><a href="account.php">My Account</a></li>
