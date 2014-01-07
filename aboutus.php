@@ -91,7 +91,7 @@ adipiscing elit.</p>
                               <div class="staff">
                                  <!-- Picture -->
                                  <div class="pic">
-                                    <img src="files/user.jpg" alt="" class="img-responsive">
+                                    <img src="images/user.jpg" alt="" class="img-responsive">
                                  </div>
                                  <!-- Details -->
                                  <div class="details">
@@ -116,7 +116,7 @@ adipiscing elit.</p>
                               <!-- Staff #2 -->
                               <div class="staff">
                                  <div class="pic">
-                                    <img src="files/user.jpg" alt="" class="img-responsive">
+                                    <img src="images/user.jpg" alt="" class="img-responsive">
                                  </div>
                                  <div class="details">
                                     <div class="desig pull-left">
@@ -137,7 +137,7 @@ adipiscing elit.</p>
                               <!-- Staff #3 -->
                               <div class="staff">
                                  <div class="pic">
-                                    <img src="files/user.jpg" alt="" class="img-responsive">
+                                    <img src="images/user.jpg" alt="" class="img-responsive">
                                  </div>
                                  <div class="details">
                                     <div class="desig pull-left">
@@ -158,7 +158,7 @@ adipiscing elit.</p>
                               <!-- Staff #4 -->
                               <div class="staff">
                                  <div class="pic">
-                                    <img src="files/user.jpg" alt="" class="img-responsive">
+                                    <img src="images/user.jpg" alt="" class="img-responsive">
                                  </div>
                                  <div class="details">
                                     <div class="desig pull-left">

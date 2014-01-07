@@ -26,7 +26,7 @@
            <div class="carousel-inner">
              <!-- Item -->
              <div class="item animated fadeInRight active">
-               <img src="files/2.png" alt="" class="img-responsive col-md-2 col-md-offset-2">
+               <img src="images/2.png" alt="" class="img-responsive col-md-2 col-md-offset-2">
                <div class="carousel-caption col-md-4 col-md-offset-1" style='position: static'>
                  <h2 class="animated fadeInLeftBig">Lorem ipsum dolor sit amet</h2>
                  <p class="animated fadeInRightBig">Lorem ipsum dolor sit amet, <strong>consectetur adipiscing</strong> elit. Donec tristique est sit amet diam interdum semper. </p>
@@ -35,7 +35,7 @@
              </div>
              
              <div class="item animated fadeInRight">
-               <img src="files/2.png" alt="" class="img-responsive col-md-2 col-md-offset-2">
+               <img src="images/2.png" alt="" class="img-responsive col-md-2 col-md-offset-2">
                <div class="carousel-caption col-md-4 col-md-offset-1" style='position: static'>
                  <h2 class="animated fadeInLeftBig">Mauris semper tincidunt suscipit</h2>
                  <p class="animated fadeInRightBig">Donec tristique est sit amet diam interdum semper. Vestibulum <strong>condimentum ante urna</strong>, vel interdum odio accumsan id.</p>
@@ -44,7 +44,7 @@
              </div>
 
              <div class="item animated fadeInRight">
-               <img src="files/2.png" alt="" class="img-responsive col-md-2 col-md-offset-2">
+               <img src="images/2.png" alt="" class="img-responsive col-md-2 col-md-offset-2">
                <div class="carousel-caption col-md-4 col-md-offset-1" style='position: static'>
                  <h2 class="animated fadeInLeftBig">Phasellus et nisi tincidunt</h2>
                  <p class="animated fadeInRightBig">Lorem <strong>ipsum dolor sit amet</strong>, consectetur adipiscing elit. Vestibulum condimentum ante urna, vel interdum odio accumsan id.</p>
@@ -96,7 +96,7 @@
                 <div class="item-icon"><span>HOT</span></div>
                 <!-- Item image -->
                 <div class="item-image">
-                  <a href="single-item.php"><img src="files/2.png" alt="" class="img-responsive"></a>
+                  <a href="single-item.php"><img src="images/2.png" alt="" class="img-responsive"></a>
                 </div>
                 <!-- Item details -->
                 <div class="item-details">
@@ -120,7 +120,7 @@
               <div class="item">
                 <!-- Item image -->
                 <div class="item-image">
-                  <a href="single-item.php"><img src="files/3.png" alt="" class="img-responsive"></a>
+                  <a href="single-item.php"><img src="images/3.png" alt="" class="img-responsive"></a>
                 </div>
                 <!-- Item details -->
                 <div class="item-details">
@@ -142,7 +142,7 @@
               <div class="item">
                 <!-- Item image -->
                 <div class="item-image">
-                  <a href="single-item.php"><img src="files/4.png" alt="" class="img-responsive"></a>
+                  <a href="single-item.php"><img src="images/4.png" alt="" class="img-responsive"></a>
                 </div>
                 <!-- Item details -->
                 <div class="item-details">
@@ -164,7 +164,7 @@
               <div class="item">
                 <!-- Item image -->
                 <div class="item-image">
-                  <a href="single-item.php"><img src="files/5.png" alt="" class="img-responsive"></a>
+                  <a href="single-item.php"><img src="images/5.png" alt="" class="img-responsive"></a>
                 </div>
                 <!-- Item details -->
                 <div class="item-details">
@@ -188,7 +188,7 @@
 
                 <!-- Item image -->
                 <div class="item-image">
-                  <a href="single-item.php"><img src="files/6.png" alt="" class="img-responsive"></a>
+                  <a href="single-item.php"><img src="images/6.png" alt="" class="img-responsive"></a>
                 </div>
                 <!-- Item details -->
                 <div class="item-details">
@@ -211,7 +211,7 @@
                <div class="item-icon"><span>HOT</span></div>
                 <!-- Item image -->
                 <div class="item-image">
-                  <a href="single-item.php"><img src="files/7.png" alt="" class="img-responsive"></a>
+                  <a href="single-item.php"><img src="images/7.png" alt="" class="img-responsive"></a>
                 </div>
                 <!-- Item details -->
                 <div class="item-details">
@@ -233,7 +233,7 @@
               <div class="item">
                 <!-- Item image -->
                 <div class="item-image">
-                  <a href="single-item.php"><img src="files/8.png" alt="" class="img-responsive"></a>
+                  <a href="single-item.php"><img src="images/8.png" alt="" class="img-responsive"></a>
                 </div>
                 <!-- Item details -->
                 <div class="item-details">
@@ -255,7 +255,7 @@
               <div class="item">
                 <!-- Item image -->
                 <div class="item-image">
-                  <a href="single-item.php"><img src="files/9.png" alt="" class="img-responsive"></a>
+                  <a href="single-item.php"><img src="images/9.png" alt="" class="img-responsive"></a>
                 </div>
                 <!-- Item details -->
                 <div class="item-details">
@@ -295,32 +295,32 @@
             <div class="row">
                <div class="col-md-2 col-sm-4 col-xs-6">
                   <div class="client">
-                    <img src="files/amazon-f.png" alt="" class="img-responsive">
+                    <img src="images/amazon-f.png" alt="" class="img-responsive">
                   </div>
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-6">
                   <div class="client">
-                    <img src="files/google-f.png" alt="" class="img-responsive">
+                    <img src="images/google-f.png" alt="" class="img-responsive">
                   </div>
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-6">
                   <div class="client">
-                    <img src="files/facebook-f.png" alt="" class="img-responsive">
+                    <img src="images/facebook-f.png" alt="" class="img-responsive">
                   </div>
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-6">
                   <div class="client">
-                    <img src="files/twitter-f.png" alt="" class="img-responsive">
+                    <img src="images/twitter-f.png" alt="" class="img-responsive">
                   </div>
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-6">
                   <div class="client">
-                    <img src="files/skype-f.png" alt="" class="img-responsive">
+                    <img src="images/skype-f.png" alt="" class="img-responsive">
                   </div>
                 </div>
                 <div class="col-md-2 col-sm-4 col-xs-6">
                   <div class="client">
-                    <img src="files/youtube-f.png" alt="" class="img-responsive">
+                    <img src="images/youtube-f.png" alt="" class="img-responsive">
                   </div>
                 </div>
             </div>

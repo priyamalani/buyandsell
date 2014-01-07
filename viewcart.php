@@ -44,7 +44,7 @@
                           <!-- Product  name -->
                           <td><a href="single-item.php">HTC One</a></td>
                           <!-- Product image -->
-                          <td><a href="single-item.php"><img src="files/2.png" alt="" class="img-responsive"></a></td>
+                          <td><a href="single-item.php"><img src="images/2.png" alt="" class="img-responsive"></a></td>
                           <!-- Quantity with refresh and remove button -->
                           <td>
                             <div class="input-group">
@@ -63,7 +63,7 @@
                         <tr>
                           <td>2</td>
                           <td><a href="single-item.php">Sony Xperia</a></td>
-                          <td><a href="single-item.php"><img src="files/3.png" alt=""></a></td>
+                          <td><a href="single-item.php"><img src="images/3.png" alt=""></a></td>
                           <td>
                             <div class="input-group">
                               <input class="form-control" placeholder="1" type="text">
@@ -79,7 +79,7 @@
                         <tr>
                           <td>3</td>
                           <td><a href="single-item.php">Nokia Asha</a></td>
-                          <td><a href="single-item.php"><img src="files/4.png" alt=""></a></td>
+                          <td><a href="single-item.php"><img src="images/4.png" alt=""></a></td>
                           <td>
                             <div class="input-group">
                               <input class="form-control" placeholder="1" type="text">
@@ -95,7 +95,7 @@
                         <tr>
                           <td>4</td>
                           <td><a href="single-item.php">Samsung Galaxy Pro</a></td>
-                          <td><a href="single-item.php"><img src="files/5.png" alt=""></a></td>
+                          <td><a href="single-item.php"><img src="images/5.png" alt=""></a></td>
                           <td>
                             <div class="input-group">
                               <input class="form-control" placeholder="1" type="text">
@@ -111,7 +111,7 @@
                         <tr>
                           <td>5</td>
                           <td><a href="single-item.php">Micromax Funbook</a></td>
-                          <td><a href="single-item.php"><img src="files/6.png" alt=""></a></td>
+                          <td><a href="single-item.php"><img src="images/6.png" alt=""></a></td>
                           <td>
                             <div class="input-group">
                               <input class="form-control" placeholder="1" type="text">

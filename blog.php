@@ -39,7 +39,7 @@
                                  
                                  <!-- Thumbnail -->
                                  <div class="bthumb">
-                                    <a href="#"><img src="files/back1.jpg" alt="" class="img-responsive"></a>
+                                    <a href="#"><img src="images/back1.jpg" alt="" class="img-responsive"></a>
                                  </div>
                                  
                                  <!-- Para -->
@@ -71,7 +71,7 @@ arcu.</p>
                                  
                                  <!-- Thumbnail -->
                                  <div class="bthumb">
-                                    <a href="#"><img src="files/back2.jpg" alt="" class="img-responsive"></a>
+                                    <a href="#"><img src="images/back2.jpg" alt="" class="img-responsive"></a>
                                  </div>
                                  
                                  <p>Lorem ipsum dolor sit amet, 

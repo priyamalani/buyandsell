@@ -45,7 +45,7 @@
                             <div class="item-icon"><span>HOT</span></div>
                             <!-- Item image -->
                             <div class="item-image">
-                              <a href="single-item.php"><img src="files/2.png" alt="" class="img-responsive"></a>
+                              <a href="single-item.php"><img src="images/2.png" alt="" class="img-responsive"></a>
                             </div>
                             <!-- Item details -->
                             <div class="item-details">
@@ -69,7 +69,7 @@
                           <div class="item">
                             <!-- Item image -->
                             <div class="item-image">
-                              <a href="single-item.php"><img src="files/3.png" alt="" class="img-responsive"></a>
+                              <a href="single-item.php"><img src="images/3.png" alt="" class="img-responsive"></a>
                             </div>
                             <!-- Item details -->
                             <div class="item-details">
@@ -91,7 +91,7 @@
                           <div class="item">
                             <!-- Item image -->
                             <div class="item-image">
-                              <a href="single-item.php"><img src="files/4.png" alt="" class="img-responsive"></a>
+                              <a href="single-item.php"><img src="images/4.png" alt="" class="img-responsive"></a>
                             </div>
                             <!-- Item details -->
                             <div class="item-details">
@@ -117,7 +117,7 @@
 
                             <!-- Item image -->
                             <div class="item-image">
-                              <a href="single-item.php"><img src="files/5.png" alt="" class="img-responsive"></a>
+                              <a href="single-item.php"><img src="images/5.png" alt="" class="img-responsive"></a>
                             </div>
                             <!-- Item details -->
                             <div class="item-details">
@@ -140,7 +140,7 @@
                            <div class="item-icon"><span>HOT</span></div>
                             <!-- Item image -->
                             <div class="item-image">
-                              <a href="single-item.php"><img src="files/6.png" alt="" class="img-responsive"></a>
+                              <a href="single-item.php"><img src="images/6.png" alt="" class="img-responsive"></a>
                             </div>
                             <!-- Item details -->
                             <div class="item-details">
@@ -162,7 +162,7 @@
                           <div class="item">
                             <!-- Item image -->
                             <div class="item-image">
-                              <a href="single-item.php"><img src="files/7.png" alt="" class="img-responsive"></a>
+                              <a href="single-item.php"><img src="images/7.png" alt="" class="img-responsive"></a>
                             </div>
                             <!-- Item details -->
                             <div class="item-details">
@@ -188,7 +188,7 @@
 
                             <!-- Item image -->
                             <div class="item-image">
-                              <a href="single-item.php"><img src="files/8.png" alt="" class="img-responsive"></a>
+                              <a href="single-item.php"><img src="images/8.png" alt="" class="img-responsive"></a>
                             </div>
                             <!-- Item details -->
                             <div class="item-details">
@@ -211,7 +211,7 @@
                            <div class="item-icon"><span>HOT</span></div>
                             <!-- Item image -->
                             <div class="item-image">
-                              <a href="single-item.php"><img src="files/9.png" alt="" class="img-responsive"></a>
+                              <a href="single-item.php"><img src="images/9.png" alt="" class="img-responsive"></a>
                             </div>
                             <!-- Item details -->
                             <div class="item-details">
@@ -233,7 +233,7 @@
                           <div class="item">
                             <!-- Item image -->
                             <div class="item-image">
-                              <a href="single-item.php"><img src="files/10.png" alt="" class="img-responsive"></a>
+                              <a href="single-item.php"><img src="images/10.png" alt="" class="img-responsive"></a>
                             </div>
                             <!-- Item details -->
                             <div class="item-details">

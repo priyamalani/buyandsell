@@ -40,7 +40,7 @@
                         <div class="col-md-4 col-xs-5">
 
                           <div class="item-image">
-                              <img src="files/2.png" alt="">
+                              <img src="images/2.png" alt="">
                           </div>
                               
 

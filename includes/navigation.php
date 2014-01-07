@@ -15,13 +15,13 @@
 							<div id="ddtopmenubar" class="mattblackmenu">
 								<ul>
 									<li><a href="index.php">Home</a></li>
-                           <li><a href="#" rel="ddsubmenu1">Account<img class="downarrowpointer" style="width: 11px; height: 7px;" src="files/arrow-down.gif"></a>
+                           <li><a href="#" rel="ddsubmenu1">Account<img class="downarrowpointer" style="width: 11px; height: 7px;" src="images/arrow-down.gif"></a>
 										
 									</li>
-									<li><a href="#" rel="ddsubmenu1">Pages<img class="downarrowpointer" style="width: 11px; height: 7px;" src="files/arrow-down.gif"></a>
+									<li><a href="#" rel="ddsubmenu1">Pages<img class="downarrowpointer" style="width: 11px; height: 7px;" src="images/arrow-down.gif"></a>
 										
 									</li>
-									<li><a href="#" rel="ddsubmenu1">Computers<img class="downarrowpointer" style="width: 11px; height: 7px;" src="files/arrow-down.gif"></a>
+									<li><a href="#" rel="ddsubmenu1">Computers<img class="downarrowpointer" style="width: 11px; height: 7px;" src="images/arrow-down.gif"></a>
 										
 									</li>                       
 									<li><a href="contactus.php">Contact</a></li>

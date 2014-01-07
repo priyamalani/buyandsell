@@ -97,7 +97,7 @@
 		<!-- Custom JS -->
 		<script src="js/custom.js"></script>
 		
-<iframe style="width: 0px; height: 0px; left: 0px; top: 0px;" src="files/a_002.htm" class="ddiframeshim" frameborder="0"></iframe><iframe style="width: 0px; height: 0px; left: 0px; top: 58px;" src="files/a_002.htm" class="ddiframeshim" frameborder="0"></iframe><div style="z-index: 2000; left: 0px; top: -1000px; visibility: hidden; height: 273px; width: 150px; overflow: visible; opacity: 1;" class="ddsubmenustyle"><ul style="visibility: hidden; top: 0px; left: 0px;" id="ddsubmenu1">
+<iframe style="width: 0px; height: 0px; left: 0px; top: 0px;" src="images/a_002.htm" class="ddiframeshim" frameborder="0"></iframe><iframe style="width: 0px; height: 0px; left: 0px; top: 58px;" src="images/a_002.htm" class="ddiframeshim" frameborder="0"></iframe><div style="z-index: 2000; left: 0px; top: -1000px; visibility: hidden; height: 273px; width: 150px; overflow: visible; opacity: 1;" class="ddsubmenustyle"><ul style="visibility: hidden; top: 0px; left: 0px;" id="ddsubmenu1">
                                  <li><a href="account.php">My Account</a></li>
 											<li><a href="viewcart.php">View Cart</a></li>
                                  <li><a href="checkout.php">Checkout</a></li>

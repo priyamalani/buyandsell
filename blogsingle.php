@@ -39,7 +39,7 @@
                                  
                                  <!-- Thumbnail -->
                                  <div class="bthumb">
-                                    <a href="#"><img src="files/back1.jpg" alt="" class="img-responsive"></a>
+                                    <a href="#"><img src="images/back1.jpg" alt="" class="img-responsive"></a>
                                  </div>
                                  
                                  <!-- Para -->
@@ -67,7 +67,7 @@ arcu.</p>
                                     <ul class="comment-list">
                                       <li class="comment">
                                         <a class="pull-left" href="#">
-                                          <img class="avatar" src="files/user.jpg">
+                                          <img class="avatar" src="images/user.jpg">
                                         </a>
                                           <div class="comment-author"><a href="#">Ashok</a></div>
                                           <div class="cmeta">Commented on 25/12/2012</div>
@@ -78,7 +78,7 @@ condimentum rutrum aliquet. Quisque eu consectetur erat.</p>
                                       </li>
                                       <li class="comment reply">
                                         <a class="pull-left" href="#">
-                                          <img class="avatar" src="files/user.jpg">
+                                          <img class="avatar" src="images/user.jpg">
                                         </a>
                                           <div class="comment-author"><a href="#">Ashok</a></div>
                                           <div class="cmeta">Commented on 25/12/2012</div>
