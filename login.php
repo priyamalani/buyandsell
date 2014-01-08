@@ -52,13 +52,13 @@
                              <div class="form-group">
                                <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
                                <div class="col-lg-10">
-                                 <input class="form-control" id="inputEmail1" name="inputEmail1" placeholder="Email" type="email">
+                                 <input class="form-control" id="inputEmail1" name="email" placeholder="Email" type="email">
                                </div>
                              </div>
                              <div class="form-group">
                                <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
                                <div class="col-lg-10">
-                                 <input class="form-control" id="inputPassword1" name="inputPassword1" placeholder="Password" type="password">
+                                 <input class="form-control" id="inputPassword1" name="password" placeholder="Password" type="password">
                                </div>
                              </div>
                              <div class="form-group">

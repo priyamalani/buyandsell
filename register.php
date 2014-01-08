@@ -41,41 +41,35 @@ turpis.</p>
                         <div class="cool-block-bor">
                         
                            <h3 class="text-center">Register</h3>
-                           <form class="form-horizontal" role="form">
+                           <form class="form-horizontal" role="form"  method="POST" action="actions/process_register.php">
                              <div class="form-group">
                                <label for="inputName" class="col-lg-2 control-label">Name</label>
                                <div class="col-lg-10">
-                                 <input class="form-control" id="inputName" placeholder="Name" type="text">
+                                 <input class="form-control" id="inputName" name="username" placeholder="Name" type="text">
                                </div>
                              </div>                           
                              <div class="form-group">
                                <label for="inputEmail1" class="col-lg-2 control-label">Email</label>
                                <div class="col-lg-10">
-                                 <input class="form-control" id="inputEmail1" placeholder="Email" type="email">
+                                 <input class="form-control" id="inputEmail1" name="email" placeholder="Email" type="email">
                                </div>
                              </div>
                              <div class="form-group">
                                <label for="inputPassword1" class="col-lg-2 control-label">Password</label>
                                <div class="col-lg-10">
-                                 <input class="form-control" id="inputPassword1" placeholder="Password" type="password">
+                                 <input class="form-control" id="inputPassword1" name="password" placeholder="Password" type="password">
                                </div>
                              </div>
                              <div class="form-group">
-                               <label for="dropdown" class="col-lg-2 control-label">State</label>
+                               <label for="inputPassword1" class="col-lg-2 control-label">Re-Password</label>
                                <div class="col-lg-10">
-                                 <select class="form-control">
-                                   <option selected="selected">1</option>
-                                   <option>2</option>
-                                   <option>3</option>
-                                   <option>4</option>
-                                   <option>5</option>
-                                 </select>
+                                 <input class="form-control" id="inputPassword1" name="rePassword" placeholder="Retype Password" type="password">
                                </div>
                              </div>
                              <div class="form-group">
                                <label for="inputEmail1" class="col-lg-2 control-label">City</label>
                                <div class="col-lg-10">
-                                 <input class="form-control" id="inputCity" placeholder="City" type="text">
+                                 <input class="form-control" id="inputCity" placeholder="City" name="city" type="text">
                                </div>
                              </div>                              
                              <div class="form-group">
