@@ -9,7 +9,7 @@ if (isset($_POST['inputEmail1'], $_POST['inputPassword1'])) {
  
     if (login($email, $password, $mysqli) == true) {
         // Login success 
-        header('Location: ../editprofile.php');
+        header('Location: ../account.php');
     } else {
         // Login failed 
         header('Location: ../index.php');
