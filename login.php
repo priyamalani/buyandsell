@@ -20,13 +20,13 @@
                         <div class="">
                             <h3></h3>
                            <h3 class="text-center">New to ShopAndSell</h3>
-                           <form class="form-horizontal" role="form">
+                           <form class="form-horizontal" role="form" action="register.php" method="POST">
                              <div class="form-group">
                                  <div class="col-lg-12">
                                <label for="inputEmail2" class="col-lg-12 control-label" style="text-align: center;">Get started now. It's fast and easy!</label>
                                  </div>
                                <div class="col-lg-12">
-                                 <input class="form-control" id="inputEmail2" placeholder="Email" type="email">
+                                 <input class="form-control" id="inputEmail2" name="registerEmail" placeholder="Email" type="email">
                                </div>
                              </div>
                             
@@ -80,14 +80,6 @@
      
       
        <?php include 'includes/whatsNew.php'; ?>	
-      
-      
-      
-      <?php include 'includes/catchyBlock.php'; ?>
-      
-      <!-- CTA Starts -->
-      <?php include 'includes/CTABlock.php'; ?>
-      <!-- CTA Ends -->
       
       
       <?php include 'includes/footer.php'; ?>

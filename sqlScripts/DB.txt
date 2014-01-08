@@ -1,9 +1,15 @@
 CREATE TABLE `members` (
     `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
     `username` VARCHAR(30) NOT NULL,
+    `name` VARCHAR(30),    
     `email` VARCHAR(50) NOT NULL,
     `password` CHAR(128) NOT NULL,
-    `salt` CHAR(128) NOT NULL 
+    `phone` VARCHAR(50),
+    `address` CHAR(128),
+    `zip` VARCHAR(50),
+    `country` VARCHAR(50),
+    `salt` CHAR(128) NOT NULL,
+    `seller` VARCHAR(50) NOT NULL DEFAULT 'owner',
 ) ENGINE = InnoDB;
 
 CREATE USER 'sec_user'@'localhost' IDENTIFIED BY 'sec_user';

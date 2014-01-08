@@ -279,53 +279,17 @@
 
       <!-- Items List ends -->
 
-      <?php include 'includes/catchyBlock.php'; ?>
       
       <?php include 'includes/whatsNew.php'; ?>	
+      
+      
+      <?php include 'includes/catchyBlock.php'; ?>
            
       
       <!-- CTA Starts -->
        <?php include 'includes/CTABlock.php'; ?>	
       <!-- CTA Ends -->
       
-      <!-- Clients starts -->
-      <div class="clients blocky">
-         <div class="container">
-                  
-            <div class="row">
-               <div class="col-md-2 col-sm-4 col-xs-6">
-                  <div class="client">
-                    <img src="images/amazon-f.png" alt="" class="img-responsive">
-                  </div>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                  <div class="client">
-                    <img src="images/google-f.png" alt="" class="img-responsive">
-                  </div>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                  <div class="client">
-                    <img src="images/facebook-f.png" alt="" class="img-responsive">
-                  </div>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                  <div class="client">
-                    <img src="images/twitter-f.png" alt="" class="img-responsive">
-                  </div>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                  <div class="client">
-                    <img src="images/skype-f.png" alt="" class="img-responsive">
-                  </div>
-                </div>
-                <div class="col-md-2 col-sm-4 col-xs-6">
-                  <div class="client">
-                    <img src="images/youtube-f.png" alt="" class="img-responsive">
-                  </div>
-                </div>
-            </div>
-         </div>
-      </div>
-      <!-- Clients ends -->
+      
       <?php include 'includes/footer.php'; ?>
       </body></html>
