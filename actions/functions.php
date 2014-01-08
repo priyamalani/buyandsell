@@ -2,7 +2,6 @@
 
 
 include_once 'config.php';   // As functions.php is not included
-$mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
  
 function sec_session_start() {
     $session_name = 'sec_session_id';   // Set a custom session name
