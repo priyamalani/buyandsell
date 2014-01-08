@@ -1,18 +1,7 @@
 <?php
-/**
- * These are the database login details
- */  
-define("HOST", "localhost");     // The host you want to connect to.
-define("USER", "root");    // The database username. 
-define("PASSWORD", "root");    // The database password. 
-define("DATABASE", "shopandsell");    // The database name.
- 
-define("CAN_REGISTER", "any");
-define("DEFAULT_ROLE", "member");
- 
-define("SECURE", FALSE);    // FOR DEVELOPMENT ONLY!!!!
 
-//include_once 'psl-config.php';   // As functions.php is not included
+
+include_once 'config.php';   // As functions.php is not included
 $mysqli = new mysqli(HOST, USER, PASSWORD, DATABASE);
  
 function sec_session_start() {
