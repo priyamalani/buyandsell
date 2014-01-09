@@ -44,7 +44,7 @@
            </div>
            <div class="modal-footer">
              <button type="button" class="btn btn-default" data-dismiss="modal">Continue Shopping</button>
-             <button type="button" class="btn btn-info">Checkout</button>
+             <a href="checkout.php" class="btn btn-info">Checkout</a>
            </div>
          </div><!-- /.modal-content -->
        </div><!-- /.modal-dialog -->
