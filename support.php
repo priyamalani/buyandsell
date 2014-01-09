@@ -24,9 +24,7 @@
             <div class="row">
                   <div class="col-md-8 col-sm-8">
                            <div class="filter-area">
-                              <h4>Type to Filter:</h4>
-                              <div id="form"><form action="#" class="filterform form-search"><input placeholder="Type to Filter" class="filterinput" type="text"></form></div>
-                              <hr>
+                              
                               <div class="clearfix"></div>
                                       
                               <!-- Lists -->
@@ -108,11 +106,10 @@ adipiscing.</p>
                                           <!-- Phone, email and address with font awesome icon -->
                                           <p>Praesent at tellus porttitor nisl porttitor sagittis. Mauris in massa ligula, a tempor nulla.</p>
 
-                                          <p><i class="icon-phone"></i> Phone<strong>:</strong> 123-456-7890</p>
+                                          <p><a href="tel:+919823466777"><i class="icon-phone"></i> Phone<strong>:</strong> +91 982 346 6777</a><br>
 
-                                          <p><i class="icon-envelope-alt"></i> Email<strong>:</strong> something@gmail.com</p>
-
-                                          <p><i class="icon-home"></i> Address<strong>:</strong> 12, Srtington Street, NY, USA </p>
+                                          <a href="mailto:rohitmalani83@gmail.com"><i class="icon-envelope-alt"></i> Email<strong>:</strong> rohitmalani83@gmail.com</a>
+                                          </p>
                                           <!-- Button -->
                                           <a href="contactus.php" class="btn btn-info">Contact Us</a> <a href="faq.php" class="btn btn-default">Check out FAQ</a>
                                        </div>
@@ -126,14 +123,7 @@ adipiscing.</p>
      
       
        <?php include 'includes/whatsNew.php'; ?>	
-      
-      
-     
-      <?php include 'includes/catchyBlock.php'; ?>
-      
-      <!-- CTA Starts -->
-      <?php include 'includes/CTABlock.php'; ?>
-      <!-- CTA Ends -->
+
       
 
       <?php include 'includes/footer.php'; ?>

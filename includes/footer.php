@@ -52,8 +52,8 @@
                               <p><i class="icon-home color contact-icon"></i> #12, Plot No.14, Raj Karmara Street, </p>
                               <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5th Stage, Koramangala, Madiwala,</p>
                               <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bangalore - 493922, Karananana.</p>
-                              <p><i class="icon-mobile-phone color contact-icon"></i> +94-948-323-5532</p>
-                              <p><i class="icon-envelope color contact-icon"></i> <a href="mailto:something@gmail.com">some.thing@gmail.com</a></p>
+                              <p><i class="icon-mobile-phone color contact-icon"></i> <a href="tel:+919823466777">+91-982-346-6777</a></p>
+                              <p><i class="icon-envelope color contact-icon"></i> <a href="mailto:rohitmalani83@gmail.com">rohitmalani83@gmail.com</a></p>
                            </div>
                            
                          </div>

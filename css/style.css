@@ -1904,7 +1904,7 @@ footer a{
    border-bottom:1px dotted #888;
 }
 
-footer a:hover{
+footer a:hover, footer a:focus{
    color:#aaa;
    text-decoration:none;
    border:0px;
