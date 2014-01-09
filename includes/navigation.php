@@ -1,5 +1,5 @@
 <!-- Logo & Navigation starts -->
-      
+
       <div class="header">
 <!--         <div class="container">
             <div class="row">
@@ -105,8 +105,16 @@
            <div class="nav navbar-nav navbar-right">
              <div class="kart-links">
                             <a href="support.php">Support</a>
-                            <a href="login.php">Login</a> 
-                            <a href="register.php">Signup</a>
+                            <?php 
+                            if(isset($_SESSION['id'])){ 
+                                echo '<a href="account.php">Account</a> ';
+                                echo '<a href="actions/process_logout.php">Logout</a> ';
+                            }
+                            else{
+                                echo '<a href="login.php">Login</a> 
+                                     <a href="register.php">Signup</a>';
+                            }
+                            ?>
                             <a data-toggle="modal" href="#shoppingcart"><i class="icon-shopping-cart"></i> 3</a>
                          </div>
            </div>

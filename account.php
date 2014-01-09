@@ -40,14 +40,14 @@
                    <div class="address">
                      <address>
                        <!-- Your name -->
-                       <strong>Ashok Ramesh</strong><br>
+                       <strong><?echo $_SESSION['name'];?></strong><br>
                        <!-- Address -->
-                       795 Folsom Ave, Suite 600<br>
-                       San Francisco, CA 94107<br>
-
+                       <p>
+                           <?echo $_SESSION['address'];?>
+                       </p>
                        <!-- Phone number -->
-                       <abbr title="Phone">P:</abbr> (123) 456-7890.<br>
-                       <a href="mailto:#">first.last@gmail.com</a>
+                       <abbr title="Phone">P:</abbr> <a href="tel:<?echo $_SESSION['phone'];?>"><?echo $_SESSION['phone'];?></a><br>
+                       <a href="mailto:<?echo $_SESSION['email'];?>"><?echo $_SESSION['email'];?></a>
                      </address>
                    </div>
 

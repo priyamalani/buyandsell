@@ -1,3 +1,4 @@
+<?if(!isset($_SESSION['id'])){?>
 <!-- Catchy starts -->
       <div class="catchy blocky">
          <div class="catchy-inner1">
@@ -155,3 +156,5 @@
          </div>
       </div>      
       <!-- Catchy ends -->
+      
+<?}?>

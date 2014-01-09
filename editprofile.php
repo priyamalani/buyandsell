@@ -38,29 +38,30 @@
                <div class="col-md-9">
                   <h3><i class="icon-user color"></i> &nbsp;Edit Profile</h3>
                   <!-- Your details -->
-                  <form class="form-horizontal" role="form">
+                  <form class="form-horizontal" role="form" action="actions/update_profile.php" method="POST">
+                      <input id="id" name="id" type="hidden" value="<? echo $_SESSION['id'];?>">
                     <div class="form-group">
                       <label for="inputName" class="col-md-2 control-label">Name</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="inputName" placeholder="Name" type="text">
+                        <input class="form-control" id="inputName" name="name" placeholder="Name" type="text" value="<? echo $_SESSION['name'];?>">
                       </div>
                     </div>            
                     <div class="form-group">
                       <label for="inputEmail1" class="col-md-2 control-label">Email</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="inputEmail1" placeholder="Email" type="email">
+                        <input class="form-control" id="inputEmail1" name="email" placeholder="Email" type="email" value="<? echo $_SESSION['email'];?>">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="inputPhone" class="col-md-2 control-label">Phone Number</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="inputPhone" placeholder="Phone" type="text">
+                        <input class="form-control" id="inputPhone" name="phoneNumber" placeholder="Phone" type="text" value="<? echo $_SESSION['phone'];?>">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="inputCountry" class="col-md-2 control-label">Country</label>
                       <div class="col-md-4">
-                        <select class="form-control">
+                        <select class="form-control" name="country">
                           <option selected="selected">Select Country</option>
                           <option>USA</option>
                           <option>India</option>
@@ -72,36 +73,38 @@
                     <div class="form-group">
                         <label for="inputAddress" class="col-md-2 control-label">Address</label>
                         <div class="col-md-4">
-                           <textarea class="form-control" rows="3" placeholder="Address"></textarea>
+                           <textarea class="form-control" rows="3" placeholder="Address" name="address"><? echo $_SESSION['address'];?></textarea>
                         </div>
                     </div>
                     <div class="form-group">
                       <label for="inputZip" class="col-md-2 control-label">Zip Code</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="inputZip" placeholder="Zip Code" type="text">
+                        <input class="form-control" id="inputZip" placeholder="Zip Code" type="text" name="zip" value="<? echo $_SESSION['zip'];?>">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="inputUsername" class="col-md-2 control-label">Username</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="inputUsername" placeholder="Username" type="text">
+                        <input class="form-control" id="inputUsername" placeholder="Username" type="text" name="username" value="<? echo $_SESSION['username'];?>">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="inputPassword" class="col-md-2 control-label">Password</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="inputPassword" placeholder="Password" type="password">
+                        <input class="form-control" id="inputPassword" placeholder="Password" type="password" name="password" value="<? echo $_SESSION['password'];?>">
                       </div>
-                    </div>                    
+                    </div>  
                     <div class="form-group">
-                      <div class="col-md-offset-2 col-md-4">
-                        <div class="checkbox">
-                          <label>
-                            <input type="checkbox"> Accept Terms &amp; Conditions
-                          </label>
-                        </div>
+                      <label for="inputSeller" class="col-md-2 control-label">Seller</label>
+                      <div class="col-md-4">
+                        <select class="form-control" name="seller">
+                          <option selected="selected">Owner</option>
+                          <option>Retail</option>
+                          <option>Other</option>
+                        </select>
                       </div>
-                    </div>
+                    </div>  
+                      
                     <hr>
                     <div class="form-group">
                       <div class="col-md-offset-2 col-md-10">

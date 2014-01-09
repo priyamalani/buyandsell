@@ -2,29 +2,31 @@
 
 
 include_once 'config.php';   // As functions.php is not included
+session_start();
+
  
-function sec_session_start() {
-    $session_name = 'sec_session_id';   // Set a custom session name
-    $secure = SECURE;
-    // This stops JavaScript being able to access the session id.
-    $httponly = true;
-    // Forces sessions to only use cookies.
-    if (ini_set('session.use_only_cookies', 1) === FALSE) {
-        header("Location: ../error.php?err=Could not initiate a safe session (ini_set)");
-        exit();
-    }
-    // Gets current cookies params.
-    $cookieParams = session_get_cookie_params();
-    session_set_cookie_params($cookieParams["lifetime"],
-        $cookieParams["path"], 
-        $cookieParams["domain"], 
-        $secure,
-        $httponly);
-    // Sets the session name to the one set above.
-    session_name($session_name);
-    session_start();            // Start the PHP session 
-    session_regenerate_id();    // regenerated the session, delete the old one. 
-}
+//function sec_session_start() {
+//    $session_name = 'sec_session_id';   // Set a custom session name
+//    $secure = SECURE;
+//    // This stops JavaScript being able to access the session id.
+//    $httponly = true;
+//    // Forces sessions to only use cookies.
+//    if (ini_set('session.use_only_cookies', 1) === FALSE) {
+//        header("Location: ../error.php?err=Could not initiate a safe session (ini_set)");
+//        exit();
+//    }
+//    // Gets current cookies params.
+//    $cookieParams = session_get_cookie_params();
+//    session_set_cookie_params($cookieParams["lifetime"],
+//        $cookieParams["path"], 
+//        $cookieParams["domain"], 
+//        $secure,
+//        $httponly);
+//    // Sets the session name to the one set above.
+//    session_name($session_name);
+//    session_start();            // Start the PHP session 
+//    session_regenerate_id();    // regenerated the session, delete the old one. 
+//}
 
 
 function login($email, $password) {
@@ -37,6 +39,17 @@ function login($email, $password) {
             return FALSE;
         }
         elseif(mysql_result($result, 0 ,'password')==$password){
+            $_SESSION['id'] = mysql_result($result, 0 ,'id');
+            $_SESSION['email'] = $email;
+            $_SESSION['password'] = $password;
+            $_SESSION['name'] = mysql_result($result, 0 ,'name');
+            $_SESSION['username'] = mysql_result($result, 0 ,'username');
+            $_SESSION['country'] = mysql_result($result, 0 ,'country');
+            $_SESSION['address'] = mysql_result($result, 0 ,'address');
+            $_SESSION['zip'] = mysql_result($result, 0 ,'zip');
+            $_SESSION['username'] = mysql_result($result, 0 ,'username');
+            $_SESSION['seller'] = mysql_result($result, 0 ,'seller');
+            $_SESSION['phone'] = mysql_result($result, 0 ,'phone');
             return TRUE;
         }
         else { return FALSE;}

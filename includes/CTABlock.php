@@ -1,3 +1,4 @@
+<?if(!isset($_SESSION['id'])){?>
 <div class="blocky">
          <div class="container">
             <div class="row">
@@ -59,3 +60,5 @@
          </div>
       </div>
       <!-- Clients ends -->
+      
+<?}?>

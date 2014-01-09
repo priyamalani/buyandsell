@@ -1,3 +1,4 @@
+<?  session_start(); ?>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 		<!-- Title here -->
