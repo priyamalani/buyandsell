@@ -2,10 +2,10 @@
 <head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 		<!-- Title here -->
-		<title>Buy and Sell Online</title>
+		<title>ShopAndSell - Shop and sell electronics, home decors, fashion apparel, sporting goods, digital items, coupons, and many more on ShopAndSell, the world's online classifieds.</title>
 		<!-- Description, Keywords and Author -->
-		<meta name="description" content="Buy and sell electronics, home decors, fashion apparel, sporting goods, digital items, coupons, and many more on ShopAndSell, the world's online classifieds.">
-		<meta name="keywords" content="Buy, Sell, Online selling, Online Buying, India, Used goods, Used stuff">
+		<meta name="description" content="Shop and sell electronics, home decors, fashion apparel, sporting goods, digital items, coupons, and many more on ShopAndSell, the world's online classifieds.">
+		<meta name="keywords" content="Shop, Buy, Sell, Online selling, Online Buying, India, Used goods, Used stuff">
 		<meta name="author" content="Priya malani">
 		
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
