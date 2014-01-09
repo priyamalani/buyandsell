@@ -53,7 +53,7 @@
 
                    <hr>
                    
-                   <h4>My Recent Purchases</h4>
+                   <h4>My Posting</h4>
 
                      <table class="table table-striped tcart">
                        <thead>
@@ -63,6 +63,7 @@
                            <th>Name</th>
                            <th>Price</th>
                            <th>Status</th>
+                           <th>View Posting</th>
                          </tr>
                        </thead>
                        <tbody>
@@ -72,6 +73,7 @@
                            <td>HTC One</td>
                            <td>$530</td>
                            <td>Completed</td>
+                           <td><a href="single-item.php" id="" class="btn btn-info btn-sm">View</a></td>
                          </tr>
                          <tr>
                            <td>15-02-12</td>
@@ -79,6 +81,7 @@
                            <td>Sony Xperia</td>
                            <td>$330</td>
                            <td>Shipped</td>
+                           <td><a href="single-item.php" id="" class="btn btn-info btn-sm">View</a></td>
                          </tr>
                          <tr>
                            <td>14-08-12</td>
@@ -86,6 +89,7 @@
                            <td>Nokia Asha</td>
                            <td>$230</td>
                            <td>Processing</td>
+                           <td><a href="single-item.php" id="" class="btn btn-info btn-sm">View</a></td>
                          </tr>                                               
                        </tbody>
                      </table>
