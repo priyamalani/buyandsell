@@ -44,7 +44,7 @@ if (isset($_POST['username'], $_POST['email'], $_POST['password'])) {
         if (!mysql_query($query, $db_server))
             header('Location: ../404.php');
         else {
-            header('Location: ../account.php');
+            header('Location: ../login.php');
         }
     }
 }
