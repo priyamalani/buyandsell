@@ -25,7 +25,7 @@
             
                     <div class="link-list">
                       <h5>Take a look around our site</h5>
-                      <a href="#">Home</a> <a href="#">About us</a> <a href="#">Support</a> <a href="#">Contact Us</a> <a href="#">Disclaimer</a>
+                      <a href="index.php">Home</a> <a href="aboutus.php">About us</a> <a href="support.php">Support</a> <a href="contactus.php">Contact Us</a> <a href="faq.php">FAQ</a>
                     </div>
 
             <div class="sep-bor"></div>
