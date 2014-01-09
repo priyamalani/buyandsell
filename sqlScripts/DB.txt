@@ -8,9 +8,12 @@ CREATE TABLE `members` (
     `address` CHAR(128),
     `zip` VARCHAR(50),
     `country` VARCHAR(50),
-    `salt` CHAR(128) NOT NULL,
-    `seller` VARCHAR(50) NOT NULL DEFAULT 'owner',
+    `salt` CHAR(128) NOT NULL
 ) ENGINE = InnoDB;
+
+ALTER TABLE members ADD COLUMN seller VARCHAR(50) DEFAULT "owner";
+ALTER TABLE members ADD active CHAR(10) NOT NULL DEFAULT 1;
+ALTER TABLE members ADD create_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP;
 
 CREATE USER 'sec_user'@'localhost' IDENTIFIED BY 'sec_user';
 GRANT all privileges ON `shopandsell`.* TO 'sec_user'@'localhost';
