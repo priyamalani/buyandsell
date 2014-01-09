@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
     <?php include 'includes/header.php'; ?>
+    
 	
 	<body>
 
@@ -82,7 +83,6 @@
                       <!-- Use uniqe name for "href" in below anchor tags -->
                       <li class="active"><a href="#tab1" data-toggle="tab">Contact Seller</a></li>
                       <li><a href="#tab2" data-toggle="tab">Description</a></li>
-                      <li><a href="#tab2" data-toggle="tab">Specs</a></li>
                       <li><a href="#tab3" data-toggle="tab">Review (5)</a></li>
                     </ul>
 
@@ -139,48 +139,7 @@
                         </ul>
                       </div>
 
-                      <!-- Sepcs -->
-                      <div class="tab-pane fade" id="tab2">
-                        
-                        <h5><strong>Product Specs:</strong></h5>
-                        <table class="table table-striped">
-                          <tbody>
-                            <tr>
-                              <td><strong>Name</strong></td>
-                              <td>Apple iPhone 5G</td>
-                            </tr>
-                            <tr>
-                              <td><strong>Brand</strong></td>
-                              <td>Apple</td>
-                            </tr>
-                            <tr>
-                              <td><strong>Modal</strong></td>
-                              <td>Fifth Generation</td>
-                            </tr>
-                            <tr>
-                              <td><strong>Memory</strong></td>
-                              <td>2GB RAM</td>
-                            </tr>
-                            <tr>
-                              <td><strong>Storage</strong></td>
-                              <td>16GB, 32GB, 64GB</td>
-                            </tr>
-                            <tr>
-                              <td><strong>Camera</strong></td>
-                              <td>Front VGA, Read 8MP</td>
-                            </tr>
-                            <tr>
-                              <td><strong>Processor</strong></td>
-                              <td>Apple 1.25GHz Processor</td>
-                            </tr>
-                            <tr>
-                              <td><strong>Battery</strong></td>
-                              <td>30 Hours Standby</td>
-                            </tr>                                                                                                
-                          </tbody>
-                        </table>
-
-                      </div>
+                     
 
                       <!-- Review -->
                       <div class="tab-pane fade" id="tab3">

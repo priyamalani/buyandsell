@@ -160,5 +160,22 @@ function esc_url($url) {
     }
 }
 
+function getGoogleMap( $address = "", $country = "", $postal = "", $width = 300, $height = 300, $id='locMap' ){
+	$location = $address.",".$country.",".$postal;
+	$location = str_replace(" ", "+", $location);
+	echo '	
+		<iframe 
+			id="'.$id.'"
+			width="'.$width.'" 
+			height="'.$height.'" 
+			frameborder="0" 
+			scrolling="no" 
+			marginheight="0" 
+			marginwidth="0" 
+			src="http://www.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q='.$location.'&amp;aq=&amp;ie=UTF8&amp;hq=&amp;hnear='.$location.'&amp;z=14&amp;iwloc=&amp;output=embed"
+			>
+			</iframe>			
+		';
+}
 
 ?>

@@ -62,34 +62,30 @@
                            <th>ID</th>
                            <th>Name</th>
                            <th>Price</th>
-                           <th>Status</th>
-                           <th>View Posting</th>
+                           <th>Views</th>
                          </tr>
                        </thead>
                        <tbody>
                          <tr>
                            <td>25-08-12</td>
                            <td>4423</td>
-                           <td>HTC One</td>
+                           <td><a href="single-item.php" id="">HTC One</a></td>
                            <td>$530</td>
-                           <td>Completed</td>
-                           <td><a href="single-item.php" id="" class="btn btn-info btn-sm">View</a></td>
+                           <td>31</td>
                          </tr>
                          <tr>
                            <td>15-02-12</td>
                            <td>6643</td>
-                           <td>Sony Xperia</td>
+                           <td><a href="single-item.php" id="">Nokia</a></td>
                            <td>$330</td>
-                           <td>Shipped</td>
-                           <td><a href="single-item.php" id="" class="btn btn-info btn-sm">View</a></td>
+                           <td>20</td>
                          </tr>
                          <tr>
                            <td>14-08-12</td>
                            <td>1283</td>
-                           <td>Nokia Asha</td>
+                           <td><a href="single-item.php" id="">Samsung</a></td>
                            <td>$230</td>
-                           <td>Processing</td>
-                           <td><a href="single-item.php" id="" class="btn btn-info btn-sm">View</a></td>
+                           <td>5</td>
                          </tr>                                               
                        </tbody>
                      </table>
