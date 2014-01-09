@@ -47,7 +47,6 @@ function login($email, $password) {
             $_SESSION['country'] = mysql_result($result, 0 ,'country');
             $_SESSION['address'] = mysql_result($result, 0 ,'address');
             $_SESSION['zip'] = mysql_result($result, 0 ,'zip');
-            $_SESSION['username'] = mysql_result($result, 0 ,'username');
             $_SESSION['seller'] = mysql_result($result, 0 ,'seller');
             $_SESSION['phone'] = mysql_result($result, 0 ,'phone');
             return TRUE;

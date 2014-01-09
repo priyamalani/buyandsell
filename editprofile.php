@@ -62,7 +62,7 @@
                       <label for="inputCountry" class="col-md-2 control-label">Country</label>
                       <div class="col-md-4">
                         <select class="form-control" name="country">
-                          <option selected="selected">Select Country</option>
+                          <option selected="selected"><?if(isset($_SESSION['country'])) echo $_SESSION['country']; else echo 'Select Country';?></option>
                           <option>USA</option>
                           <option>India</option>
                           <option>Canada</option>

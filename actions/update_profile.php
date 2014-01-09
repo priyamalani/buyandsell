@@ -39,6 +39,15 @@ if (isset($_POST['username'], $_POST['email'], $_POST['password'])) {
         if (!mysql_query($query, $db_server))
             header('Location: ../404.php');
         else {
+            $_SESSION['email'] = $email;
+            $_SESSION['password'] = $password;
+            $_SESSION['name'] = $name;
+            $_SESSION['username'] = $username;
+            $_SESSION['country'] = $country;
+            $_SESSION['address'] = $address;
+            $_SESSION['zip'] = $zip;
+            $_SESSION['seller'] = $seller;
+            $_SESSION['phone'] = $phoneNumber;
             header('Location: ../account.php');
         }
     }
