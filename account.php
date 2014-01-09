@@ -43,11 +43,12 @@
                        <strong><?echo $_SESSION['name'];?></strong><br>
                        <!-- Address -->
                        <p>
+                           <abbr title="Address"><i class="icon-home"></i></abbr> :
                            <?echo $_SESSION['address'];?>
                        </p>
                        <!-- Phone number -->
-                       <abbr title="Phone">P:</abbr> <a href="tel:<?echo $_SESSION['phone'];?>"><?echo $_SESSION['phone'];?></a><br>
-                       <a href="mailto:<?echo $_SESSION['email'];?>"><?echo $_SESSION['email'];?></a>
+                       <abbr title="Phone"><i class="icon-phone"></i></abbr> : <a href="tel:<?echo $_SESSION['phone'];?>"><?echo $_SESSION['phone'];?></a><br>
+                       <abbr title="Email"><i class="icon-envelope"></i></abbr> : <a href="mailto:<?echo $_SESSION['email'];?>"><?echo $_SESSION['email'];?></a>
                      </address>
                    </div>
 
