@@ -1,3 +1,6 @@
+<?php
+require_once 'actions/functions.php';
+?>
 <!DOCTYPE html>
 <html>
     <?php include 'includes/header.php'; ?>
@@ -73,15 +76,15 @@
                     <div class="form-group">
                       <label for="inputCategory" class="col-md-2 control-label">Category</label>
                       <div class="col-md-4">
-                        <select class="form-control" name="category">
-                          <option selected="selected">Select One</option>
-                          <option value="1">Category 1</option>
-                          <option value="2">Category 2</option>
-                          <option value="3">Category 3</option>
-                          <option value="4">Category 4</option>
-                        </select>
+                          <? echo getCategory(0, 'baseCategory', '', TRUE);?>
                       </div>
                     </div>
+                    <div class="form-group">
+                      <label for="subCategoryDiv" class="col-md-2 control-label">Sub-Category</label>
+                      <div class="col-md-4" id="subCategoryDiv">
+                          
+                      </div>
+                    </div>  
                     <div class="form-group">
                       <label for="estimatedDelivery" class="col-md-2 control-label">Delivery Date</label>
                       <div class="col-md-4">
@@ -169,5 +172,26 @@ $(function() {
    $('#image3').click(function(){
       $('#imageFile3').click(); 
    }); 
+   
+   $('#baseCategory').change(function(){
+      var cat = $('#baseCategory').val();
+      
+      if(cat == 1){
+          $('#subCategoryDiv').html('<? echo getCategory(1, 'subCategory', '');?>');
+      }
+      else if(cat == 2){
+          $('#subCategoryDiv').html('<? echo getCategory(2, 'subCategory', '');?>');
+      }
+      else if(cat == 3){
+          $('#subCategoryDiv').html('<? echo getCategory(3, 'subCategory', '');?>');
+      }
+      else if(cat == 4){
+          $('#subCategoryDiv').html('<? echo getCategory(4, 'subCategory', '');?>');
+      }
+   });
+   
+//   $("input[name='imageFile1']").change(function() { this.form.submit(); });
+//   $("input[name='imageFile2']").change(function() { this.form.submit(); });
+//   $("input[name='imageFile3']").change(function() { this.form.submit(); });
 });
 </script>

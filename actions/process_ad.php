@@ -3,7 +3,7 @@ include_once 'functions.php';
 
 $error_msg = "";
  
-if (isset($_POST['name'], $_POST['sellingPrice'],$_POST['category'],$_POST['imageFile1'])) {
+if (isset($_POST['name'], $_POST['sellingPrice'],$_POST['baseCategory'],$_POST['imageFile1'])) {
     // Sanitize and validate the data passed in
     $mem_id = $_SESSION['id'];
     $name = $_POST['name'];
@@ -11,7 +11,7 @@ if (isset($_POST['name'], $_POST['sellingPrice'],$_POST['category'],$_POST['imag
     $sellingPrice = $_POST['sellingPrice'];
     $actualPrice = $_POST['actualPrice'];
     $quantity = $_POST['quantity'];
-    $category = $_POST['category'];
+    $category = isset($_POST['subCategory']) ? $_POST['subCategory'] : $_POST['baseCategory'];
     $estimatedDelivery = $_POST['estimatedDelivery'];
     $shippingCharges = $_POST['shippingCharges'];
     $returnPolicy = $_POST['returnPolicy'];
