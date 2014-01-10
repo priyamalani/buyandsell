@@ -36,7 +36,7 @@
                   </div>
                </div>
                <div class="col-md-9">
-                  <h3><i class="icon-user color"></i> &nbsp;Wish List</h3>
+                  <h3><i class="icon-heart color"></i> &nbsp;Wish List</h3>
                   <table class="table table-striped tcart">
                     <thead>
                       <tr>

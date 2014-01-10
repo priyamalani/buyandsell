@@ -36,7 +36,7 @@
                   </div>
                </div>
                <div class="col-md-9">
-                  <h3><i class="icon-user color"></i> &nbsp;Order History</h3>
+                  <h3><i class="icon-folder-open color"></i> &nbsp;Order History</h3>
                   <!-- Your details -->
                   
 

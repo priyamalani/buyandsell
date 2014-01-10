@@ -32,11 +32,12 @@
                          <li><a href="wishlist.php">Wish List</a></li>
                          <li><a href="orderhistory.php">Order History</a></li>                         
                          <li><a href="editprofile.php">Edit Profile</a></li>
+                         <li><a href="post-ad.php">Post Ad</a></li>
                      </ul>
                   </div>
                </div>
                <div class="col-md-9">
-                  <h3><i class="icon-user color"></i> &nbsp;Add Product</h3>
+                  <h3><i class="icon-gift color"></i> &nbsp;Add Product</h3>
                   <!-- Your details -->
                   <form class="form-horizontal" role="form" action="actions/process_ad.php" method="POST">
                     <div class="form-group">

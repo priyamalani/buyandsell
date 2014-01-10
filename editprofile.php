@@ -37,7 +37,7 @@
                   </div>
                </div>
                <div class="col-md-9">
-                  <h3><i class="icon-user color"></i> &nbsp;Edit Profile</h3>
+                  <h3><i class="icon-pencil color"></i> &nbsp;Edit Profile</h3>
                   <!-- Your details -->
                   <form class="form-horizontal" role="form" action="actions/update_profile.php" method="POST">
                       <input id="id" name="id" type="hidden" value="<? echo $_SESSION['id'];?>">
