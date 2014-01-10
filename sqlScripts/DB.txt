@@ -65,3 +65,5 @@ CREATE TABLE product (
       REFERENCES members(id)
 )   ENGINE=INNODB;
 
+insert into category values (1, 'generic', 1);
+

@@ -1,5 +1,5 @@
 <?php
-include_once 'config.php';   // As functions.php is not included
+require_once 'config.php';   // As functions.php is not included
 
  
 //function sec_session_start() {

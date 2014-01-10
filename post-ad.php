@@ -74,10 +74,10 @@
                       <div class="col-md-4">
                         <select class="form-control" name="category">
                           <option selected="selected">Select One</option>
-                          <option>Category 1</option>
-                          <option>Category 2</option>
-                          <option>Category 3</option>
-                          <option>Category 4</option>
+                          <option value="1">Category 1</option>
+                          <option value="2">Category 2</option>
+                          <option value="3">Category 3</option>
+                          <option value="4">Category 4</option>
                         </select>
                       </div>
                     </div>

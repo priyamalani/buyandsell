@@ -1,5 +1,5 @@
 <?
-include_once 'actions/config.php';
+require_once 'actions/config.php';
 ?>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
