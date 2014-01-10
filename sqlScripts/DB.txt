@@ -74,3 +74,5 @@ insert into category values (11, 'Art & Craft', 2, 1), (12, 'Home Decor', 2, 1),
 
 insert into category values (16, 'Phone', 3, 1), (17, 'Camera', 3, 1), (18, 'Computer', 3, 1), (19, 'Other', 3, 1);
 
+insert into category values (20, 'Other', 4, 1);
+
