@@ -49,7 +49,7 @@ CREATE TABLE product (
     info_4 VARCHAR(50),
     info_5 VARCHAR(50),
     create_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
-    visits INT,
+    visits INT DEFAULT 0,
     return_policy VARCHAR(500),
     
 

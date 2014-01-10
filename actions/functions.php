@@ -175,4 +175,38 @@ function getGoogleMap( $address = "", $country = "", $postal = "", $width = 300,
 		';
 }
 
+function getMembersAllProduct($mem_id) {
+    
+    $query = "SELECT * FROM product where members_id='".$mem_id."'";
+        $result = mysql_query($query);
+        if (!$result) die ("Database access failed: " . mysql_error());
+        $rows = mysql_num_rows($result);
+        if($rows>0){
+            echo '<thead>
+                         <tr>
+                           <th>Date</th>
+                           <th>ID</th>
+                           <th>Name</th>
+                           <th>Price</th>
+                           <th>Views</th>
+                         </tr>
+                       </thead>
+                       <tbody>';
+        for ($j = 0 ; $j < $rows ; ++$j)
+        {   
+             echo '<tr>
+                        <td>' . mysql_result($result,$j,'create_date') . '</td>
+                        <td>' . mysql_result($result,$j,'product_id') . '</td>
+                        <td><a href="single-item.php" id="">' . mysql_result($result,$j,'product_name') . '</a></td>
+                        <td>' . mysql_result($result,$j,'selling_price') . '</td>
+                        <td>' . mysql_result($result,$j,'visits') . '</td>
+                   </tr>';
+        }
+        echo '</tbody>';
+        }
+        else {
+            echo '<p>You have no posting. To post a new ad <a href="post-ad.php">Click here</a></p>';
+        }
+}
+
 ?>

@@ -28,7 +28,7 @@ if (isset($_POST['name'], $_POST['sellingPrice'],$_POST['category'],$_POST['imag
             header('Location: ../404.php');
         }
         else {
-           header('Location: ../index.php');
+           header('Location: ../account.php');
         }
     }
 }

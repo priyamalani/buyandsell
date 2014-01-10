@@ -1,3 +1,6 @@
+<?php
+require_once 'actions/functions.php';
+?>
 <!DOCTYPE html>
 <html>
     <?php include 'includes/header.php'; ?>
@@ -58,38 +61,11 @@
                    <h4>My Posting</h4>
 
                      <table class="table table-striped tcart">
-                       <thead>
-                         <tr>
-                           <th>Date</th>
-                           <th>ID</th>
-                           <th>Name</th>
-                           <th>Price</th>
-                           <th>Views</th>
-                         </tr>
-                       </thead>
-                       <tbody>
-                         <tr>
-                           <td>25-08-12</td>
-                           <td>4423</td>
-                           <td><a href="single-item.php" id="">HTC One</a></td>
-                           <td>$530</td>
-                           <td>31</td>
-                         </tr>
-                         <tr>
-                           <td>15-02-12</td>
-                           <td>6643</td>
-                           <td><a href="single-item.php" id="">Nokia</a></td>
-                           <td>$330</td>
-                           <td>20</td>
-                         </tr>
-                         <tr>
-                           <td>14-08-12</td>
-                           <td>1283</td>
-                           <td><a href="single-item.php" id="">Samsung</a></td>
-                           <td>$230</td>
-                           <td>5</td>
-                         </tr>                                               
-                       </tbody>
+                       
+                        <?php
+                             echo (getMembersAllProduct($_SESSION['id']));
+                        ?>                                              
+                       
                      </table>
                </div>
             </div>
