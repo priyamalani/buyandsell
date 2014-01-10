@@ -1,8 +1,5 @@
 <?php
-
-
 include_once 'config.php';   // As functions.php is not included
-session_start();
 
  
 //function sec_session_start() {

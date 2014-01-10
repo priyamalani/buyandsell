@@ -28,3 +28,40 @@ INSERT INTO `members` VALUES(1, 'test_user', 'test@example.com',
 'test_user',
 'abc12345');
 
+CREATE TABLE `category` (
+    `id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    `category_name` VARCHAR(30) NOT NULL,
+    `active` CHAR(10) DEFAULT 1    
+) ENGINE = InnoDB;
+
+
+CREATE TABLE product (
+    product_no INT NOT NULL AUTO_INCREMENT,
+    product_name VARCHAR(50),
+    product_desc VARCHAR(500),
+    category_id INT NOT NULL,
+    product_id INT NOT NULL,
+    members_id INT NOT NULL,
+    active INT NOT NULL DEFAULT 1,
+    info_1 VARCHAR(50),
+    info_2 VARCHAR(50),
+    info_3 VARCHAR(50),
+    info_4 VARCHAR(50),
+    info_5 VARCHAR(50),
+    create_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    visits INT,
+    return_policy VARCHAR(500),
+    
+
+    PRIMARY KEY(product_no),
+    INDEX (category_id, product_id),
+    INDEX (members_id),
+
+    FOREIGN KEY (category_id)
+      REFERENCES category(id)
+      ON UPDATE CASCADE ON DELETE RESTRICT,
+
+    FOREIGN KEY (members_id)
+      REFERENCES members(id)
+)   ENGINE=INNODB;
+

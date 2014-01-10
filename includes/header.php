@@ -1,4 +1,6 @@
-<?  session_start(); ?>
+<?
+include_once 'actions/config.php';
+?>
 <head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 		<!-- Title here -->
