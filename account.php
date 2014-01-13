@@ -80,3 +80,18 @@ require_once 'actions/functions.php';
       
       <?php include 'includes/footer.php'; ?>
         </body></html>
+
+<!--<script>
+          
+    $(document).on( "click", '.single-item', function(){
+        $.ajax({  
+            url: ("single-item.php"),  
+            data: {
+            item_id : this.id
+            },
+            success: function( data ){  
+             window.location = "single-item.php";
+            } 
+        });        
+     });
+</script>-->

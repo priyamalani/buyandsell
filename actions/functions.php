@@ -197,7 +197,7 @@ function getMembersAllProduct($mem_id) {
              echo '<tr>
                         <td>' . mysql_result($result,$j,'create_date') . '</td>
                         <td>' . mysql_result($result,$j,'product_id') . '</td>
-                        <td><a href="single-item.php" id="">' . mysql_result($result,$j,'product_name') . '</a></td>
+                        <td><a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'" class="single-item" id="'. mysql_result($result,$j,'product_id') .'">' . mysql_result($result,$j,'product_name') . '</a></td>
                         <td>' . mysql_result($result,$j,'selling_price') . '</td>
                         <td>' . mysql_result($result,$j,'visits') . '</td>
                    </tr>';
@@ -206,6 +206,28 @@ function getMembersAllProduct($mem_id) {
         }
         else {
             echo '<p>You have no posting. To post a new ad <a href="post-ad.php">Click here</a></p>';
+        }
+}
+
+
+function getProductDetails($product_id) {
+    
+    $query = "SELECT * FROM product where product_id='".$product_id."'";
+        $result = mysql_query($query);
+        if (!$result) die ("Database access failed: " . mysql_error());
+        $rows = mysql_num_rows($result);
+        if($rows>1){
+            echo '<p>Too many posting with product id = '.$product_id;
+        }
+        else {
+            $details = array();
+            $details['create_date'] = mysql_result($result,0,'create_date');
+            $details['product_id'] = mysql_result($result,0,'product_id');
+            $details['product_name'] = mysql_result($result,0,'product_name');
+            $details['selling_price'] = mysql_result($result,0,'selling_price');
+            $details['visits'] = mysql_result($result,0,'visits');
+            $details['info_1'] = mysql_result($result,0,'info_1');
+            return $details;
         }
 }
 
@@ -246,5 +268,129 @@ function directory_exists( $path = null ){
 	}
 	return $success;
 }
+
+function isGood(){
+    $isGood = FALSE;
+
+    if ( func_num_args() > 0 ){
+        $vars = func_get_args();
+
+        foreach( $vars as $var ){
+            if ( isset( $var ) && $var !== "NULL" && $var !== "NIL" && !empty( $var ) && $var !== FALSE ){
+                if ( is_array( $var ) )
+                    $isGood = ( count($var)>0 ) ? TRUE : FALSE;
+                else
+                    $isGood = TRUE;
+            }
+            else
+                $isGood = FALSE;
+
+            if ( !$isGood ) break;
+        }
+    }
+
+    return $isGood;
+}
+
+function getParameter( $param = null, $dataType = null ){
+	$val = null;
+	
+	if ( isGood( $param ) ){
+		$val = getURLParameter( $param );
+		if( !isGood( $val ) )	$val = getFormParameter( $param );
+		if( !isGood( $val ) )	$val = getSessionParameter( $param );
+		
+		//********  check datatype if requested  ************
+		if ( isGood( $val, $dataType ) ){
+			if ( !isDataType( $val, $dataType ) ){
+				setSessionParameter( "error_message", "Parameter Datatype Error - There was an issue processing a passed parameter with an incorrect datatype. Please contact the system administrator to have this issue resolve.");
+				header("Location:".getAbsoluteURL("error.php") );
+				exit;
+			}
+		}
+	}
+	
+	return $val;
+}
+
+function hasParameter( $param ){
+	$exists = FALSE;
+	
+	if ( isGood( $param ) ){
+		if ( isGood( getURLParameter( $param ) ) ){ $exists = TRUE; }
+		if ( isGood( getFormParameter( $param ) ) ){ $exists = TRUE; }
+		if ( hasSessionParameter( $param ) ){ $exists = TRUE; }
+	}
+	
+	return $exists;	
+}
+
+function getURLParameter( $param = null, $dataType = null ){
+	if ( isset( $_GET[$param] ) ){
+		$val = $_GET[$param];
+		
+		//********  check datatype if requested  ************
+		if ( isGood( $val, $dataType ) ){
+			if ( !isDataType( $val, $dataType ) ){
+				setSessionParameter( "error_message", "Parameter Datatype Error - There was an issue processing a passed parameter with an incorrect datatype. Please contact the system administrator to have this issue resolve.");
+				header("Location:".getAbsoluteURL("error.php") );
+				exit;
+			}
+		}
+		
+		return $val;
+	}
+	else
+		return null;
+}
+
+function getFormParameter( $param = null, $dataType = null ){
+	if ( isset( $_POST[$param] ) ){
+		$val = $_POST[$param];
+		
+		//********  check datatype if requested  ************
+		if ( isGood( $val, $dataType ) ){
+			if ( !isDataType( $val, $dataType ) ){
+				setSessionParameter( "error_message", "Parameter Datatype Error - There was an issue processing a passed parameter with an incorrect datatype. Please contact the system administrator to have this issue resolve.");
+				header("Location:".getAbsoluteURL("error.php") );
+				exit;
+			}
+		}
+		
+		return $val;
+	}
+	else
+		return null;
+}
+
+function getSessionParameter( $param_name ){
+	if ( isset( $_SESSION[ $param_name ] ) )
+		return $_SESSION[ $param_name ];
+	else
+		return null;
+}
+
+function popSessionParameter( $param_name ){
+	$param = getSessionParameter( $param_name );
+	removeSessionParameter( $param_name );
+	return $param;
+}
+
+function setSessionParameter( $param_name, $param_value ){
+	$_SESSION[ $param_name ] = $param_value;
+}
+
+function hasSessionParameter( $param_name ){
+	return isset( $_SESSION[ $param_name ] );
+}
+
+function removeSessionParameter( $param_name ){
+	unset( $_SESSION[ $param_name ] );
+}
+
+function clearSessionParameter( $param_name ){
+	unset( $_SESSION[ $param_name ] );
+}
+
 
 ?>

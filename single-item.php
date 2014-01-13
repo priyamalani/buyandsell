@@ -1,3 +1,6 @@
+<?php
+require_once 'actions/functions.php';
+?>
 <!DOCTYPE html>
 <html>
     <?php include 'includes/header.php'; ?>
@@ -11,6 +14,11 @@
            
      
       <?php include 'includes/navigation.php'; ?>
+      <?php
+      $item_id = getParameter('item_id');
+      $detail = getProductDetails($item_id);
+      error_log(print_r($detail,TRUE));
+      ?>
       <!-- Page title -->
       <div class="page-title">
          <div class="container">
@@ -41,19 +49,18 @@
                         <div class="col-md-4 col-xs-5">
 
                           <div class="item-image">
-                              <img src="images/2.png" alt="">
+                              <img src="images/ads/<?=$_SESSION['id'].'/'.$detail['info_1']?>" alt="">
                           </div>
                               
 
                         </div>
                         <div class="col-md-5 col-xs-7">
                           <!-- Title -->
-                            <h4>Apple iPhone 5G</h4>
-                            <h5><strong>Price : $999</strong></h5>
-                            <p><strong>Shipping</strong> : Free</p>
-                            <p><strong>Brand</strong> : Apple</p>
-                            <p><strong>Modal</strong> : 5G</p>
-                            <p><strong>Availability</strong> : 1</p><br>
+                            <h4><?=$detail['product_name']?></h4>
+                            <h5><strong>Price : <?=$detail['selling_price']?></strong></h5>
+                            <p><strong>Shipping</strong> : <?=$detail['product_name']?></p>
+                            <p><strong>Create Date</strong> : <?=$detail['create_date']?></p>
+                            <p><strong>Availability</strong> : <?=$detail['product_name']?></p><br>
                             
 
                                     
