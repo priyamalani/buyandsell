@@ -24,7 +24,9 @@ if (isset($_POST['name'], $_POST['sellingPrice'],$_POST['baseCategory'])) {
     
     
     $location = '../images/ads/'.$_SESSION['id'].'/';
-    
+    if (!file_exists($location)) {
+        mkdir($location, 0777, true);
+    }
     if(isset($_FILES['imageFile1'])){
     $target = $location.$_FILES['imageFile1']['name'];
     move_uploaded_file( $_FILES['imageFile1']['tmp_name'], $target);

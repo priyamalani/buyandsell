@@ -231,4 +231,20 @@ function getCategory($parent_category = null, $name = null, $css = null, $defaul
 }
 
 
+function directory_exists( $path = null ){
+	$success = FALSE;
+	if ( $path !='' ){
+		$directories = explode( "/", $path );
+		$build_path = "";
+		foreach ( $directories as $directory ){
+			if ( $directories !='' ){
+				$build_path .= "/".$directory;
+                                if ( !file_exists( $build_path ) ){ $success = mkdir( $build_path, 0777, true ); }
+                                else{                                $success = TRUE; }		 	
+			}
+		}
+	}
+	return $success;
+}
+
 ?>
