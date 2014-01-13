@@ -34,7 +34,7 @@ require_once 'actions/functions.php';
                <div class="col-md-9">
                   <h3><i class="icon-gift color"></i> &nbsp;Add Product</h3>
                   <!-- Your details -->
-                  <form class="form-horizontal" role="form" action="actions/process_ad.php" method="POST">
+                  <form class="form-horizontal" enctype="multipart/form-data" role="form" action="actions/process_ad.php" method="POST">
                     <div class="form-group">
                       <label for="inputName" class="col-md-2 control-label">Name</label>
                       <div class="col-md-4">
