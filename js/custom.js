@@ -56,7 +56,7 @@ $('#carousel_container').carouFredSel({
 	width: '100%',
    direction: 'right',
 	scroll: {
-      items: 4,
+      items: 1,
       delay: 2000,
       duration: 500,
       pauseOnHover: "true"
