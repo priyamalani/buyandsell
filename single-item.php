@@ -119,7 +119,7 @@ require_once 'actions/functions.php';
                           </form>
                         <div class="col-md-6 col-sm-6">
                             <label for="googleMap">Google Map</label><br>
-                            <iframe height="285px" width="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.ca/maps?q=naGPUR&amp;ie=UTF8&amp;hq=&amp;hnear=Nagpur,+Maharashtra,+India&amp;t=m&amp;z=11&amp;ll=21.1458,79.088155&amp;output=embed"></iframe>
+                            <?=  getGoogleMap($mem_details['address'], $mem_details['country'], $mem_details['zip'], '100%', '285px', 'sellerMap')?>
                         </div>
                       </div>
                       <!-- Description -->

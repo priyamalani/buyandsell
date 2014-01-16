@@ -78,7 +78,7 @@ require_once 'actions/functions.php';
                                 <td>' . $result[$i]['selling_price'] . '</td>
                                 <td>' . $result[$i]['visits'] . '</td>
                                 <td id="'.$result[$i]['product_no'].'" class="editItem"><a href="#"><i class="icon-pencil"></i></a></td>
-                                <td id="'.$result[$i]['product_no'].'" class="deleteItem"><i class="icon-trash"></i></td>    
+                                <td id="'.$result[$i]['product_no'].'" class="deleteItem"><a href="#"><i class="icon-trash"></i></a></td>    
                                 </tr>';  
                              }
                                 echo '</tbody>';
