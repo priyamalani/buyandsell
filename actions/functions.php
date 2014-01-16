@@ -316,6 +316,45 @@ function updatePageView($product_id){
             header('Location: ../404.php');
 }
 
+function getMostViewedItem($count){
+    $query = "select * from product order by visits desc limit 0,".$count;
+        $result = mysql_query($query);
+        if (!$result) die ("Database access failed: " . mysql_error());
+        $rows = mysql_num_rows($result);
+        if($rows>0){
+            for ($j = 0 ; $j < $rows ; ++$j){ 
+                echo '<div class="col-md-3 col-sm-4 col-xs-6">
+                        <div class="item">
+                          <!-- Use the below link to put HOT icon -->
+                          <div class="item-icon"><span>HOT</span></div>
+                          <!-- Item image -->
+                          <div class="item-image">
+                            <a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'"><img src="images/ads/' . mysql_result($result,$j,'members_id') . '/' . mysql_result($result,$j,'info_1') . '" alt="" class="img-responsive"></a>
+                          </div>
+                          <!-- Item details -->
+                          <div class="item-details">
+                            <!-- Name -->
+                            <h5><a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'">' . mysql_result($result,$j,'product_name') . '</a></h5>
+                            <div class="clearfix"></div>
+                            <!-- Para. Note more than 2 lines. -->
+                            <p>' . substr(mysql_result($result,$j,'product_desc'),0,50) . '...</p>
+                            <hr>
+                            <!-- Price -->
+                            <div class="item-price pull-left">'.mysql_result($result,$j,'selling_price').'</div>
+                            <!-- Add to cart -->
+                            <div class="pull-right"><a href="#" class="btn btn-danger btn-sm">Add to Cart</a></div>
+                            <div class="clearfix"></div>
+                          </div>
+                        </div>
+                      </div>';
+            }
+        }
+        else {
+            $res = False;
+            return $res;
+        }
+}
+
 
 function getCategory($parent_category = null, $name = null, $css = null, $default = FALSE) {
     
