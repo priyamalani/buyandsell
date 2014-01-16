@@ -57,7 +57,7 @@ require_once 'actions/functions.php';
                         <?php
                              $result = getMembersAllProduct($_SESSION['id']);
                              $count = count($result);
-                             if($count>=1){
+                             if(isGood($result)){
                                 echo '<thead>
                                              <tr>
                                                <th>Date</th>

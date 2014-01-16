@@ -60,7 +60,7 @@ require_once 'actions/functions.php';
                             <h5><strong>Price : <?=$detail['selling_price']?></strong></h5>
                             <p><strong>Shipping</strong> : <?=$detail['shipping_charges']?></p>
                             <p><strong>Create Date</strong> : <?=$detail['create_date']?></p>
-                            <p><strong>Availability</strong> : <?=$detail['quantity']?></p><br>
+                            <p><strong>Quantity</strong> : <?=$detail['quantity']?></p><br>
                             
 
                                     
