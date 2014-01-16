@@ -55,7 +55,33 @@ require_once 'actions/functions.php';
                      <table class="table table-striped tcart">
                        
                         <?php
-                             echo (getMembersAllProduct($_SESSION['id']));
+                             $result = getMembersAllProduct($_SESSION['id']);
+                             $count = count($result);
+                             if($count>0){
+                                echo '<thead>
+                                             <tr>
+                                               <th>Date</th>
+                                               <th>ID</th>
+                                               <th>Name</th>
+                                               <th>Price</th>
+                                               <th>Views</th>
+                                             </tr>
+                                           </thead>
+                                           <tbody>';
+                             for($i=0; $i<$count; $i++){
+                             echo '<tr>
+                                <td>' . $result[$i]['create_date'] . '</td>
+                                <td>' . $result[$i]['product_id'] . '</td>
+                                <td><a href="single-item.php?item_id='.$result[$i]['product_id'].'" class="single-item" id="'. $result[$i]['product_id'] .'">' . $result[$i]['product_name'] . '</a></td>
+                                <td>' . $result[$i]['selling_price'] . '</td>
+                                <td>' . $result[$i]['visits'] . '</td>
+                                </tr>';  
+                             }
+                                echo '</tbody>';
+                             }
+                             else {
+                                    echo '<p>You have no posting. To post a new ad <a href="post-ad.php">Click here</a></p>';
+                                }
                         ?>                                              
                        
                      </table>

@@ -182,30 +182,21 @@ function getMembersAllProduct($mem_id) {
         if (!$result) die ("Database access failed: " . mysql_error());
         $rows = mysql_num_rows($result);
         if($rows>0){
-            echo '<thead>
-                         <tr>
-                           <th>Date</th>
-                           <th>ID</th>
-                           <th>Name</th>
-                           <th>Price</th>
-                           <th>Views</th>
-                         </tr>
-                       </thead>
-                       <tbody>';
         for ($j = 0 ; $j < $rows ; ++$j)
         {   
-             echo '<tr>
-                        <td>' . mysql_result($result,$j,'create_date') . '</td>
-                        <td>' . mysql_result($result,$j,'product_id') . '</td>
-                        <td><a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'" class="single-item" id="'. mysql_result($result,$j,'product_id') .'">' . mysql_result($result,$j,'product_name') . '</a></td>
-                        <td>' . mysql_result($result,$j,'selling_price') . '</td>
-                        <td>' . mysql_result($result,$j,'visits') . '</td>
-                   </tr>';
+            $return[$j]['create_date'] = mysql_result($result,$j,'create_date');
+            $return[$j]['product_id'] = mysql_result($result,$j,'product_id');
+            $return[$j]['selling_price'] = mysql_result($result,$j,'selling_price');
+            $return[$j]['product_name'] = mysql_result($result,$j,'product_name');
+            $return[$j]['info_1'] = mysql_result($result,$j,'info_1');
+            $return[$j]['members_id'] = mysql_result($result,$j,'members_id');
+            $return[$j]['product_desc'] = mysql_result($result,$j,'product_desc');
+             
         }
-        echo '</tbody>';
+        return $return;
         }
         else {
-            echo '<p>You have no posting. To post a new ad <a href="post-ad.php">Click here</a></p>';
+            return FALSE;
         }
 }
 
