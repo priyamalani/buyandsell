@@ -306,6 +306,16 @@ function getRecentProducts($count) {
         }
 }
 
+function updatePageView($product_id){
+    $query = "select visits from product where product_id=".$product_id;
+    $result = mysql_query($query);
+    $count = mysql_result($result,0,'visits');
+    $count = $count+1;
+    $query = "UPDATE product SET visits= '".$count."' where product_id=".$product_id;
+        if (!mysql_query($query))
+            header('Location: ../404.php');
+}
+
 
 function getCategory($parent_category = null, $name = null, $css = null, $default = FALSE) {
     

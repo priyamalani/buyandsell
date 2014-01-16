@@ -16,6 +16,7 @@ require_once 'actions/functions.php';
       <?php include 'includes/navigation.php'; ?>
       <?php
       $item_id = getParameter('item_id');
+      updatePageView($item_id);
       $detail = getProductDetails($item_id);
       $mem_details = getMembersDetails($detail['members_id']);
       ?>
