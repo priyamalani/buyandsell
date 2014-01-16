@@ -191,12 +191,28 @@ function getMembersAllProduct($mem_id) {
             $return[$j]['info_1'] = mysql_result($result,$j,'info_1');
             $return[$j]['members_id'] = mysql_result($result,$j,'members_id');
             $return[$j]['product_desc'] = mysql_result($result,$j,'product_desc');
+            $return[$j]['visits'] = mysql_result($result,$j,'visits');
+            $return[$j]['product_no'] = mysql_result($result,$j,'product_no');
              
         }
         return $return;
         }
         else {
             return FALSE;
+        }
+}
+
+function deleteItem($product_no){
+        $query = "SELECT * FROM product where product_no='".$product_no."'";
+        $result = mysql_query($query);
+        if (!$result) die ("Database access failed: " . mysql_error());
+        $rows = mysql_num_rows($result);
+        if($rows>0){
+            $query = "delete FROM product where product_no='".$product_no."'";
+            $result = mysql_query($query);
+            if (!$result) die ("Database access failed: " . mysql_error());
+            else 
+                return TRUE;
         }
 }
 

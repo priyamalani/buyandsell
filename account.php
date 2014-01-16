@@ -65,6 +65,8 @@ require_once 'actions/functions.php';
                                                <th>Name</th>
                                                <th>Price</th>
                                                <th>Views</th>
+                                               <th>Edit</th>
+                                               <th>Delete</th>
                                              </tr>
                                            </thead>
                                            <tbody>';
@@ -75,6 +77,8 @@ require_once 'actions/functions.php';
                                 <td><a href="single-item.php?item_id='.$result[$i]['product_id'].'" class="single-item" id="'. $result[$i]['product_id'] .'">' . $result[$i]['product_name'] . '</a></td>
                                 <td>' . $result[$i]['selling_price'] . '</td>
                                 <td>' . $result[$i]['visits'] . '</td>
+                                <td id="'.$result[$i]['product_no'].'" class="editItem"><a href="#"><i class="icon-pencil"></i></a></td>
+                                <td id="'.$result[$i]['product_no'].'" class="deleteItem"><i class="icon-trash"></i></td>    
                                 </tr>';  
                              }
                                 echo '</tbody>';
@@ -107,17 +111,22 @@ require_once 'actions/functions.php';
       <?php include 'includes/footer.php'; ?>
         </body></html>
 
-<!--<script>
-          
-    $(document).on( "click", '.single-item', function(){
+<script>
+$(function() {          
+    $(document).on( "click", '.deleteItem', function(){
+        if(confirm('Are you sure you want to delete?')){
         $.ajax({  
-            url: ("single-item.php"),  
+            url: ("actions/delete-item.php"),  
             data: {
-            item_id : this.id
+            product_no : this.id
             },
             success: function( data ){  
-             window.location = "single-item.php";
+             window.location.reload();
             } 
-        });        
+        });
+        }
+        else
+        return false;
      });
-</script>-->
+});
+</script>
