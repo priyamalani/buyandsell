@@ -227,6 +227,11 @@ function getProductDetails($product_id) {
             $details['selling_price'] = mysql_result($result,0,'selling_price');
             $details['visits'] = mysql_result($result,0,'visits');
             $details['info_1'] = mysql_result($result,0,'info_1');
+            $details['members_id'] = mysql_result($result,0,'members_id');
+            $details['shipping_charges'] = mysql_result($result,0,'shipping_charges');
+            $details['quantity'] = mysql_result($result,0,'quantity');
+            $details['product_desc'] = mysql_result($result,0,'product_desc');
+            $details['more_details'] = mysql_result($result,0,'more_details');
             return $details;
         }
 }
@@ -240,11 +245,11 @@ function getRecentProducts($count) {
         if($rows>0){
             for ($j = 0 ; $j < $rows ; ++$j){ 
                 echo'<li class="col-md-3">
-                                 <a href="#"><img src="images/ads/' . mysql_result($result,$j,'members_id') . '/' . mysql_result($result,$j,'info_1') . '" alt="" class="img-responsive"></a>
+                                 <a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'"><img src="images/ads/' . mysql_result($result,$j,'members_id') . '/' . mysql_result($result,$j,'info_1') . '" alt="" class="img-responsive"></a>
                                  <div class="carousel_caption">
                                      <h5><a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'">' . mysql_result($result,$j,'product_name') . '</a></h5>
                                      <p>' . mysql_result($result,$j,'product_desc') . '</p>
-                                     <a href="#" class="btn btn-info btn-sm"><i class="icon-shopping-cart"></i> Buy for ' . mysql_result($result,$j,'selling_price') . '</a>
+                                     <a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'" class="btn btn-info btn-sm"><i class="icon-shopping-cart"></i> Buy for ' . mysql_result($result,$j,'selling_price') . '</a>
                                  </div>
                               </li>';
             }

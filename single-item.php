@@ -48,7 +48,7 @@ require_once 'actions/functions.php';
                         <div class="col-md-4 col-xs-5">
 
                           <div class="item-image">
-                              <img src="images/ads/<?=$_SESSION['id'].'/'.$detail['info_1']?>" alt="">
+                              <img src="images/ads/<?=$detail['members_id'].'/'.$detail['info_1']?>" alt="">
                           </div>
                               
 
@@ -57,23 +57,23 @@ require_once 'actions/functions.php';
                           <!-- Title -->
                             <h4><?=$detail['product_name']?></h4>
                             <h5><strong>Price : <?=$detail['selling_price']?></strong></h5>
-                            <p><strong>Shipping</strong> : <?=$detail['product_name']?></p>
+                            <p><strong>Shipping</strong> : <?=$detail['shipping_charges']?></p>
                             <p><strong>Create Date</strong> : <?=$detail['create_date']?></p>
-                            <p><strong>Availability</strong> : <?=$detail['product_name']?></p><br>
+                            <p><strong>Availability</strong> : <?=$detail['quantity']?></p><br>
                             
 
                                     
                                      <!-- Quantity and add to cart button -->
                                     
-                                    <div class="input-group">
+<!--                                    <div class="input-group">
                                        <input class="form-control" placeholder="1" type="text">
                                        <span class="input-group-btn">
                                          <button class="btn btn-info" type="button">Go!</button>
                                        </span>
-                                     </div><!-- /input-group -->
+                                     </div>  -->
 
                                     <!-- Add to wish list -->
-                                    <a href="wishlist.php">+ Add to Wish List</a>
+<!--                                    <a href="wishlist.php">+ Add to Wish List</a>-->
 
                                     <!-- Share button -->
                             
@@ -123,26 +123,10 @@ require_once 'actions/functions.php';
                       </div>
                       <!-- Description -->
                       <div class="tab-pane fade" id="tab2">
-                        <h5><strong>Apple iPhone 5G</strong></h5>
-                        <p>Nulla facilisi. Sed justo dui, scelerisque ut
-                        consectetur vel, eleifend id erat. Morbi auctor adipiscing tempor. 
-                       Phasellus condimentum rutrum aliquet. Quisque eu consectetur erat. Proin
-                        rutrum, erat eget posuere semper, <em>arcu mauris posuere tortor</em>, 
-                       in commodo enim magna id massa. Suspendisse potenti. Aliquam erat 
-                       volutpat. Maecenas quis tristique turpis. Nulla facilisi. Duis sed velit
-                        at <a href="#">magna sollicitudin cursus</a> ac ultrices magna. Aliquam
-                        consequat, purus vitae auctor ullamcorper, sem velit convallis quam, a 
-                       pharetra justo nunc et mauris. Vivamus diam diam, fermentum sed dapibus 
-                       eget, egestas sed eros. Lorem ipsum dolor sit amet, consectetur 
-                       adipiscing elit.</p>
-                        <h6><strong>Features</strong></h6>
-                        <ul>
-                        <li>Etiam adipiscing posuere justo, nec iaculis justo dictum non</li>
-                        <li>Cras tincidunt mi non arcu hendrerit eleifend</li>
-                        <li>Aenean ullamcorper justo tincidunt justo aliquet et lobortis diam faucibus</li>
-                        <li>Maecenas hendrerit neque id ante dictum mattis</li>
-                        <li>Vivamus non neque lacus, et cursus tortor</li>
-                        </ul>
+                        <h5><strong><?=$detail['product_name']?></strong></h5>
+                        <p><?=$detail['product_desc']?></p>
+                        <h6><strong>More Details</strong></h6>
+                        <p><?=$detail['more_details']?></p>
                       </div>
 
                      

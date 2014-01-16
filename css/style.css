@@ -924,7 +924,7 @@ strong{
 	padding:5px;
    min-height:170px;
    max-height:170px;
-   width:100px;
+   width:auto;
    margin:0 auto;
 }
 
@@ -1124,11 +1124,16 @@ strong{
    margin-bottom:8px;
 }
 
+#myTab{
+    margin-top: 10%;
+}
+
 .single-item .item-image img{
    width:auto !important;
    height:auto !important;
    max-width:250px !important;
    margin-top:20px !important;
+   max-height: 225px;
 }
 
 .item-review .rmeta{
