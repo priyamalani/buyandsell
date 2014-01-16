@@ -208,12 +208,25 @@ function deleteItem($product_no){
         if (!$result) die ("Database access failed: " . mysql_error());
         $rows = mysql_num_rows($result);
         if($rows>0){
+            $res = deleteImage('../images/ads/'.mysql_result($result,0,'members_id').'/'.mysql_result($result,0,'info_1'));
+            if($res){
             $query = "delete FROM product where product_no='".$product_no."'";
             $result = mysql_query($query);
             if (!$result) die ("Database access failed: " . mysql_error());
             else 
                 return TRUE;
+            }
         }
+}
+
+function deleteImage( $image = null ){
+	if ( isGood( $image ) )
+		if ( file_exists($image)  )
+			return unlink( $image );
+		else 	
+			return FALSE;
+	else 
+		return FALSE;
 }
 
 
@@ -255,7 +268,7 @@ function getRecentProducts($count) {
                                  <a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'"><img src="images/ads/' . mysql_result($result,$j,'members_id') . '/' . mysql_result($result,$j,'info_1') . '" alt="" class="img-responsive"></a>
                                  <div class="carousel_caption">
                                      <h5><a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'">' . mysql_result($result,$j,'product_name') . '</a></h5>
-                                     <p>' . mysql_result($result,$j,'product_desc') . '</p>
+                                     <p>' . substr(mysql_result($result,$j,'product_desc'),0,50) . '...</p>
                                      <a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'" class="btn btn-info btn-sm"><i class="icon-shopping-cart"></i> Buy for ' . mysql_result($result,$j,'selling_price') . '</a>
                                  </div>
                               </li>';
