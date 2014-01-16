@@ -231,6 +231,31 @@ function getProductDetails($product_id) {
         }
 }
 
+function getRecentProducts($count) {
+    
+    $query = "select * from product order by create_date desc limit 0,".$count;
+        $result = mysql_query($query);
+        if (!$result) die ("Database access failed: " . mysql_error());
+        $rows = mysql_num_rows($result);
+        if($rows>0){
+            for ($j = 0 ; $j < $rows ; ++$j){ 
+                echo'<li class="col-md-3">
+                                 <a href="#"><img src="images/ads/' . mysql_result($result,$j,'members_id') . '/' . mysql_result($result,$j,'info_1') . '" alt="" class="img-responsive"></a>
+                                 <div class="carousel_caption">
+                                     <h5><a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'">' . mysql_result($result,$j,'product_name') . '</a></h5>
+                                     <p>' . mysql_result($result,$j,'product_desc') . '</p>
+                                     <a href="#" class="btn btn-info btn-sm"><i class="icon-shopping-cart"></i> Buy for ' . mysql_result($result,$j,'selling_price') . '</a>
+                                 </div>
+                              </li>';
+            }
+        }
+        else {
+            $res = False;
+            return $res;
+        }
+}
+
+
 function getCategory($parent_category = null, $name = null, $css = null, $default = FALSE) {
     
     $query = "SELECT * FROM category where parent_category='".$parent_category."'";
