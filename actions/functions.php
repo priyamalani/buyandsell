@@ -52,6 +52,30 @@ function login($email, $password) {
 
 }
 
+function getMembersDetails($id) {
+    
+    $query = "SELECT * FROM members where id='".$id."'";
+        $result = mysql_query($query);
+        if (!$result) die ("Database access failed: " . mysql_error());
+        $rows = mysql_num_rows($result);
+        if($rows>1){
+            return FALSE;
+        }
+        else{
+            $return['id'] = $id;
+            $return['email'] = mysql_result($result, 0 ,'email');
+            $return['name'] = mysql_result($result, 0 ,'name');
+            $return['username'] = mysql_result($result, 0 ,'username');
+            $return['country'] = mysql_result($result, 0 ,'country');
+            $return['address'] = mysql_result($result, 0 ,'address');
+            $return['zip'] = mysql_result($result, 0 ,'zip');
+            $return['seller'] = mysql_result($result, 0 ,'seller');
+            $return['phone'] = mysql_result($result, 0 ,'phone');
+            return $return;
+        }
+
+}
+
 function checkbrute($user_id, $mysqli) {
     // Get timestamp of current time 
     $now = time();
@@ -255,6 +279,8 @@ function getProductDetails($product_id) {
             return $details;
         }
 }
+
+
 
 function getRecentProducts($count) {
     

@@ -17,6 +17,7 @@ require_once 'actions/functions.php';
       <?php
       $item_id = getParameter('item_id');
       $detail = getProductDetails($item_id);
+      $mem_details = getMembersDetails($detail['members_id']);
       ?>
       <!-- Page title -->
       <div class="page-title">
@@ -100,18 +101,18 @@ require_once 'actions/functions.php';
                        <span class="text-right col-md-6">
                            <a href="members-ads.php?members_id=<?=$detail['members_id']?>" class="btn btn-danger">View seller's other Ads <i class='icon-double-angle-right'></i></a>
                        </span>
-                        <form role="form" class="col-md-6 col-sm-12">
+                        <form role="form" class="col-md-6 col-sm-12" action='actions/send-email.php?email=<?=$mem_details['email']?>' method='POST'>
                             <div class="form-group">
                               <label for="name">Your Name</label>
-                              <input class="form-control" id="name" placeholder="Enter Name" type="text">
+                              <input class="form-control" id="name" name="name" placeholder="Enter Name" type="text">
                             </div>                                    
                             <div class="form-group">
                               <label for="exampleInputEmail1">Email address</label>
-                              <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                              <input class="form-control" id="userEmail" name='userEmail' placeholder="Enter email" type="email">
                             </div>
                             <div class="form-group">
-                              <label for="exampleInputEmail1">Message</label>
-                              <textarea class="form-control" rows="3"></textarea>
+                              <label for="userMessage">Message</label>
+                              <textarea id='userMessage' name='userMessage' class="form-control" rows="3"></textarea>
                             </div>  
                             <button type="submit" class="btn btn-info">Send</button>
                             <button type="reset" class="btn btn-default">Reset</button>
