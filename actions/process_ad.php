@@ -3,7 +3,6 @@ include_once 'functions.php';
 
 $error_msg = "";
  
-    error_log('0');
 if (isset($_POST['name'], $_POST['sellingPrice'],$_POST['baseCategory'])) {
     // Sanitize and validate the data passed in
     $mem_id = $_SESSION['id'];

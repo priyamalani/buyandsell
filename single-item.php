@@ -17,7 +17,6 @@ require_once 'actions/functions.php';
       <?php
       $item_id = getParameter('item_id');
       $detail = getProductDetails($item_id);
-      error_log(print_r($detail,TRUE));
       ?>
       <!-- Page title -->
       <div class="page-title">
