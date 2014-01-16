@@ -53,7 +53,15 @@
                               <h5><a href="single-item.php?item_id=<?=$result[$i]['product_id']?>"><?=$result[$i]['product_name']?></a></h5>
                               <div class="clearfix"></div>
                               <!-- Para. Note more than 2 lines. -->
-                              <p><?=$result[$i]['product_desc']?></p>
+                              <p>
+                              <?php 
+                              if(strlen($result[$i]['product_desc'])>50){
+                                  echo substr($result[$i]['product_desc'],0,50).'...';
+                              }
+                              else
+                                  echo $result[$i]['product_desc'];
+                              ?>
+                              </p>
                               <hr>
                               <!-- Price -->
                               <div class="item-price pull-left"><?=$result[$i]['selling_price']?></div>
