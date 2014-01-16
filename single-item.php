@@ -97,7 +97,7 @@ require_once 'actions/functions.php';
                     <div id="myTabContent" class="tab-content">
                         <!--contact -->
                         <div class="tab-pane fade in active" id="tab1">
-                        <h5 class="text-left col-md-6"><strong>Seller Name</strong></h5>
+                        <h5 class="text-left col-md-6"><strong><?=$mem_details['name']?></strong></h5>
                        <span class="text-right col-md-6">
                            <a href="members-ads.php?members_id=<?=$detail['members_id']?>" class="btn btn-danger">View seller's other Ads <i class='icon-double-angle-right'></i></a>
                        </span>
