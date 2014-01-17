@@ -89,23 +89,6 @@ if(!isset($_SESSION['id'])){
       
       
       <?php include 'includes/footer.php'; ?>
-<!--      <script>
-          $(document).on( "click", "#signIn", function(event){
-        $.ajax({
-                url: ("actions/process_login.php"),
-                data: {},
-                success: function(data) {
-                    $("#mostPopular").html(data);
-                    closeAllMenuDropdowns();
-                    $('#SOCPDropdownMenu').show();
-                    return false;
-                }
-            });
-        openSOCP();
-        publishBtns();
-        return;
-    });
-      </script>-->
         </body></html>
 
 
