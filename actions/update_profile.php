@@ -31,13 +31,16 @@ if (isset($_POST['username'], $_POST['email'], $_POST['password'])) {
     if (!$result) die ("Database access failed: " . mysql_error());
     $rows = mysql_num_rows($result);
     if(count($rows)<1){
-        header('Location: ../404.php');
+        setSessionParameter('error_message', 'Email already exists please <a href="login.php">login</a>');
+        header('Location: ../error.php');
         die("Email Exists");
     }
     elseif (empty($error_msg)) {
         $query = "UPDATE members SET name= '".$name."' ,email= '".$email."' ,phone= '".$phoneNumber."' ,country= '".$country."' ,address= '".$address."' ,zip= '".$zip."' ,username= '".$username."' ,password= '".$password."' ,seller= '".$seller."' where id=".$id;
-        if (!mysql_query($query, $db_server))
-            header('Location: ../404.php');
+        if (!mysql_query($query, $db_server)){
+            setSessionParameter('error_message', 'Unable to create profile');
+            header('Location: ../error.php');
+        }
         else {
             $_SESSION['email'] = $email;
             $_SESSION['password'] = $password;

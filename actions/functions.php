@@ -318,8 +318,10 @@ function updatePageView($product_id){
     $count = mysql_result($result,0,'visits');
     $count = $count+1;
     $query = "UPDATE product SET visits= '".$count."' where product_id=".$product_id;
-        if (!mysql_query($query))
-            header('Location: ../404.php');
+        if (!mysql_query($query)){
+            setSessionParameter('error_message', 'Unable to update page view');
+            header('Location: ../error.php');
+        }
 }
 
 function getMostViewedItem($count){

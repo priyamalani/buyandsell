@@ -49,7 +49,8 @@ if (isset($_POST['name'], $_POST['sellingPrice'])) {
         $query = "INSERT INTO product (product_name, product_desc, actual_price, selling_price, category_id, return_policy, info_1, info_2, info_3, quantity, estimated_delivery, shipping_charges, more_details, product_id, members_id) VALUES" .
         "('$name', '$description', '$actualPrice', '$sellingPrice', '$category', '$returnPolicy', '$imageFile1', '$imageFile2', '$imageFile3', '$quantity', '$estimatedDelivery', '$shippingCharges', '$moreDetails', '$product_id', '$mem_id')"; 
         if (!mysql_query($query)){
-            header('Location: ../404.php');
+            setSessionParameter('error_message', 'Unable to insert product');
+            header('Location: ../error.php');
         }
         else {
            header('Location: ../account.php');
@@ -66,7 +67,8 @@ $product_id = $_POST['product_id'];
    if (empty($error_msg)) {
         $query = "update product set product_name = '".$name."', product_desc = '".$description."', actual_price = '".$actualPrice."', selling_price = '".$sellingPrice."', category_id = '".$category."', return_policy = '".$returnPolicy."', quantity = '".$quantity."', estimated_delivery = '".$estimatedDelivery."', shipping_charges = '".$shippingCharges."', more_details = '".$moreDetails."' where product_id = ".$product_id." and members_id = ".$mem_id;
         if (!mysql_query($query)){
-            header('Location: ../404.php');
+            setSessionParameter('error_message', 'Unable to update product');
+            header('Location: ../error.php');
         }
         else {
             if(isset($imageFile1)){

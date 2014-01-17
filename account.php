@@ -134,6 +134,6 @@ $(function() {
 </script>
 <?}
  else {
-    header('Location: 404.php');
+    header('Location: login.php');
 }
 ?>
