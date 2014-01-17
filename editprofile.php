@@ -41,13 +41,13 @@ if(isset($_SESSION['id'])){
                     <div class="form-group">
                       <label for="inputName" class="col-md-2 control-label">Name</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="inputName" name="name" placeholder="Name" type="text" value="<? echo $_SESSION['name'];?>">
+                        <input class="form-control" id="inputName" name="name" placeholder="Name" type="text" value="<? echo $_SESSION['name'];?>" required>
                       </div>
                     </div>            
                     <div class="form-group">
                       <label for="inputEmail1" class="col-md-2 control-label">Email</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="inputEmail1" name="email" placeholder="Email" type="email" value="<? echo $_SESSION['email'];?>">
+                        <input class="form-control" id="inputEmail1" name="email" placeholder="Email" type="email" value="<? echo $_SESSION['email'];?>" required>
                       </div>
                     </div>
                     <div class="form-group">
@@ -83,19 +83,19 @@ if(isset($_SESSION['id'])){
                     <div class="form-group">
                       <label for="inputUsername" class="col-md-2 control-label">Username</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="inputUsername" placeholder="Username" type="text" name="username" value="<? echo $_SESSION['username'];?>">
+                        <input class="form-control" id="inputUsername" placeholder="Username" type="text" name="username" value="<? echo $_SESSION['username'];?>" required>
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="inputPassword" class="col-md-2 control-label">Password</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="inputPassword" placeholder="Password" type="password" name="password" value="<? echo $_SESSION['password'];?>">
+                        <input class="form-control" id="inputPassword" placeholder="Password" type="password" name="password" value="<? echo $_SESSION['password'];?>" required>
                       </div>
                     </div>  
                     <div class="form-group">
                       <label for="inputSeller" class="col-md-2 control-label">Seller</label>
                       <div class="col-md-4">
-                        <select class="form-control" name="seller">
+                        <select class="form-control" name="seller" required>
                           <option selected="selected">Owner</option>
                           <option>Retail</option>
                           <option>Other</option>
