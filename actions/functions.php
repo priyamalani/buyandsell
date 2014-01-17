@@ -300,7 +300,7 @@ function getRecentProducts($count) {
                                  <a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'"><img src="images/ads/' . mysql_result($result,$j,'members_id') . '/' . mysql_result($result,$j,'info_1') . '" alt="" class="img-responsive"></a>
                                  <div class="carousel_caption">
                                      <h5><a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'">' . mysql_result($result,$j,'product_name') . '</a></h5>
-                                     <p>' . substr(mysql_result($result,$j,'product_desc'),0,50) . '...</p>
+                                     
                                      <a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'" class="btn btn-info btn-sm"><i class="icon-shopping-cart"></i> Buy for ' . mysql_result($result,$j,'selling_price') . '</a>
                                  </div>
                               </li>';
@@ -343,7 +343,7 @@ function getMostViewedItem($count){
                             <h5><a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'">' . mysql_result($result,$j,'product_name') . '</a></h5>
                             <div class="clearfix"></div>
                             <!-- Para. Note more than 2 lines. -->
-                            <p>' . substr(mysql_result($result,$j,'product_desc'),0,50) . '...</p>
+                            <p>' . substr(mysql_result($result,$j,'product_desc'),0,20) . '...</p>
                             <hr>
                             <!-- Price -->
                             <div class="item-price pull-left">'.mysql_result($result,$j,'selling_price').'</div>
