@@ -59,32 +59,32 @@ turpis.</p>
                              <div class="form-group">
                                <label for="inputName" class="col-md-3 control-label">Name</label>
                                <div class="col-md-9">
-                                 <input class="form-control" id="inputName" name="username" placeholder="Name" type="text">
+                                 <input class="form-control" id="inputName" name="username" placeholder="Name" type="text"  required>
                                </div>
                              </div>                           
                              <div class="form-group">
                                <label for="inputEmail1" class="col-md-3 control-label">Email</label>
                                <div class="col-md-9">
-                                 <input class="form-control" id="inputEmail1" name="email" placeholder="Email" type="email" value="<?=$register?>">
+                                 <input class="form-control" id="inputEmail1" name="email" placeholder="Email" type="email" value="<?=$register?>"  required>
                                </div>
                              </div>
                              <div class="form-group">
                                <label for="inputPassword1" class="col-md-3 control-label">Password</label>
                                <div class="col-md-9">
-                                 <input class="form-control" id="inputPassword1" name="password" placeholder="Password" type="password">
+                                 <input class="form-control" id="inputPassword1" name="password" placeholder="Password" type="password"  required>
                                </div>
                              </div>
                              <div class="form-group">
                                <label for="inputPassword1" class="col-md-3 control-label">Re-Password</label>
                                <div class="col-md-9">
-                                 <input class="form-control" id="inputPassword1" name="rePassword" placeholder="Retype Password" type="password">
+                                 <input class="form-control" id="inputPassword1" name="rePassword" placeholder="Retype Password" type="password"  required>
                                </div>
                              </div>                            
                              <div class="form-group">
                                <div class="col-md-offset-3 col-md-9">
                                  <div class="checkbox">
                                    <label>
-                                     <input type="checkbox"> I Agree Terms &amp; Conditions
+                                     <input type="checkbox" required> I Agree Terms &amp; Conditions
                                    </label>
                                  </div>
                                </div>
