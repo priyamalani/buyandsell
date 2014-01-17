@@ -41,6 +41,7 @@ require_once 'actions/functions.php';
                   <!-- Your details -->
                   <form class="form-horizontal" enctype="multipart/form-data" role="form" action="actions/process_ad.php" method="POST">
                       <input type="hidden" name="action" id="action" value="update"/>
+                      <input type="hidden" name="product_id" id="product_id" value="<?=$product_id?>"/>
                     <div class="form-group">
                       <label for="inputName" class="col-md-2 control-label">Name</label>
                       <div class="col-md-4">
