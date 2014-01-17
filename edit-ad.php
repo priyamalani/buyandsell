@@ -46,19 +46,19 @@ if((isset($_SESSION['id'])) && ($details['members_id'] == $_SESSION['id'])){
                     <div class="form-group">
                       <label for="inputName" class="col-md-2 control-label">Name</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="inputName" name="name" placeholder="Name" type="text" value="<?=$details['product_name']?>">
+                        <input class="form-control" id="inputName" name="name" placeholder="Name" type="text" value="<?=$details['product_name']?>" required>
                       </div>
                     </div>             
                     <div class="form-group">
                         <label for="Descriptions" class="col-md-2 control-label">Descriptions</label>
                         <div class="col-md-4">
-                           <textarea class="form-control" rows="3" placeholder="Descriptions" name="descriptions"><?=$details['product_desc']?></textarea>
+                           <textarea class="form-control" rows="3" placeholder="Descriptions" name="descriptions" required><?=$details['product_desc']?></textarea>
                         </div>
                     </div>
                     <div class="form-group">
                       <label for="sellingPrice" class="col-md-2 control-label">Selling Price</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="sellingPrice" placeholder="Selling Price" type="text" name="sellingPrice" value="<?=$details['selling_price']?>">
+                        <input class="form-control" id="sellingPrice" placeholder="Selling Price" type="text" name="sellingPrice" value="<?=$details['selling_price']?>" required>
                       </div>
                     </div>
                     <div class="form-group">
