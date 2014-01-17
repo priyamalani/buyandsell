@@ -1,5 +1,7 @@
 <?php
 require_once 'actions/functions.php';
+
+if(isset($_SESSION['id'])){
 ?>
 <!DOCTYPE html>
 <html>
@@ -130,3 +132,8 @@ $(function() {
      });
 });
 </script>
+<?}
+ else {
+    header('Location: 404.php');
+}
+?>

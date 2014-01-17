@@ -1,5 +1,8 @@
 <?php
 require_once 'actions/functions.php';
+
+if(isset($_SESSION['id'])){
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -188,3 +191,8 @@ $(function() {
 //   $("input[name='imageFile3']").change(function() { this.form.submit(); });
 });
 </script>
+<?}
+ else {
+    header('Location: login.php');
+}
+?>

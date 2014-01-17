@@ -1,5 +1,10 @@
 <?php
 require_once 'actions/functions.php';
+
+$product_id = getParameter('product_id');
+$details = getProductDetails($product_id);
+
+if((isset($_SESSION['id'])) && ($details['members_id'] == $_SESSION['id'])){
 ?>
 <!DOCTYPE html>
 <html>
@@ -13,10 +18,6 @@ require_once 'actions/functions.php';
            
     
       <?php include 'includes/navigation.php'; 
-      $product_id = getParameter('product_id');
-      $details = getProductDetails($product_id);
-            
-            $details['category_id'];
       ?> 
       <!-- Page title -->
       <div class="page-title">
@@ -199,3 +200,8 @@ $(function() {
    });
 });
 </script>
+<?}
+ else {
+    header('Location: 404.php');
+}
+?>
