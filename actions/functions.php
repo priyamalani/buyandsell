@@ -271,11 +271,17 @@ function getProductDetails($product_id) {
             $details['selling_price'] = mysql_result($result,0,'selling_price');
             $details['visits'] = mysql_result($result,0,'visits');
             $details['info_1'] = mysql_result($result,0,'info_1');
+            $details['info_2'] = mysql_result($result,0,'info_2');
+            $details['info_3'] = mysql_result($result,0,'info_3');
             $details['members_id'] = mysql_result($result,0,'members_id');
             $details['shipping_charges'] = mysql_result($result,0,'shipping_charges');
             $details['quantity'] = mysql_result($result,0,'quantity');
             $details['product_desc'] = mysql_result($result,0,'product_desc');
             $details['more_details'] = mysql_result($result,0,'more_details');
+            $details['actual_price'] = mysql_result($result,0,'actual_price');
+            $details['category_id'] = mysql_result($result,0,'category_id');
+            $details['estimated_delivery'] = mysql_result($result,0,'estimated_delivery');
+            $details['return_policy'] = mysql_result($result,0,'return_policy');
             return $details;
         }
 }

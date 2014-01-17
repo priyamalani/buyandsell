@@ -12,7 +12,12 @@ require_once 'actions/functions.php';
       <!-- /.modal -->
            
     
-      <?php include 'includes/navigation.php'; ?> 
+      <?php include 'includes/navigation.php'; 
+      $product_id = getParameter('product_id');
+      $details = getProductDetails($product_id);
+            
+            $details['category_id'];
+      ?> 
       <!-- Page title -->
       <div class="page-title">
          <div class="container">
@@ -35,35 +40,35 @@ require_once 'actions/functions.php';
                   <h3><i class="icon-gift color"></i> &nbsp;Add Product</h3>
                   <!-- Your details -->
                   <form class="form-horizontal" enctype="multipart/form-data" role="form" action="actions/process_ad.php" method="POST">
-                      <input type="hidden" name="action" id="action" value="insert"/>
+                      <input type="hidden" name="action" id="action" value="update"/>
                     <div class="form-group">
                       <label for="inputName" class="col-md-2 control-label">Name</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="inputName" name="name" placeholder="Name" type="text" value="">
+                        <input class="form-control" id="inputName" name="name" placeholder="Name" type="text" value="<?=$details['product_name']?>">
                       </div>
                     </div>             
                     <div class="form-group">
                         <label for="Descriptions" class="col-md-2 control-label">Descriptions</label>
                         <div class="col-md-4">
-                           <textarea class="form-control" rows="3" placeholder="Descriptions" name="descriptions"></textarea>
+                           <textarea class="form-control" rows="3" placeholder="Descriptions" name="descriptions"><?=$details['product_desc']?></textarea>
                         </div>
                     </div>
                     <div class="form-group">
                       <label for="sellingPrice" class="col-md-2 control-label">Selling Price</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="sellingPrice" placeholder="Selling Price" type="text" name="sellingPrice" value="">
+                        <input class="form-control" id="sellingPrice" placeholder="Selling Price" type="text" name="sellingPrice" value="<?=$details['selling_price']?>">
                       </div>
                     </div>
                     <div class="form-group">
                       <label for="actualPrice" class="col-md-2 control-label">Actual Price</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="actualPrice" placeholder="Actual Price" type="text" name="actualPrice" value="">
+                        <input class="form-control" id="actualPrice" placeholder="Actual Price" type="text" name="actualPrice" value="<?=$details['actual_price']?>">
                       </div>
                     </div> 
                     <div class="form-group">
                       <label for="quantity" class="col-md-2 control-label">Quantity</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="quantity" placeholder="Quantity" type="text" name="quantity" value="">
+                        <input class="form-control" id="quantity" placeholder="Quantity" type="text" name="quantity" value="<?=$details['quantity']?>">
                       </div>
                     </div>  
                     <div class="form-group">
@@ -81,46 +86,55 @@ require_once 'actions/functions.php';
                     <div class="form-group">
                       <label for="estimatedDelivery" class="col-md-2 control-label">Delivery Date</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="estimatedDelivery" placeholder="Estimated Delivery Time" type="date" name="estimatedDelivery" value="">
+                        <input class="form-control" id="estimatedDelivery" placeholder="Estimated Delivery Time" type="date" name="estimatedDelivery" value="<?=$details['estimated_delivery']?>">
                       </div>
                     </div> 
                     <div class="form-group">
                       <label for="shippingCharges" class="col-md-2 control-label">Shipping Cost</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="shippingCharges" placeholder="Shipping Charges" type="text" name="shippingCharges" value="">
+                        <input class="form-control" id="shippingCharges" placeholder="Shipping Charges" type="text" name="shippingCharges" value="<?=$details['shipping_charges']?>">
                       </div>
                     </div>
                     <div class="form-group">
                         <label for="returnPolicy" class="col-md-2 control-label">Return Policy</label>
                         <div class="col-md-4">
-                           <textarea id="returnPolicy" class="form-control" rows="3" placeholder="Return Policy" name="returnPolicy"></textarea>
+                           <textarea id="returnPolicy" class="form-control" rows="3" placeholder="Return Policy" name="returnPolicy"><?=$details['return_policy']?></textarea>
                         </div>
                     </div>  
                     <div class="form-group">
                         <label for="moreDetails" class="col-md-2 control-label">More Details</label>
                         <div class="col-md-4">
-                           <textarea id="moreDetails" class="form-control" rows="3" placeholder="Eg: Size, Modal, etc" name="moreDetails"></textarea>
+                           <textarea id="moreDetails" class="form-control" rows="3" placeholder="Eg: Size, Modal, etc" name="moreDetails"><?=$details['more_details']?></textarea>
                         </div>
                     </div> 
                     <div class="form-group">
                       <label for="image1" class="col-md-2 control-label">Image 1</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="imageFile1" type="file" name="imageFile1" value="" style="display: none;">
-                        <input class="btn-primary btn" id="image1" type="button" name="image1" value="Click to upload">
+                        <?php if(isGood($details['info_1'])){?>
+                        <img class="img-responsive" src="images/ads/<? echo $details['members_id'].'/'.$details['info_1'];?>"/><br>
+                        <?}?>
+                        <input class="form-control hidden" id="imageFile1" type="file" name="imageFile1" value="">
+                        <input class="btn-primary btn" id="image1" type="button" name="image1" value="Click to upload new file">
                       </div>
                     </div>  
                     <div class="form-group">
                       <label for="image2" class="col-md-2 control-label">Image 2</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="imageFile2" type="file" name="imageFile2" value="" style="display: none;">
-                        <input class="btn-primary btn" id="image2" type="button" name="image2" value="Click to upload">
+                        <?php if(isGood($details['info_2'])){?>
+                        <img class="img-responsive" src="images/ads/<? echo $details['members_id'].'/'.$details['info_2'];?>"/><br>
+                        <?}?>
+                        <input class="form-control hidden" id="imageFile2" type="file" name="imageFile2" value="">
+                        <input class="btn-primary btn" id="image2" type="button" name="image2" value="Click to upload new file">
                       </div>
                     </div> 
                     <div class="form-group">
                       <label for="image3" class="col-md-2 control-label">Image 3</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="imageFile3" type="file" name="imageFile3" value="" style="display: none;">
-                        <input class="btn-primary btn" id="image3" type="button" name="image3" value="Click to upload">
+                        <?php if(isGood($details['info_3'])){?>
+                        <img class="img-responsive" src="images/ads/<? echo $details['members_id'].'/'.$details['info_3'];?>"/><br>
+                        <?}?>
+                        <input class="form-control hidden" id="imageFile3" type="file" name="imageFile3" value="">
+                        <input class="btn-primary btn" id="image3" type="button" name="image3" value="Click to upload new file">
                       </div>
                     </div>  
                     <hr>
@@ -182,9 +196,5 @@ $(function() {
           $('#subCategoryDiv').html('<? echo getCategory(4, 'subCategory', '');?>');
       }
    });
-   
-//   $("input[name='imageFile1']").change(function() { this.form.submit(); });
-//   $("input[name='imageFile2']").change(function() { this.form.submit(); });
-//   $("input[name='imageFile3']").change(function() { this.form.submit(); });
 });
 </script>

@@ -2,7 +2,10 @@
 include_once 'functions.php';
 
 $error_msg = "";
- 
+
+$action = $_POST['action'];
+
+if($action == 'insert'){ 
 if (isset($_POST['name'], $_POST['sellingPrice'],$_POST['baseCategory'])) {
     // Sanitize and validate the data passed in
     $mem_id = $_SESSION['id'];
@@ -49,6 +52,10 @@ if (isset($_POST['name'], $_POST['sellingPrice'],$_POST['baseCategory'])) {
            header('Location: ../account.php');
         }
     }
+}
+}
+elseif($action == 'update'){
+    header('Location: ../index.php');
 }
 
 ?>
