@@ -19,6 +19,8 @@ $imageFile1 = $_FILES['imageFile1']['name'];
 $imageFile2 = $_FILES['imageFile2']['name'];
 $imageFile3 = $_FILES['imageFile3']['name'];
 
+$category = (isGood($category)) ? $category : 20;
+
 
 $location = '../images/ads/'.$_SESSION['id'].'/';
 if (!file_exists($location)) {
@@ -40,7 +42,7 @@ move_uploaded_file( $_FILES['imageFile3']['tmp_name'], $target);
 
 if($action == 'insert'){ 
 $product_id = mt_rand();
-if (isset($_POST['name'], $_POST['sellingPrice'],$_POST['baseCategory'])) {
+if (isset($_POST['name'], $_POST['sellingPrice'])) {
     // Sanitize and validate the data passed in
     
    if (empty($error_msg)) {
@@ -58,7 +60,7 @@ if (isset($_POST['name'], $_POST['sellingPrice'],$_POST['baseCategory'])) {
 
 elseif($action == 'update'){
 $product_id = $_POST['product_id'];
-    if (isset($_POST['name'], $_POST['sellingPrice'],$_POST['baseCategory'])) {
+    if (isset($_POST['name'], $_POST['sellingPrice'])) {
     // Sanitize and validate the data passed in
     
    if (empty($error_msg)) {

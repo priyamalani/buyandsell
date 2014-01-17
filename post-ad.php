@@ -42,19 +42,19 @@ if(isset($_SESSION['id'])){
                     <div class="form-group">
                       <label for="inputName" class="col-md-2 control-label">Name</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="inputName" name="name" placeholder="Name" type="text" value="">
+                        <input class="form-control" id="inputName" name="name" placeholder="Name" type="text" value="" required>
                       </div>
                     </div>             
                     <div class="form-group">
                         <label for="Descriptions" class="col-md-2 control-label">Descriptions</label>
                         <div class="col-md-4">
-                           <textarea class="form-control" rows="3" placeholder="Descriptions" name="descriptions"></textarea>
+                           <textarea class="form-control" rows="3" placeholder="Descriptions" name="descriptions" required></textarea>
                         </div>
                     </div>
                     <div class="form-group">
                       <label for="sellingPrice" class="col-md-2 control-label">Selling Price</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="sellingPrice" placeholder="Selling Price" type="text" name="sellingPrice" value="">
+                        <input class="form-control" id="sellingPrice" placeholder="Selling Price" type="text" name="sellingPrice" value="" required>
                       </div>
                     </div>
                     <div class="form-group">
@@ -108,21 +108,21 @@ if(isset($_SESSION['id'])){
                     <div class="form-group">
                       <label for="image1" class="col-md-2 control-label">Image 1</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="imageFile1" type="file" name="imageFile1" value="" style="display: none;">
+                        <input class="form-control hidden" id="imageFile1" type="file" name="imageFile1" value="" required>
                         <input class="btn-primary btn" id="image1" type="button" name="image1" value="Click to upload">
                       </div>
                     </div>  
                     <div class="form-group">
                       <label for="image2" class="col-md-2 control-label">Image 2</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="imageFile2" type="file" name="imageFile2" value="" style="display: none;">
+                        <input class="form-control hidden" id="imageFile2" type="file" name="imageFile2" value="">
                         <input class="btn-primary btn" id="image2" type="button" name="image2" value="Click to upload">
                       </div>
                     </div> 
                     <div class="form-group">
                       <label for="image3" class="col-md-2 control-label">Image 3</label>
                       <div class="col-md-4">
-                        <input class="form-control" id="imageFile3" type="file" name="imageFile3" value="" style="display: none;">
+                        <input class="form-control hidden" id="imageFile3" type="file" name="imageFile3" value="">
                         <input class="btn-primary btn" id="image3" type="button" name="image3" value="Click to upload">
                       </div>
                     </div>  

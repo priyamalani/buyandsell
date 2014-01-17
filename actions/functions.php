@@ -369,7 +369,7 @@ function getCategory($parent_category = null, $name = null, $css = null, $defaul
         if (!$result) die ("Database access failed: " . mysql_error());
         $rows = mysql_num_rows($result);
         if($rows>0){
-        echo '<select class="form-control" id="'.$name.'" name="'.$name.'" style="'.$css.'">';
+        echo '<select class="form-control" id="'.$name.'" name="'.$name.'" style="'.$css.'" required>';
         if($default!=FALSE)
         echo '<option>Please select</option>';
         for ($j = 0 ; $j < $rows ; ++$j)
