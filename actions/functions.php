@@ -290,6 +290,41 @@ function getProductDetails($product_id) {
         }
 }
 
+function getProductsByCategory($category_id) {
+    
+    $query = "SELECT * FROM product where category_id='".$category_id."'";
+        $result = mysql_query($query);
+        if (!$result) die ("Database access failed: " . mysql_error());
+        $rows = mysql_num_rows($result);
+        if($rows==0){
+            setSessionParameter('error_message', 'Looks like the product is no longer available');
+            return $rows;
+        }
+        else {
+            $details = array();
+            for($i=0; $i<$rows; $i++){
+            $details[$i]['create_date'] = mysql_result($result,$i,'create_date');
+            $details[$i]['product_id'] = mysql_result($result,$i,'product_id');
+            $details[$i]['product_name'] = mysql_result($result,$i,'product_name');
+            $details[$i]['selling_price'] = mysql_result($result,$i,'selling_price');
+            $details[$i]['visits'] = mysql_result($result,$i,'visits');
+            $details[$i]['info_1'] = mysql_result($result,$i,'info_1');
+            $details[$i]['info_2'] = mysql_result($result,$i,'info_2');
+            $details[$i]['info_3'] = mysql_result($result,$i,'info_3');
+            $details[$i]['members_id'] = mysql_result($result,$i,'members_id');
+            $details[$i]['shipping_charges'] = mysql_result($result,$i,'shipping_charges');
+            $details[$i]['quantity'] = mysql_result($result,$i,'quantity');
+            $details[$i]['product_desc'] = mysql_result($result,$i,'product_desc');
+            $details[$i]['more_details'] = mysql_result($result,$i,'more_details');
+            $details[$i]['actual_price'] = mysql_result($result,$i,'actual_price');
+            $details[$i]['category_id'] = mysql_result($result,$i,'category_id');
+            $details[$i]['estimated_delivery'] = mysql_result($result,$i,'estimated_delivery');
+            $details[$i]['return_policy'] = mysql_result($result,$i,'return_policy');
+            }
+            return $details;
+        }
+}
+
 
 
 function getRecentProducts($count) {

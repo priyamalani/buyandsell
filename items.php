@@ -9,7 +9,11 @@
       <!-- /.modal -->
            
     
-      <?php include 'includes/navigation.php'; ?> 
+      <?php 
+      include 'includes/navigation.php'; 
+      $category_id = getParameter('id');
+      $products = getProductsByCategory($category_id);
+      ?> 
       <!-- Page title -->
       <div class="page-title">
          <div class="container">
@@ -38,238 +42,48 @@
                  <!-- Items List starts -->
 
                      <div class="row">
-                        <!-- Item #1 -->
-                        <div class="col-md-4 col-sm-4 col-xs-6">
-                          <div class="item">
-                            <!-- Use the below link to put HOT icon -->
-                            <div class="item-icon"><span>HOT</span></div>
-                            <!-- Item image -->
-                            <div class="item-image">
-                              <a href="single-item.php"><img src="images/2.png" alt="" class="img-responsive"></a>
-                            </div>
-                            <!-- Item details -->
-                            <div class="item-details">
-                              <!-- Name -->
-                              <h5><a href="single-item.php">HTC One V</a></h5>
-                              <div class="clearfix"></div>
-                              <!-- Para. Note more than 2 lines. -->
-                              <p>Something about the product goes here. Not More than 2 lines.</p>
-                              <hr>
-                              <!-- Price -->
-                              <div class="item-price pull-left">$360</div>
-                              <!-- Add to cart -->
-                              <div class="pull-right"><a href="#" class="btn btn-danger btn-sm">Add to Cart</a></div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <!-- Item #2 -->
-                        <div class="col-md-4 col-sm-4 col-xs-6">
-                          <div class="item">
-                            <!-- Item image -->
-                            <div class="item-image">
-                              <a href="single-item.php"><img src="images/3.png" alt="" class="img-responsive"></a>
-                            </div>
-                            <!-- Item details -->
-                            <div class="item-details">
-                              <!-- Name -->
-                              <h5><a href="single-item.php">Dell One V</a></h5>
-                              <!-- Para. Note more than 2 lines. -->
-                              <p>Something about the product goes here. Not More than 2 lines.</p>
-                              <hr>
-                              <!-- Price -->
-                              <div class="item-price pull-left">$264</div>
-                              <!-- Add to cart -->
-                              <div class="pull-right"><a href="#" class="btn btn-danger btn-sm">Add to Cart</a></div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>  
-
-                        <div class="col-md-4 col-sm-4 col-xs-6">
-                          <div class="item">
-                            <!-- Item image -->
-                            <div class="item-image">
-                              <a href="single-item.php"><img src="images/4.png" alt="" class="img-responsive"></a>
-                            </div>
-                            <!-- Item details -->
-                            <div class="item-details">
-                              <!-- Name -->
-                              <h5><a href="single-item.php">Cannon One V</a></h5>
-                              <!-- Para. Note more than 2 lines. -->
-                              <p>Something about the product goes here. Not More than 2 lines.</p>
-                              <hr>
-                              <!-- Price -->
-                              <div class="item-price pull-left">$160</div>
-                              <!-- Add to cart -->
-                              <div class="pull-right"><a href="#" class="btn btn-danger btn-sm">Add to Cart</a></div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>
-
+                        <?php
+                        if(isGood($products)){
+                            echo 'Count: '.count($products);
+                        for($i=0; $i<count($products);$i++){
+                            echo '<!-- Item #'.$i.' -->
+                                <div class="col-md-4 col-sm-4 col-xs-6">
+                                <div class="item">
+                                  <!-- Item image -->
+                                  <div class="item-image">
+                                    <a href="single-item.php?item_id='.$products[$i]['product_id'].'"><img src="images/ads/'.$products[$i]['members_id'].'/'.$products[$i]['info_1'].'" alt="" class="img-responsive"></a>
+                                  </div>
+                                  <!-- Item details -->
+                                  <div class="item-details">
+                                    <!-- Name -->
+                                    <h5><a href="single-item.php?item_id='.$products[$i]['product_id'].'">'.$products[$i]['product_name'].'</a></h5>
+                                    <div class="clearfix"></div>
+                                    <!-- Para. Note more than 2 lines. -->
+                                    <p>'.substr($products[$i]['product_desc'],0,20).'...</p>
+                                    <hr>
+                                    <!-- Price -->
+                                    <div class="item-price pull-left">'.$products[$i]['selling_price'].'</div>
+                                    <!-- Add to cart -->
+                                    <div class="pull-right"><a href="#" class="btn btn-danger btn-sm">Add to Cart</a></div>
+                                    <div class="clearfix"></div>
+                                  </div>
+                                </div>
+                              </div>';
+                        }
+                        }
+                        elseif(isGood ($_SESSION['id'])) {
+                            echo '<p class="col-md-12">No products found.<br>Be the first one to post in this category <a href="post-ad.php">Post Now</a></p>';
+                        }
+                        
+                        else {
+                            echo '<p class="col-md-12">No products found.<br>Be the first one to post in this category. To post <a href="login.php">Login</a> or <a href="register.php">Register</a></p>';
+                        }
+                        ?>
+                        
                      </div>
-                     
-                     <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-6">
-                          <div class="item">
-
-                            <!-- Item image -->
-                            <div class="item-image">
-                              <a href="single-item.php"><img src="images/5.png" alt="" class="img-responsive"></a>
-                            </div>
-                            <!-- Item details -->
-                            <div class="item-details">
-                              <!-- Name -->
-                              <h5><a href="single-item.php">Samsung One V</a></h5>
-                              <!-- Para. Note more than 2 lines. -->
-                              <p>Something about the product goes here. Not More than 2 lines.</p>
-                              <hr>
-                              <!-- Price -->
-                              <div class="item-price pull-left">$300</div>
-                              <!-- Add to cart -->
-                              <div class="pull-right"><a href="#" class="btn btn-danger btn-sm">Add to Cart</a></div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-4 col-xs-6">
-                          <div class="item">
-                           <div class="item-icon"><span>HOT</span></div>
-                            <!-- Item image -->
-                            <div class="item-image">
-                              <a href="single-item.php"><img src="images/6.png" alt="" class="img-responsive"></a>
-                            </div>
-                            <!-- Item details -->
-                            <div class="item-details">
-                              <!-- Name -->
-                              <h5><a href="single-item.php">Micromax One V</a></h5>
-                              <!-- Para. Note more than 2 lines. -->
-                              <p>Something about the product goes here. Not More than 2 lines.</p>
-                              <hr>
-                              <!-- Price -->
-                              <div class="item-price pull-left">$240</div>
-                              <!-- Add to cart -->
-                              <div class="pull-right"><a href="#" class="btn btn-danger btn-sm">Add to Cart</a></div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-4 col-xs-6">
-                          <div class="item">
-                            <!-- Item image -->
-                            <div class="item-image">
-                              <a href="single-item.php"><img src="images/7.png" alt="" class="img-responsive"></a>
-                            </div>
-                            <!-- Item details -->
-                            <div class="item-details">
-                              <!-- Name -->
-                              <h5><a href="single-item.php">Nokia One V</a></h5>
-                              <!-- Para. Note more than 2 lines. -->
-                              <p>Something about the product goes here. Not More than 2 lines.</p>
-                              <hr>
-                              <!-- Price -->
-                              <div class="item-price pull-left">$50</div>
-                              <!-- Add to cart -->
-                              <div class="pull-right"><a href="#" class="btn btn-danger btn-sm">Add to Cart</a></div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
-                      
-                      <div class="row">
-                        <div class="col-md-4 col-sm-4 col-xs-6">
-                          <div class="item">
-
-                            <!-- Item image -->
-                            <div class="item-image">
-                              <a href="single-item.php"><img src="images/8.png" alt="" class="img-responsive"></a>
-                            </div>
-                            <!-- Item details -->
-                            <div class="item-details">
-                              <!-- Name -->
-                              <h5><a href="single-item.php">Samsung One V</a></h5>
-                              <!-- Para. Note more than 2 lines. -->
-                              <p>Something about the product goes here. Not More than 2 lines.</p>
-                              <hr>
-                              <!-- Price -->
-                              <div class="item-price pull-left">$300</div>
-                              <!-- Add to cart -->
-                              <div class="pull-right"><a href="#" class="btn btn-danger btn-sm">Add to Cart</a></div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-4 col-xs-6">
-                          <div class="item">
-                           <div class="item-icon"><span>HOT</span></div>
-                            <!-- Item image -->
-                            <div class="item-image">
-                              <a href="single-item.php"><img src="images/9.png" alt="" class="img-responsive"></a>
-                            </div>
-                            <!-- Item details -->
-                            <div class="item-details">
-                              <!-- Name -->
-                              <h5><a href="single-item.php">Micromax One V</a></h5>
-                              <!-- Para. Note more than 2 lines. -->
-                              <p>Something about the product goes here. Not More than 2 lines.</p>
-                              <hr>
-                              <!-- Price -->
-                              <div class="item-price pull-left">$240</div>
-                              <!-- Add to cart -->
-                              <div class="pull-right"><a href="#" class="btn btn-danger btn-sm">Add to Cart</a></div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>
-
-                        <div class="col-md-4 col-sm-4 col-xs-6">
-                          <div class="item">
-                            <!-- Item image -->
-                            <div class="item-image">
-                              <a href="single-item.php"><img src="images/10.png" alt="" class="img-responsive"></a>
-                            </div>
-                            <!-- Item details -->
-                            <div class="item-details">
-                              <!-- Name -->
-                              <h5><a href="single-item.php">Nokia One V</a></h5>
-                              <!-- Para. Note more than 2 lines. -->
-                              <p>Something about the product goes here. Not More than 2 lines.</p>
-                              <hr>
-                              <!-- Price -->
-                              <div class="item-price pull-left">$50</div>
-                              <!-- Add to cart -->
-                              <div class="pull-right"><a href="#" class="btn btn-danger btn-sm">Add to Cart</a></div>
-                              <div class="clearfix"></div>
-                            </div>
-                          </div>
-                        </div>
-
-                      </div>
 
                   <!-- Items List ends -->
                   
-                  
-                     <div class="row">
-                        <div class="col-md-12">
-                                    <!-- Pagination -->
-                                    <ul class="pagination">
-                                      <li><a href="#"><i class="icon-caret-left"></i></a></li>
-                                      <li><a href="#">1</a></li>
-                                      <li><a href="#">2</a></li>
-                                      <li><a href="#">3</a></li>
-                                      <li><a href="#">4</a></li>
-                                      <li><a href="#">5</a></li>
-                                      <li><a href="#"><i class="icon-caret-right"></i></a></li>
-                                    </ul> 
-                        </div>
-                     </div>
                
                </div>
                
