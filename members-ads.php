@@ -12,12 +12,13 @@
       <?php include 'includes/navigation.php'; 
       $members_id = getParameter('members_id');
       $result = getMembersAllProduct($members_id);
+      $mem_details = getMembersDetails($members_id);
       $count = count($result);
       ?> 
       <!-- Page title -->
       <div class="page-title">
          <div class="container">
-            <h2><i class="icon-desktop color"></i> <?=$members_id?> <small>Subtext for header</small></h2>
+            <h2><i class="icon-desktop color"></i> <?=$mem_details['name']?> <small>Subtext for header</small></h2>
             <hr>
          </div>
       </div>
@@ -102,46 +103,6 @@
                
                
                <div class="col-md-3 col-md-pull-9">
-                  <div class="sidey">
-                     <ul class="nav">
-                         <li><a href="index.php"><i class="icon-home"></i> &nbsp;Home</a>
-                         </li><li><a href="#"><i class="icon-mobile-phone"></i> &nbsp;Smartphones<span class="caret"></span></a>
-                             <ul style="display: none;" data-index="0">
-                                 <li><a href="items.php">Apple</a></li>
-                                 <li><a href="items.php">Samsung</a></li>
-                                 <li><a href="items.php">Motorola</a></li>
-                                 <li><a href="items.php">Nokia</a></li>
-                             </ul>
-                         </li>
-                         <li><a href="#"><i class="icon-laptop"></i> &nbsp;Laptops<span class="caret"></span></a>
-                             <ul style="display: none;" data-index="1">
-                                 <li><a href="items.php">Apple</a></li>
-                                 <li><a href="items.php">Samsung</a></li>
-                                 <li><a href="items.php">Motorola</a></li>
-                                 <li><a href="items.php">Nokia</a></li>
-                             </ul>
-                         </li>
-                         <li><a href="#"><i class="icon-briefcase"></i> &nbsp;Office Items<span class="caret"></span></a>
-                             <ul style="display: none;" data-index="2">
-                                 <li><a href="items.php">Apple</a></li>
-                                 <li><a href="items.php">Samsung</a></li>
-                                 <li><a href="items.php">Motorola</a></li>
-                                 <li><a href="items.php">Nokia</a></li>
-                             </ul>
-                         </li>
-                         <li><a href="#"><i class="icon-camera"></i> &nbsp;Camera<span class="caret"></span></a>
-                             <ul style="display: none;" data-index="3">
-                                 <li><a href="items.php">Apple</a></li>
-                                 <li><a href="items.php">Samsung</a></li>
-                                 <li><a href="items.php">Motorola</a></li>
-                                 <li><a href="items.php">Nokia</a></li>
-                             </ul>
-                         </li>
-                     </ul>
-                  </div>
-                  
-                  <!-- Sidebar items (featured items)-->
-
                    <?php include 'includes/featuredSidebar.php'; ?>
                </div>
             </div>

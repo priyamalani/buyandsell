@@ -382,9 +382,12 @@ function getCategory($parent_category = null, $name = null, $css = null, $defaul
         echo '</select>';
         }
         else{
+            $cat_name = array();
             for ($j = 0 ; $j < $rows ; ++$j){   
-                 echo '<li><a href="items.php?id='.mysql_result($result,$j,'id').'">'.mysql_result($result,$j,'category_name').'</a></li>';
+                 $cat_name[$j][0] = mysql_result($result,$j,'category_name');
+                 $cat_name[$j][1] = mysql_result($result,$j,'id');
             }
+                 return $cat_name;
         }
         }
         else {

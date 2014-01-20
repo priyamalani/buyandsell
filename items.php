@@ -275,34 +275,6 @@
                
                
                <div class="col-md-3 col-md-pull-9">
-                  <div class="sidey">
-                     <ul class="nav">
-                         <li><a href="index.php"><i class="icon-home"></i> &nbsp;Home</a>
-                         </li><li><a href="#"><i class="icon-heart"></i> &nbsp;Fashion<span class="caret"></span></a>
-                             <ul style="display: none;" data-index="0">
-                                 <?echo getCategory(1, 'side-bar-1', NULL, NULL, TRUE);?>
-                             </ul>
-                         </li>
-                         <li><a href="#"><i class="icon-road"></i> &nbsp;Home & Garden<span class="caret"></span></a>
-                             <ul style="display: none;" data-index="1">
-                                 <?echo getCategory(2, 'side-bar-2', NULL, NULL, TRUE);?>
-                             </ul>
-                         </li>
-                         <li><a href="#"><i class="icon-mobile-phone"></i> &nbsp;Electronic<span class="caret"></span></a>
-                             <ul style="display: none;" data-index="2">
-                                 <?echo getCategory(3, 'side-bar-3', NULL, NULL, TRUE);?>
-                             </ul>
-                         </li>
-                         <li><a href="#"><i class="icon-random"></i> &nbsp;Other<span class="caret"></span></a>
-                             <ul style="display: none;" data-index="3">
-                                 <?echo getCategory(4, 'side-bar-4', NULL, NULL, TRUE);?>
-                             </ul>
-                         </li>
-                     </ul>
-                  </div>
-                  
-                  <!-- Sidebar items (featured items)-->
-
                    <?php include 'includes/featuredSidebar.php'; ?>
                </div>
             </div>
