@@ -44,7 +44,6 @@
                      <div class="row">
                         <?php
                         if(isGood($products)){
-                            echo 'Count: '.count($products);
                         for($i=0; $i<count($products);$i++){
                             echo '<!-- Item #'.$i.' -->
                                 <div class="col-md-4 col-sm-4 col-xs-6">
