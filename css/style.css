@@ -1014,7 +1014,7 @@ strong{
    border-top:0px;
 }
 
-.sidey .nav a:hover, .sidey .nav li.active > a {
+.sidey .nav a:hover, .sidey .nav li.active > a, .sidey .nav a:focus {
 	background: #009e7e;
 	color: #fff;
    border-bottom:1px solid #009e7e;
