@@ -19,6 +19,7 @@ require_once 'actions/functions.php';
       updatePageView($item_id);
       $detail = getProductDetails($item_id);
       $mem_details = getMembersDetails($detail['members_id']);
+      if(isGood($detail, $item_id)){
       ?>
       <!-- Page title -->
       <div class="page-title">
@@ -207,3 +208,8 @@ require_once 'actions/functions.php';
 
       <?php include 'includes/footer.php'; ?>
         </body></html>
+<?}
+ else {
+    header('Location: error.php');
+}
+?>

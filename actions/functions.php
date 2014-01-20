@@ -263,6 +263,10 @@ function getProductDetails($product_id) {
         if($rows>1){
             echo '<p>Too many posting with product id = '.$product_id;
         }
+        elseif($rows==0){
+            setSessionParameter('error_message', 'Looks like the product is no longer available');
+            return FALSE;
+        }
         else {
             $details = array();
             $details['create_date'] = mysql_result($result,0,'create_date');
