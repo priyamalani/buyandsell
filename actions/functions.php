@@ -364,13 +364,14 @@ function getMostViewedItem($count){
 }
 
 
-function getCategory($parent_category = null, $name = null, $css = null, $default = FALSE) {
+function getCategory($parent_category = null, $name = null, $css = null, $default = FALSE, $noStyle = FALSE) {
     
     $query = "SELECT * FROM category where parent_category='".$parent_category."'";
         $result = mysql_query($query);
         if (!$result) die ("Database access failed: " . mysql_error());
         $rows = mysql_num_rows($result);
         if($rows>0){
+        if($noStyle==FALSE){    
         echo '<select class="form-control" id="'.$name.'" name="'.$name.'" style="'.$css.'" required>';
         if($default!=FALSE)
         echo '<option>Please select</option>';
@@ -379,6 +380,12 @@ function getCategory($parent_category = null, $name = null, $css = null, $defaul
              echo '<option value="'.mysql_result($result,$j,'id').'">'.mysql_result($result,$j,'category_name').'</option>';
         }
         echo '</select>';
+        }
+        else{
+            for ($j = 0 ; $j < $rows ; ++$j){   
+                 echo '<li><a href="items.php?id='.mysql_result($result,$j,'id').'">'.mysql_result($result,$j,'category_name').'</a></li>';
+            }
+        }
         }
         else {
             echo '<p>No Category</p>';
