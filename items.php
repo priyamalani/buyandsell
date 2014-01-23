@@ -17,7 +17,7 @@
       <!-- Page title -->
       <div class="page-title">
          <div class="container">
-            <h2><i class="icon-desktop color"></i> Laptops &amp; Desktops <small>Subtext for header</small></h2>
+             <h2><i class="icon-desktop color"></i> <?=getCategoryName($category_id)?></h2>
             <hr>
          </div>
       </div>

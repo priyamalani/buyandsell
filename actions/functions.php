@@ -470,6 +470,19 @@ function getCategory($parent_category = null, $name = null, $css = null, $defaul
         }
 }
 
+function getCategoryName($category_id){
+    $query = "SELECT category_name FROM category where id='".$category_id."'";
+        $result = mysql_query($query);
+        if (!$result) die ("Database access failed: " . mysql_error());
+        $rows = mysql_num_rows($result);
+        if($rows>0){
+           return mysql_result($result,0,'category_name');
+        }
+        else {
+            echo 'No Category';
+        }
+}
+
 
 function directory_exists( $path = null ){
 	$success = FALSE;
