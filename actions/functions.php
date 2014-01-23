@@ -483,6 +483,19 @@ function getCategoryName($category_id){
         }
 }
 
+function getParentCategory($category_id){
+    $query = "SELECT parent_category FROM category where id='".$category_id."'";
+        $result = mysql_query($query);
+        if (!$result) die ("Database access failed: " . mysql_error());
+        $rows = mysql_num_rows($result);
+        if($rows>0){
+           return mysql_result($result,0,'parent_category');
+        }
+        else {
+            echo 'No Category';
+        }
+}
+
 
 function directory_exists( $path = null ){
 	$success = FALSE;

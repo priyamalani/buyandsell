@@ -13,11 +13,13 @@
       include 'includes/navigation.php'; 
       $category_id = getParameter('id');
       $products = getProductsByCategory($category_id);
+      $cat_name = getCategoryName($category_id);
+      $parent_cat = getParentCategory($category_id);
       ?> 
       <!-- Page title -->
       <div class="page-title">
          <div class="container">
-             <h2><i class="icon-desktop color"></i> <?=getCategoryName($category_id)?></h2>
+             <h2><i class="icon-desktop color"></i> <?=$cat_name?></h2>
             <hr>
          </div>
       </div>
@@ -34,9 +36,8 @@
                
                    <!-- Breadcrumb -->
                  <ul class="breadcrumb">
-                   <li><a href="index.php">Home</a> <span class="divider"></span></li>
-                   <li><a href="items.php">Smartphone</a> <span class="divider"></span></li>
-                   <li class="active">Apple</li>
+                     <li><a href="#"><?=getCategoryName($parent_cat)?></a> <span class="divider"></span></li>
+                   <li class="active"><?=$cat_name?></li>
                  </ul>
                
                  <!-- Items List starts -->
