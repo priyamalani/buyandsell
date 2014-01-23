@@ -36,6 +36,7 @@
                
                    <!-- Breadcrumb -->
                  <ul class="breadcrumb">
+                   <li><a href="index.php">Home</a> <span class="divider"></span></li>
                      <li><a href="#"><?=getCategoryName($parent_cat)?></a> <span class="divider"></span></li>
                    <li class="active"><?=$cat_name?></li>
                  </ul>
