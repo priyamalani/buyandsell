@@ -96,9 +96,9 @@
              </li>
              <li><a href="items.php">Other</a></li>
            </ul>
-           <form class="navbar-form navbar-left" role="search" style="max-width: 250px;">
+           <form class="navbar-form navbar-left" role="search" style="max-width: 250px;" action="actions/process_search.php" method="POST">
              <div class="input-group">
-                <input type="text" class="form-control">
+                <input type="text" class="form-control" id="search" name="search">
                 <span class="input-group-addon"><i class="icon-search"></i></span>
               </div>
            </form>
