@@ -64,37 +64,37 @@
              <li class="dropdown">
                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Fashion <b class="caret"></b></a>
                <ul class="dropdown-menu">
-                 <li><a href="items.php">Men Clothing</a></li>
-                 <li><a href="items.php">Women Clothing</a></li>
-                 <li><a href="items.php">Baby Clothing</a></li>
-                 <li><a href="items.php">Accessories</a></li>
-                 <li><a href="items.php">Beauty Products</a></li>
+                 <li><a href="items.php?id=5">Men Clothing</a></li>
+                 <li><a href="items.php?id=6">Women Clothing</a></li>
+                 <li><a href="items.php?id=7">Baby Clothing</a></li>
+                 <li><a href="items.php?id=8">Accessories</a></li>
+                 <li><a href="items.php?id=9">Beauty Products</a></li>
                  <li class="divider"></li>
-                 <li><a href="items.php">Others</a></li>
+                 <li><a href="items.php?id=10">Others</a></li>
                </ul>
              </li>
              <li class="dropdown">
                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Home & Garden <b class="caret"></b></a>
                <ul class="dropdown-menu">
-                 <li><a href="items.php">Art & Crafts</a></li>
-                 <li><a href="items.php">Home Decor</a></li>
-                 <li><a href="items.php">Garden</a></li>
-                 <li><a href="items.php">Pet Supplies</a></li>
+                 <li><a href="items.php?id=11">Art & Crafts</a></li>
+                 <li><a href="items.php?id=12">Home Decor</a></li>
+                 <li><a href="items.php?id=13">Garden</a></li>
+                 <li><a href="items.php?id=14">Pet Supplies</a></li>
                  <li class="divider"></li>
-                 <li><a href="items.php">Others</a></li>
+                 <li><a href="items.php?id=15">Others</a></li>
                </ul>
              </li>
              <li class="dropdown">
                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Electronic <b class="caret"></b></a>
                <ul class="dropdown-menu">
-                 <li><a href="items.php">Phones</a></li>
-                 <li><a href="items.php">Cameras</a></li>
-                 <li><a href="items.php">Computers</a></li>
+                 <li><a href="items.php?id=16">Phones</a></li>
+                 <li><a href="items.php?id=17">Cameras</a></li>
+                 <li><a href="items.php?id=18">Computers</a></li>
                  <li class="divider"></li>
-                 <li><a href="items.php">Other</a></li>
+                 <li><a href="items.php?id=19">Other</a></li>
                </ul>
              </li>
-             <li><a href="items.php">Other</a></li>
+             <li><a href="items.php?id=20">Other</a></li>
            </ul>
            <form class="navbar-form navbar-left search_form" role="search" style="max-width: 250px;" action="actions/process_search.php" method="POST">
              <div class="input-group">
