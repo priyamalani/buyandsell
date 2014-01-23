@@ -17,7 +17,9 @@
       <!-- Page title -->
       <div class="page-title">
          <div class="container">
-            <h2><i class="icon-desktop color"></i> Laptops &amp; Desktops <small>Subtext for header</small></h2>
+            <h2><i class="icon-search color"></i> 
+                   Products matching "<?=$search?>"
+            </h2>
             <hr>
          </div>
       </div>
@@ -32,12 +34,6 @@
                
                <div class="col-md-9 col-md-push-3">
                
-                   <!-- Breadcrumb -->
-                 <ul class="breadcrumb">
-                   <li><a href="index.php">Home</a> <span class="divider"></span></li>
-                   <li><a href="items.php">Smartphone</a> <span class="divider"></span></li>
-                   <li class="active">Apple</li>
-                 </ul>
                
                  <!-- Items List starts -->
 
@@ -70,12 +66,9 @@
                               </div>';
                         }
                         }
-                        elseif(isGood ($_SESSION['id'])) {
-                            echo '<p class="col-md-12">No products found.<br>Be the first one to post in this category <a href="post-ad.php">Post Now</a></p>';
-                        }
                         
                         else {
-                            echo '<p class="col-md-12">No products found.<br>Be the first one to post in this category. To post <a href="login.php">Login</a> or <a href="register.php">Register</a></p>';
+                            echo '<p class="col-md-12">No products found.<br>Try again</p>';
                         }
                         ?>
                         
