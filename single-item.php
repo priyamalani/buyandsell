@@ -46,7 +46,7 @@ require_once 'actions/functions.php';
                   <!-- Breadcrumb -->
                  <ul class="breadcrumb">
                    <li><a href="index.php">Home</a> <span class="divider"></span></li>
-                   <li><a href="#"><?=$parent_cat_name?></a> <span class="divider"></span></li>
+                   <li><a href="items.php?id=<?=$parent_cat?>&parent=<?=TRUE?>"><?=$parent_cat_name?></a> <span class="divider"></span></li>
                    <li><a href="items.php?id=<?=$category_id?>"><?=$cat_name?></a> <span class="divider"></span></li>
                    <li class="active"><?=$detail['product_name']?></li>
                  </ul>

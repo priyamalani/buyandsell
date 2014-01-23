@@ -326,9 +326,9 @@ function getSearchResult($search) {
         }
 }
 
-function getProductsByCategory($category_id) {
+function getProductsByCategory($category_id, $parent = FALSE) {
     
-    $query = "SELECT * FROM product where category_id='".$category_id."'";
+    $query = ($parent)? "SELECT * FROM product where category_id in (select id from category where parent_category=".$category_id.")" : "SELECT * FROM product where category_id='".$category_id."'";
         $result = mysql_query($query);
         if (!$result) die ("Database access failed: " . mysql_error());
         $rows = mysql_num_rows($result);
