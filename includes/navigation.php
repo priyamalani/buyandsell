@@ -96,10 +96,10 @@
              </li>
              <li><a href="items.php">Other</a></li>
            </ul>
-           <form class="navbar-form navbar-left" role="search" style="max-width: 250px;" action="actions/process_search.php" method="POST">
+           <form class="navbar-form navbar-left search_form" role="search" style="max-width: 250px;" action="actions/process_search.php" method="POST">
              <div class="input-group">
                 <input type="text" class="form-control" id="search" name="search">
-                <span class="input-group-addon"><i class="icon-search"></i></span>
+                <span class="input-group-addon submit_search btn"><i class="icon-search"></i></span>
               </div>
            </form>
            <div class="nav navbar-nav navbar-right">

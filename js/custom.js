@@ -126,4 +126,9 @@ $(document).ready(function() {
         e.preventDefault();
         $('#navbar-collapse-1').toggleClass('collapse');
       });
+      
+   $(document).on( "click", ".submit_search", function(){
+        $(".search_form").submit();
+    });
+    
 });
