@@ -18,6 +18,10 @@ require_once 'actions/functions.php';
       $item_id = getParameter('item_id');
       updatePageView($item_id);
       $detail = getProductDetails($item_id);
+      $category_id = $detail['category_id'];
+      $cat_name = getCategoryName($category_id);
+      $parent_cat = getParentCategory($category_id);
+      $parent_cat_name = getCategoryName($parent_cat);
       $mem_details = getMembersDetails($detail['members_id']);
       if(isGood($detail, $item_id)){
       ?>
@@ -42,8 +46,9 @@ require_once 'actions/functions.php';
                   <!-- Breadcrumb -->
                  <ul class="breadcrumb">
                    <li><a href="index.php">Home</a> <span class="divider"></span></li>
-                   <li><a href="items.php">Smartphone</a> <span class="divider"></span></li>
-                   <li class="active">Apple</li>
+                   <li><a href="#"><?=$parent_cat_name?></a> <span class="divider"></span></li>
+                   <li><a href="items.php?id=<?=$category_id?>"><?=$cat_name?></a> <span class="divider"></span></li>
+                   <li class="active"><?=$detail['product_name']?></li>
                  </ul>
                
                   <div class="single-item">
