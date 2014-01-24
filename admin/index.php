@@ -1,7 +1,7 @@
 <?php
 require_once '../actions/functions.php';
 
-if(isset($_SESSION['id']) && $_SESSION['id']=='admin'){
+if(isset($_SESSION['id']) && $_SESSION['seller']=='admin'){
 ?>
 <!DOCTYPE html>
 <html>
