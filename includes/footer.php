@@ -6,7 +6,7 @@
 
                        <div class="col-md-3 col-sm-3">
                          <div class="fwidget">
-                           <h4>How to <span class="color">Sell</span></h4>
+                           <h4>How to <span class="color">Shop</span></h4>
                            <hr>
                            <ul>
                              <li><a href="#">Link</a></li>
@@ -20,7 +20,7 @@
                    
                        <div class="col-md-3 col-sm-3">
                          <div class="fwidget">
-                           <h4>How to <span class="color">Shop</span></h4>
+                           <h4>How to <span class="color">Sell</span></h4>
                            <hr>
                            <ul>
                              <li><a href="#">Link</a></li>
