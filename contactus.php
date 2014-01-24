@@ -61,14 +61,14 @@
                                               Nagpur,<br>
                                               India<br>
                                               <!-- Phone number -->
-                                              <abbr title="Phone">P:</abbr> (123) 456-7890.
+                                              <abbr title="Phone">P:</abbr> <a href="tel:+919823466777"> +91 982 346 6777</a>
                                            </address>
                                             
                                            <address>
                                               <!-- Name -->
-                                              <h6>Full Name</h6>
+                                              <h6>Rohit Malani</h6>
                                               <!-- Email -->
-                                              <a href="mailto:#">first.last@gmail.com</a>
+                                              <a href="mailto:rohitmalani83@gmail.com"> rohitmalani83@gmail.com</a>
                                            </address>
                                            
                                        </div>
