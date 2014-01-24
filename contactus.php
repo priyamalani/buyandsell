@@ -56,10 +56,10 @@
                                        <div class="address">
                                            <address>
                                               <!-- Company name -->
-                                              <h6>Responsive Web, Inc.</h6>
+                                              <h6>ShopAndSell</h6>
                                               <!-- Address -->
-                                              795 Folsom Ave, Suite 600<br>
-                                              San Francisco, CA 94107<br>
+                                              Nagpur,<br>
+                                              India<br>
                                               <!-- Phone number -->
                                               <abbr title="Phone">P:</abbr> (123) 456-7890.
                                            </address>

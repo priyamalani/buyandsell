@@ -33,11 +33,14 @@ else{
     $subject = 'Mail from contact us page ShopAndSell';
     $subject = $important. $subject;
     $message = "From : ".$name.' 
-    
-'.$message.'
+        
 
-       
-Time : '.date('l jS \of F Y h:i:s A');
+Time : '.date('l jS \of F Y h:i:s A').'
+    
+    
+'.$message
+
+;
 }
 $headers = "From:" . $from;
 mail($to,$subject,$message,$headers);
