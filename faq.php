@@ -54,7 +54,7 @@ nesciunt you probably haven't heard of them accusamus labore sustainable
                       <div class="panel-heading">
                         <h4 class="panel-title">
                           <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo">
-                            Enim eiusmod high life accusamus ?
+                            How to post a ad?
                           </a>
                         </h4>
                       </div>
@@ -77,7 +77,7 @@ nesciunt you probably haven't heard of them accusamus labore sustainable
                       <div class="panel-heading">
                         <h4 class="panel-title">
                           <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseThree">
-                            Brunch 3 wolf moon tempor ?
+                            Is it FREE?
                           </a>
                         </h4>
                       </div>
@@ -100,7 +100,7 @@ nesciunt you probably haven't heard of them accusamus labore sustainable
                       <div class="panel-heading">
                         <h4 class="panel-title">
                           <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapseFour">
-                            Raw denim aesthetic synth nesciunt ?
+                            How to buy?
                           </a>
                         </h4>
                       </div>
