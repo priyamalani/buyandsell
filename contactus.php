@@ -25,22 +25,22 @@
                                  <!-- Contact form -->
                                     <h5>Contact Form</h5>
                                     
-                                    <form role="form">
+                                    <form role="form" action='actions/send-email.php' method='POST'>
                                       <div class="form-group">
                                         <label for="name">Your Name</label>
-                                        <input class="form-control" id="name" placeholder="Enter Name" type="text">
+                                        <input class="form-control" id="name" name="name" placeholder="Enter Name" type="text">
                                       </div>                                    
                                       <div class="form-group">
                                         <label for="exampleInputEmail1">Email address</label>
-                                        <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                                        <input class="form-control" id="userEmail" name="userEmail" placeholder="Enter email" type="email">
                                       </div>
                                       <div class="form-group">
-                                        <label for="exampleInputEmail1">Content</label>
-                                        <textarea class="form-control" rows="3"></textarea>
+                                        <label for="userMessage">Content</label>
+                                        <textarea class="form-control" rows="3" name="userMessage" id="userMessage"></textarea>
                                       </div>                                      
                                       <div class="checkbox">
                                         <label>
-                                          <input type="checkbox"> Important?
+                                          <input name="important" id="important" type="checkbox"> Important?
                                         </label>
                                       </div>
                                       <button type="submit" class="btn btn-info">Send</button>
