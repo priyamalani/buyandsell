@@ -75,7 +75,7 @@
                        <?}?>
 
                        
-
+                       
                      </div>
                      
                      
@@ -125,3 +125,25 @@
       
       <?php include 'includes/footer.php'; ?>
         </body></html>
+
+<!-- <script>
+    $(window).scroll(function () {
+        var nearToBottom = 800;
+
+        if ($(window).scrollTop() + $(window).height() > 
+            $(document).height() - nearToBottom) { 
+            $.ajax({
+                url: ("actions/getMorePosts.php"),
+                data: {
+                    page: '',
+                    from: '',
+                    to: '',
+                    id: '<?//$members_id?>'
+                },
+                success: function(data) {
+                    $('#moreContent').html(data);
+                }
+            });
+        } 
+    });
+</script>-->
