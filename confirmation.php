@@ -14,7 +14,7 @@
          <div class="container">
             <h2><i class="icon-shopping-cart color"></i> We received payment Successfully...</h2>
             <hr>
-            <h5>Thanks for buying from OlsonKart!!!</h5>
+            <h5>Thanks for buying from ShopAndSell!!!</h5>
             <h5>Your Order #id is <span class="color">43454354</span>. Use this for further communication.</h5>
             <div class="sep-bor"></div>
             <form class="form-inline" role="form">
