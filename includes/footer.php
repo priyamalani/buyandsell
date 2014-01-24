@@ -4,7 +4,7 @@
          
                <div class="row">
 
-                        <div class="col-md-4 col-sm-4">
+                        <div class="col-md-3 col-sm-3">
                            <div class="fwidget">
                            
                               <h4>About <span class="color">Us</span></h4>
@@ -27,31 +27,44 @@
                            </div>
                        </div>
 
-                       <div class="col-md-4 col-sm-4">
+                       <div class="col-md-3 col-sm-3">
                          <div class="fwidget">
-                           <h4>Top <span class="color">Categories</span></h4>
+                           <h4>How to <span class="color">Sell</span></h4>
                            <hr>
                            <ul>
-                             <li><a href="#">Sed eu leo orci, condimentum gravida metus</a></li>
-                             <li><a href="#">Etiam at nulla ipsum, in rhoncus purus</a></li>
-                             <li><a href="#">Fusce vel magna faucibus felis dapibus facilisis</a></li>
-                             <li><a href="#">Vivamus scelerisque dui in massa</a></li>
-                             <li><a href="#">Pellentesque eget adipiscing dui semper</a></li>
+                             <li><a href="#">Link</a></li>
+                             <li><a href="#">Link</a></li>
+                             <li><a href="#">Link</a></li>
+                             <li><a href="#">Link</a></li>
+                             <li><a href="#">Link</a></li>
                            </ul>
                          </div>
-                       </div>        
-
+                       </div>   
+                   
+                       <div class="col-md-3 col-sm-3">
+                         <div class="fwidget">
+                           <h4>How to <span class="color">Shop</span></h4>
+                           <hr>
+                           <ul>
+                             <li><a href="#">Link</a></li>
+                             <li><a href="#">Link</a></li>
+                             <li><a href="#">Link</a></li>
+                             <li><a href="#">Link</a></li>
+                             <li><a href="#">Link</a></li>
+                           </ul>
+                         </div>
+                       </div>
                        
 
-                       <div class="col-md-4 col-sm-4">
+                       <div class="col-md-3 col-sm-3">
                          <div class="fwidget">
                            
                              <h4>Contact <span class="color">Us</span></h4>
                            <hr>
                            <div class="address">
-                              <p><i class="icon-home color contact-icon"></i> #12, Plot No.14, Raj Karmara Street, </p>
-                              <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5th Stage, Koramangala, Madiwala,</p>
-                              <p> &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Bangalore - 493922, Karananana.</p>
+                              <p><i class="icon-home color contact-icon"></i> #12, Plot No.14, </p>
+                              <p> 5th Stage, Koramangala, Madiwala,</p>
+                              <p> Bangalore - 493922, Karananana.</p>
                               <p><i class="icon-mobile-phone color contact-icon"></i> <a href="tel:+919823466777">+91-982-346-6777</a></p>
                               <p><i class="icon-envelope color contact-icon"></i> <a href="mailto:rohitmalani83@gmail.com">rohitmalani83@gmail.com</a></p>
                            </div>
