@@ -4,29 +4,6 @@
          
                <div class="row">
 
-                        <div class="col-md-3 col-sm-3">
-                           <div class="fwidget">
-                           
-                              <h4>About <span class="color">Us</span></h4>
-                              
-                              <hr>
-                            <ul class="">
-                              <li><i class="icon-info color contact-icon"></i> <a href="aboutus.php">About Us</a></li>
-                              <li><i class="icon-phone color contact-icon"></i> <a href="contactus.php">Get In Touch With Us</a></li>
-                              <li><i class="icon-comment color contact-icon"></i> <a href="blog.php">Read Our Blog</a></li>
-                              <li><i class="icon-question color contact-icon"></i> <a href="faq.php">FAQ</a></li>
-                            </ul>
-                              
-                              <div class="social">
-                                 <a href="#" class="facebook"><i class="icon-facebook"></i></a>
-                                 <a href="#" class="twitter"><i class="icon-twitter"></i></a>
-                                 <a href="#" class="google-plus"><i class="icon-google-plus"></i></a>
-                                 <a href="#" class="linkedin"><i class="icon-linkedin"></i></a>
-                                 <a href="#" class="pinterest"><i class="icon-pinterest"></i></a>
-                              </div>
-                           </div>
-                       </div>
-
                        <div class="col-md-3 col-sm-3">
                          <div class="fwidget">
                            <h4>How to <span class="color">Sell</span></h4>
@@ -53,6 +30,28 @@
                              <li><a href="#">Link</a></li>
                            </ul>
                          </div>
+                       </div>
+                   <div class="col-md-3 col-sm-3">
+                           <div class="fwidget">
+                           
+                              <h4>About <span class="color">ShopAndSell</span></h4>
+                              
+                              <hr>
+                            <ul class="">
+                              <li><i class="icon-info color contact-icon"></i> <a href="aboutus.php">About Us</a></li>
+                              <li><i class="icon-phone color contact-icon"></i> <a href="contactus.php">Get In Touch With Us</a></li>
+                              <li><i class="icon-comment color contact-icon"></i> <a href="blog.php">Read Our Blog</a></li>
+                              <li><i class="icon-question color contact-icon"></i> <a href="faq.php">FAQ</a></li>
+                            </ul>
+                              
+                              <div class="social">
+                                 <a href="#" class="facebook"><i class="icon-facebook"></i></a>
+                                 <a href="#" class="twitter"><i class="icon-twitter"></i></a>
+                                 <a href="#" class="google-plus"><i class="icon-google-plus"></i></a>
+                                 <a href="#" class="linkedin"><i class="icon-linkedin"></i></a>
+                                 <a href="#" class="pinterest"><i class="icon-pinterest"></i></a>
+                              </div>
+                           </div>
                        </div>
                        
 
