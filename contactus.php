@@ -61,14 +61,14 @@
                                               Nagpur,<br>
                                               India<br>
                                               <!-- Phone number -->
-                                              <abbr title="Phone">P:</abbr> <a href="tel:+919823466777"> +91 982 346 6777</a>
+                                              <abbr title="Phone"><i class="icon-phone"></i> :</abbr> <a href="tel:+919823466777"> +91 982 346 6777</a>
                                            </address>
                                             
                                            <address>
                                               <!-- Name -->
                                               <h6>Rohit Malani</h6>
                                               <!-- Email -->
-                                              <a href="mailto:rohitmalani83@gmail.com"> rohitmalani83@gmail.com</a>
+                                              <abbr title="Email"><i class="icon-envelope-alt"></i> :</abbr> <a href="mailto:rohitmalani83@gmail.com"> rohitmalani83@gmail.com</a>
                                            </address>
                                            
                                        </div>
