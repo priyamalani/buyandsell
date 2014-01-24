@@ -17,7 +17,7 @@ if(isset($_SESSION['id'])){
       <!-- Page title -->
       <div class="page-title">
          <div class="container">
-            <h2><i class="icon-desktop color"></i> My Account <small>Subtext for header</small></h2>
+            <h2><i class="icon-user color"></i> <?echo $_SESSION['name'];?> <small> Account ID: <? echo $_SESSION['id'];?></small></h2>
             <hr>
          </div>
       </div>
