@@ -66,7 +66,7 @@
             <hr>
             
             <div class="copy text-center">
-               Copyright 2013 <a href="index.php">ShopAndSell</a>
+               Copyright 2014 <a href="index.php">ShopAndSell</a>
             </div>
          </div>
       </footer>
