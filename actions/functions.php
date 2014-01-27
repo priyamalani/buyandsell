@@ -436,6 +436,33 @@ function getMostViewedItem($count){
         }
 }
 
+function getReviews($product_no){
+    $query = "select * from reviews where product_no=".$product_no." order by review_date desc";
+        $result = mysql_query($query);
+        if (!$result) die ("Database access failed: " . mysql_error());
+        $rows = mysql_num_rows($result);
+        $details = array();
+        if($rows>0){
+            for ($i = 0 ; $i < $rows ; ++$i){ 
+                $details[$i]['id'] = mysql_result($result,$i,'id');
+                $details[$i]['name'] = mysql_result($result,$i,'name');
+                $details[$i]['email'] = mysql_result($result,$i,'email');
+                $details[$i]['comment'] = mysql_result($result,$i,'comment');
+                $details[$i]['rating'] = mysql_result($result,$i,'rating');
+                $details[$i]['product_no'] = mysql_result($result,$i,'product_no');
+                $details[$i]['review_date'] = mysql_result($result,$i,'review_date');
+                $details[$i]['other'] = mysql_result($result,$i,'other');
+
+            }
+            
+                return $details;
+        }
+        else {
+            $res = False;
+            return $res;
+        }
+}
+
 
 function getCategory($parent_category = null, $name = null, $css = null, $default = FALSE, $noStyle = FALSE) {
     

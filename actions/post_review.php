@@ -20,7 +20,7 @@ if (isset($_POST['comment'], $_POST['productNo'])) {
             header('Location: ../error.php');
         }
         else {
-            header('Location: ../login.php');
+            header('Location: ../single-item.php?item_id='.$_POST['productId']);
         }
     }
 }

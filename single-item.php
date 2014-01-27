@@ -23,6 +23,7 @@ require_once 'actions/functions.php';
       $parent_cat = getParentCategory($category_id);
       $parent_cat_name = getCategoryName($parent_cat);
       $mem_details = getMembersDetails($detail['members_id']);
+      $reviews = getReviews($detail['product_no']);
       if(isGood($detail, $item_id)){
       ?>
       <!-- Page title -->
@@ -98,7 +99,7 @@ require_once 'actions/functions.php';
                       <!-- Use uniqe name for "href" in below anchor tags -->
                       <li class="active"><a href="#tab1" data-toggle="tab">Contact Seller</a></li>
                       <li><a href="#tab2" data-toggle="tab">Description</a></li>
-                      <li><a href="#tab3" data-toggle="tab">Review (5)</a></li>
+                      <li><a href="#tab3" data-toggle="tab">Review (<?=  count($reviews)?>)</a></li>
                     </ul>
 
                     <!-- Tab Content -->
@@ -144,20 +145,29 @@ require_once 'actions/functions.php';
                       <div class="tab-pane fade" id="tab3">
                         <h5><strong>Product Reviews :</strong></h5>
                         <hr>
-                        <div class="item-review">
-                          <h5>Ravi Kumar - <span class="color">4/5</span></h5>
-                          <p class="rmeta">27/1/2012</p>
-                          <p>Suspendisse potenti. Morbi ac felis nec 
-                            mauris imperdiet fermentum. Aenean sodales augue ac lacus hendrerit sed 
-                            rhoncus erat hendrerit. Vivamus vel ultricies elit. Curabitur lacinia 
-                            nulla vel tellus elementum non mollis justo aliquam.</p>
-                        </div>
+                        <?php 
+                        if(isGood(count($reviews))){
+                        for ($i = 0 ; $i < count($reviews) ; ++$i){ 
+                            echo '<div class="item-review">
+                                    <h5>'.$reviews[$i]['name'].' - <span class="color">'.$reviews[$i]['rating'].'/5</span></h5>
+                                    <p class="rmeta">'.$reviews[$i]['review_date'].'</p>
+                                    <p>'.$reviews[$i]['comment'].'</p>
+                                  </div>
+                                  <hr>'; 
+                        }
+                        }
+                        else {
+                            echo 'Be the first one to review this product.';
+                        }
+                        ?>
+                        
 
                         <hr>
                         <h5><strong>Write a Review</strong></h5>
                         <hr>
                                               <form role="form" action="actions/post_review.php" method="POST">
                                                   <input type="hidden" value="<?=$detail['product_no']?>" name="productNo" name="productNo"/>
+                                                  <input type="hidden" value="<?=$detail['product_id']?>" name="productId" name="productId"/>
                                                <div class="form-group">
                                                  <label for="name">Your Name</label>
                                                  <input class="form-control" id="name" placeholder="Enter Name" name="name" type="text">
