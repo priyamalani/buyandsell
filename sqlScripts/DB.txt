@@ -106,6 +106,7 @@ CREATE TABLE order_history (
     buyer_id INT,
     quantity INT NOT NULL,
     order_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    status VARCHAR(50) DEFAULT "processing",
     
 
     PRIMARY KEY(id),

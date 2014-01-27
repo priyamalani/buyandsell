@@ -466,7 +466,6 @@ function getWishList($members_id){
     $query = "SELECT DISTINCT w.product_no, w.members_id, p.product_name, p.quantity, p.product_id, p.selling_price
                 FROM wishlist w, product p
                 WHERE w.product_no = p.product_no and w.members_id=".$members_id;
-//    $query = "select * from wishlist where members_id=".$members_id." order by wishlist_date desc";
         $result = mysql_query($query);
         if (!$result) die ("Database access failed: " . mysql_error());
         $rows = mysql_num_rows($result);
@@ -480,6 +479,34 @@ function getWishList($members_id){
                 $details[$i]['product_id'] = mysql_result($result,$i,'product_id');
                 $details[$i]['selling_price'] = mysql_result($result,$i,'selling_price');
 
+            }
+            
+                return $details;
+        }
+        else {
+            return FALSE;
+        }
+}
+
+function getOrderHistory($members_id){
+    $query = "SELECT DISTINCT o.id, o.status, o.order_date, o.product_no, o.buyer_id, p.product_name, o.quantity, p.product_id, p.selling_price
+                FROM order_history o, product p
+                WHERE o.product_no = p.product_no and o.buyer_id=".$members_id;
+        $result = mysql_query($query);
+        if (!$result) die ("Database access failed: " . mysql_error());
+        $rows = mysql_num_rows($result);
+        $details = array();
+        if($rows>0){
+            for ($i = 0 ; $i < $rows ; ++$i){ 
+                $details[$i]['id'] = mysql_result($result,$i,'id');
+                $details[$i]['order_date'] = mysql_result($result,$i,'order_date');
+                $details[$i]['product_no'] = mysql_result($result,$i,'product_no');
+                $details[$i]['members_id'] = mysql_result($result,$i,'members_id');
+                $details[$i]['product_name'] = mysql_result($result,$i,'product_name');
+                $details[$i]['quantity'] = mysql_result($result,$i,'quantity');
+                $details[$i]['product_id'] = mysql_result($result,$i,'product_id');
+                $details[$i]['selling_price'] = mysql_result($result,$i,'selling_price');
+                $details[$i]['status'] = mysql_result($result,$i,'status');
             }
             
                 return $details;

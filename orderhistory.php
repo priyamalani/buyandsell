@@ -2,6 +2,7 @@
 require_once 'actions/functions.php';
 
 if(isset($_SESSION['id'])){
+$orderHistory = getOrderHistory($_SESSION['id']);    
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,7 +41,7 @@ if(isset($_SESSION['id'])){
                   <table class="table table-striped tcart">
                     <thead>
                       <tr>
-                        <th>Date</th>
+                        <th>Date & Time</th>
                         <th>ID</th>
                         <th>Name</th>
                         <th>Price</th>
@@ -48,55 +49,18 @@ if(isset($_SESSION['id'])){
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>25-08-12</td>
-                        <td>4423</td>
-                        <td>HTC One</td>
-                        <td>$530</td>
-                        <td>Completed</td>
-                      </tr>
-                      <tr>
-                        <td>15-02-12</td>
-                        <td>6643</td>
-                        <td>Sony Xperia</td>
-                        <td>$330</td>
-                        <td>Shipped</td>
-                      </tr>
-                      <tr>
-                        <td>14-08-12</td>
-                        <td>1243</td>
-                        <td>Nokia Asha</td>
-                        <td>$230</td>
-                        <td>Processing</td>
-                      </tr>  
-                      <tr>
-                        <td>14-08-12</td>
-                        <td>1283</td>
-                        <td>Xperia Tipo</td>
-                        <td>$330</td>
-                        <td>Shipping</td>
-                      </tr>
-                      <tr>
-                        <td>14-08-12</td>
-                        <td>8283</td>
-                        <td>Apple iPhone</td>
-                        <td>$730</td>
-                        <td>Processing</td>
-                      </tr>
-                      <tr>
-                        <td>14-08-12</td>
-                        <td>3283</td>
-                        <td>Windows Mobile</td>
-                        <td>$130</td>
-                        <td>Shipped</td>
-                      </tr>
-                      <tr>
-                        <td>14-08-12</td>
-                        <td>1523</td>
-                        <td>Galaxy SIII</td>
-                        <td>$430</td>
-                        <td>Completed</td>
-                      </tr>                                                                                                             
+                      <?php
+                      for($i=0; $i<count($orderHistory);$i++){
+                      echo '<tr>
+                            <td>'.$orderHistory[$i]['order_date'].'</td>
+                            <td>'.$orderHistory[$i]['id'].'</td>
+                            <td>'.$orderHistory[$i]['product_name'].'</td>
+                            <td>'.$orderHistory[$i]['selling_price'].'</td>
+                            <td>'.$orderHistory[$i]['status'].'</td>
+                          </tr>';
+                      }
+                      ?>
+                                                                                                                                  
                     </tbody>
                   </table>
                    
