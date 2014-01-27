@@ -81,7 +81,9 @@ require_once 'actions/functions.php';
                                     <form role="form" class="" action='actions/place_order.php' method='POST'>
                                     <input type="hidden" name="buyer_id" value="<?=$_SESSION['id']?>">   
                                     <input type="hidden" name="seller_id" value="<?=$detail['members_id']?>">   
-                                    <input type="hidden" name="productNo" value="<?=$detail['product_no']?>">  
+                                    <input type="hidden" name="productNo" value="<?=$detail['product_no']?>"> 
+                                    <input type="hidden" name="productId" value="<?=$detail['product_id']?>"> 
+                                    <input type="hidden" name="seller_email" value="<?=$mem_details['email']?>>"> 
                                     <div class="input-group">
                                        <input class="form-control" name="quantity" placeholder="1" type="text">
                                        <span class="input-group-btn">
