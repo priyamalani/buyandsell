@@ -156,19 +156,20 @@ require_once 'actions/functions.php';
                         <hr>
                         <h5><strong>Write a Review</strong></h5>
                         <hr>
-                                              <form role="form">
+                                              <form role="form" action="actions/post_review.php" method="POST">
+                                                  <input type="hidden" value="<?=$detail['product_no']?>" name="productNo" name="productNo"/>
                                                <div class="form-group">
                                                  <label for="name">Your Name</label>
-                                                 <input class="form-control" id="name" placeholder="Enter Name" type="text">
+                                                 <input class="form-control" id="name" placeholder="Enter Name" name="name" type="text">
                                                </div>                                    
                                                <div class="form-group">
                                                  <label for="exampleInputEmail1">Email address</label>
-                                                 <input class="form-control" id="exampleInputEmail1" placeholder="Enter email" type="email">
+                                                 <input class="form-control" id="exampleInputEmail1" name="email" placeholder="Enter email" type="email">
                                                </div>
                                                <div class="form-group">
                                                    <label for="rating">Rating</label>
                                                    <!-- Dropdown menu -->
-                                                   <select class="form-control">
+                                                   <select class="form-control" name="rating" id="rating">
                                                      <option selected="selected">Rating</option>
                                                      <option>1</option>
                                                      <option>2</option>
@@ -178,10 +179,10 @@ require_once 'actions/functions.php';
                                                    </select>
                                                 </div>
                                                <div class="form-group">
-                                                 <label for="exampleInputEmail1">Review</label>
-                                                 <textarea class="form-control" rows="3"></textarea>
+                                                 <label for="comment">Review</label>
+                                                 <textarea id="comment" name="comment" class="form-control" rows="3"></textarea>
                                                </div>  
-                                               <button type="submit" class="btn btn-info">Send</button>
+                                               <input type="submit" class="btn btn-info" value="Send"/>
                                                <button type="reset" class="btn btn-default">Reset</button>
                                              </form>
 

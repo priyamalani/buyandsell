@@ -271,6 +271,7 @@ function getProductDetails($product_id) {
             $details = array();
             $details['create_date'] = mysql_result($result,0,'create_date');
             $details['product_id'] = mysql_result($result,0,'product_id');
+            $details['product_no'] = mysql_result($result,0,'product_no');
             $details['product_name'] = mysql_result($result,0,'product_name');
             $details['selling_price'] = mysql_result($result,0,'selling_price');
             $details['visits'] = mysql_result($result,0,'visits');
