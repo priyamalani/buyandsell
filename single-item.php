@@ -81,9 +81,16 @@ require_once 'actions/functions.php';
                                          <button class="btn btn-info" type="button">Go!</button>
                                        </span>
                                      </div>  -->
-
+                                     <?php
+                                     if(isset($_SESSION['id'])){
+                                     ?>
                                     <!-- Add to wish list -->
-<!--                                    <a href="wishlist.php">+ Add to Wish List</a>-->
+                                    <form role="form" class="" action='actions/add_wishlist.php' method='POST'>
+                                    <input type="hidden" name="members_id" value="<?=$_SESSION['id']?>">   
+                                    <input type="hidden" name="productNo" value="<?=$detail['product_no']?>">   
+                                    <input type="submit" class="btn" value="+ Add to Wish List"/>
+                                    </form>
+                                     <?}?>
 
                                     <!-- Share button -->
                             

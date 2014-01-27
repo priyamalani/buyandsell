@@ -2,6 +2,7 @@
 require_once 'actions/functions.php';
 
 if(isset($_SESSION['id'])){
+$wishlist = getWishList($_SESSION['id']);    
 ?>
 <!DOCTYPE html>
 <html>
@@ -40,52 +41,22 @@ if(isset($_SESSION['id'])){
                         <th>#</th>
                         <th>Name</th>
                         <th>Price</th>
-                        <th>Quantity</th>
+                        <th>Quantity Available</th>
                       </tr>
                     </thead>
                     <tbody>
-                      <tr>
-                        <td>1</td>
-                        <td><a href="single-item.php">HTC One</a></td>
-                        <td>$530</td>
-                        <td>1</td>
-                      </tr>
-                      <tr>
-                        <td>2</td>
-                        <td><a href="single-item.php">Sony Xperia</a></td>
-                        <td>$330</td>
-                        <td>2</td>
-                      </tr>
-                      <tr>
-                        <td>3</td>
-                        <td><a href="single-item.php">Nokia Asha</a></td>
-                        <td>$230</td>
-                        <td>6</td>
-                      </tr>  
-                      <tr>
-                        <td>4</td>
-                        <td><a href="single-item.php">Xperia Tipo</a></td>
-                        <td>$330</td>
-                        <td>2</td>
-                      </tr>
-                      <tr>
-                        <td>5</td>
-                        <td><a href="single-item.php">Apple iPhone</a></td>
-                        <td>$730</td>
-                        <td>1</td>
-                      </tr>
-                      <tr>
-                        <td>6</td>
-                        <td><a href="single-item.php">Windows Mobile</a></td>
-                        <td>$130</td>
-                        <td>3</td>
-                      </tr>
-                      <tr>
-                        <td>7</td>
-                        <td><a href="single-item.php">Galaxy SIII</a></td>
-                        <td>$430</td>
-                        <td>2</td>
-                      </tr>                                                                                                             
+                        <?php
+                        for($i=0; $i<count($wishlist); $i++){
+                            $count = $i+1;
+                        echo '<tr>
+                            <td>'.$count.'</td>
+                            <td><a href="single-item.php?item_id='.$wishlist[$i]['product_id'].'">'.$wishlist[$i]['product_name'].'</a></td>
+                            <td>'.$wishlist[$i]['selling_price'].'</td>
+                            <td>'.$wishlist[$i]['quantity'].'</td>
+                          </tr>';
+                        }
+                        ?>
+                                                                                                                             
                     </tbody>
                   </table>
                </div>
