@@ -18,9 +18,14 @@ if (isset($_POST['seller_id'], $_POST['productNo'])) {
     $name = 'ShopAndSell';
     $from = 'ShopAndSell';
     $message = $name.'
-An Order has been placed for your item id = '.$product_id.
+        
+An Order has been placed for your item id = '.$product_id.'
+    
+'.
             
-$actual_link
+$actual_link.'
+
+From:'
 .$from   ;
     $headers = "From:" . $from;
     mail($to,$subject,$message,$headers);
