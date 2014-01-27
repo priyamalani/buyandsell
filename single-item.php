@@ -92,6 +92,10 @@ require_once 'actions/functions.php';
                                     <input type="hidden" name="productNo" value="<?=$detail['product_no']?>">   
                                     <input type="submit" class="btn" value="+ Add to Wish List"/>
                                     </form>
+                                     <?}
+                                     elseif(!isset($_SESSION['id'])){
+                                     ?>  
+                                    <a href="login.php" class="btn" >+ Add to Wish List"</a>
                                      <?}?>
 
                                     <!-- Share button -->
