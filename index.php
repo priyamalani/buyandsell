@@ -90,7 +90,31 @@
           
          <div class="row">
             <!-- Item #1 -->
-            <? echo getMostViewedItem(8);?>
+            
+            <?php 
+            
+            $details = getMostViewedItem(9);
+             
+                for ($j = 0 ; $j < count($details) ; ++$j){ 
+                    echo '
+                        <div class="col-md-4">
+                        <div class="thumbs">
+                        <div class="item-icon"><span>HOT</span></div>
+                                            <img class="img-responsive change-image" src="images/ads/' . $details[$j]['members_id']. '/' . $details[$j]['info_1']. '" alt="Image Size 430x280">
+
+                                            <a id="'.$details[$j]['product_id'].'" href="single-item.php?item_id='.$details[$j]['product_id'].'" target="_blank">
+                                                <span class="title">
+                                                        <span>
+                                                            <p>' . $details[$j]['product_name']. '</p>
+                                                            <p><em>' . substr($details[$j]['product_desc'],0,20) . '...</em></p>    
+                                                            <p><i class="icon-circle-arrow-right icon-2x"></i></p>
+                                                        </span>
+                                                </span>	
+                                            </a>
+                                    </div>
+                        </div>';
+                }
+                ?>
 
           </div>
         </div>

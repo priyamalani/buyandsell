@@ -404,33 +404,30 @@ function getMostViewedItem($count){
         $result = mysql_query($query);
         if (!$result) die ("Database access failed: " . mysql_error());
         $rows = mysql_num_rows($result);
+        $details = array();
         if($rows>0){
-            for ($j = 0 ; $j < $rows ; ++$j){ 
-                echo '<div class="col-md-3 col-sm-4 col-xs-6">
-                        <div class="item">
-                          <!-- Use the below link to put HOT icon -->
-                          <div class="item-icon"><span>HOT</span></div>
-                          <!-- Item image -->
-                          <div class="item-image">
-                            <a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'"><img src="images/ads/' . mysql_result($result,$j,'members_id') . '/' . mysql_result($result,$j,'info_1') . '" alt="" class="img-responsive"></a>
-                          </div>
-                          <!-- Item details -->
-                          <div class="item-details">
-                            <!-- Name -->
-                            <h5><a href="single-item.php?item_id='.mysql_result($result,$j,'product_id').'">' . mysql_result($result,$j,'product_name') . '</a></h5>
-                            <div class="clearfix"></div>
-                            <!-- Para. Note more than 2 lines. -->
-                            <p>' . substr(mysql_result($result,$j,'product_desc'),0,20) . '...</p>
-                            <hr>
-                            <!-- Price -->
-                            <div class="item-price pull-left">'.mysql_result($result,$j,'selling_price').'</div>
-                            <!-- Add to cart -->
-                            <div class="pull-right"><a href="#" class="btn btn-danger btn-sm">Add to Cart</a></div>
-                            <div class="clearfix"></div>
-                          </div>
-                        </div>
-                      </div>';
+            for ($i = 0 ; $i < $rows ; ++$i){ 
+                $details[$i]['create_date'] = mysql_result($result,$i,'create_date');
+                $details[$i]['product_id'] = mysql_result($result,$i,'product_id');
+                $details[$i]['product_name'] = mysql_result($result,$i,'product_name');
+                $details[$i]['selling_price'] = mysql_result($result,$i,'selling_price');
+                $details[$i]['visits'] = mysql_result($result,$i,'visits');
+                $details[$i]['info_1'] = mysql_result($result,$i,'info_1');
+                $details[$i]['info_2'] = mysql_result($result,$i,'info_2');
+                $details[$i]['info_3'] = mysql_result($result,$i,'info_3');
+                $details[$i]['members_id'] = mysql_result($result,$i,'members_id');
+                $details[$i]['shipping_charges'] = mysql_result($result,$i,'shipping_charges');
+                $details[$i]['quantity'] = mysql_result($result,$i,'quantity');
+                $details[$i]['product_desc'] = mysql_result($result,$i,'product_desc');
+                $details[$i]['more_details'] = mysql_result($result,$i,'more_details');
+                $details[$i]['actual_price'] = mysql_result($result,$i,'actual_price');
+                $details[$i]['category_id'] = mysql_result($result,$i,'category_id');
+                $details[$i]['estimated_delivery'] = mysql_result($result,$i,'estimated_delivery');
+                $details[$i]['return_policy'] = mysql_result($result,$i,'return_policy');
+
             }
+            
+                return $details;
         }
         else {
             $res = False;
