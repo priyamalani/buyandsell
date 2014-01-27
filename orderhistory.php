@@ -44,6 +44,7 @@ $orderHistory = getOrderHistory($_SESSION['id']);
                         <th>Date & Time</th>
                         <th>ID</th>
                         <th>Name</th>
+                        <th>Quantity</th>
                         <th>Price</th>
                         <th>Status</th>
                       </tr>
@@ -55,6 +56,7 @@ $orderHistory = getOrderHistory($_SESSION['id']);
                             <td>'.$orderHistory[$i]['order_date'].'</td>
                             <td>'.$orderHistory[$i]['id'].'</td>
                             <td>'.$orderHistory[$i]['product_name'].'</td>
+                            <td>'.$orderHistory[$i]['quantity'].'</td>
                             <td>'.$orderHistory[$i]['selling_price'].'</td>
                             <td>'.$orderHistory[$i]['status'].'</td>
                           </tr>';
