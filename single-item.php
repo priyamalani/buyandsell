@@ -16,7 +16,6 @@ require_once 'actions/functions.php';
       <?php include 'includes/navigation.php'; ?>
       <?php
       $item_id = getParameter('item_id');
-      updatePageView($item_id);
       $detail = getProductDetails($item_id);
       $category_id = $detail['category_id'];
       $cat_name = getCategoryName($category_id);
@@ -24,6 +23,9 @@ require_once 'actions/functions.php';
       $parent_cat_name = getCategoryName($parent_cat);
       $mem_details = getMembersDetails($detail['members_id']);
       $reviews = getReviews($detail['product_no']);
+      if($detail['members_id']!=$_SESSION['id']){
+      updatePageView($item_id);
+      }
       if(isGood($detail, $item_id)){
       ?>
       <!-- Page title -->
