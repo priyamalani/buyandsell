@@ -83,6 +83,39 @@ CREATE TABLE reviews (
 
 )   ENGINE=INNODB;
 
+CREATE TABLE wishlist (
+    id INT NOT NULL AUTO_INCREMENT,
+    product_no INT NOT NULL,
+    members_id INT NOT NULL,
+    wishlist_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    
+
+    PRIMARY KEY(id),
+
+    FOREIGN KEY (product_no)
+      REFERENCES product(product_no),
+
+    FOREIGN KEY (members_id)
+      REFERENCES members(id)
+)   ENGINE=INNODB;
+
+CREATE TABLE order_history (
+    id INT NOT NULL AUTO_INCREMENT,
+    product_no INT NOT NULL,
+    seller_id INT NOT NULL,
+    buyer_id INT NOT NULL,
+    order_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    
+
+    PRIMARY KEY(id),
+
+    FOREIGN KEY (product_no)
+      REFERENCES product(product_no),
+
+    FOREIGN KEY (seller_id)
+      REFERENCES members(id)
+)   ENGINE=INNODB;
+
 
 insert into category values (1, 'Fashion', 0, 1), (2, 'Home & Garden', 0, 1), (3, 'Electronic', 0, 1), (4, 'Other', 0, 1);
 
