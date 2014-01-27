@@ -99,7 +99,7 @@ require_once 'actions/functions.php';
                       <!-- Use uniqe name for "href" in below anchor tags -->
                       <li class="active"><a href="#tab1" data-toggle="tab">Contact Seller</a></li>
                       <li><a href="#tab2" data-toggle="tab">Description</a></li>
-                      <li><a href="#tab3" data-toggle="tab">Review (<?=  count($reviews)?>)</a></li>
+                      <li><a href="#tab3" data-toggle="tab">Review (<?=count($reviews)?>)</a></li>
                     </ul>
 
                     <!-- Tab Content -->
@@ -146,7 +146,7 @@ require_once 'actions/functions.php';
                         <h5><strong>Product Reviews :</strong></h5>
                         <hr>
                         <?php 
-                        if(isGood(count($reviews))){
+                        if(isGood($reviews)){
                         for ($i = 0 ; $i < count($reviews) ; ++$i){ 
                             echo '<div class="item-review">
                                     <h5>'.$reviews[$i]['name'].' - <span class="color">'.$reviews[$i]['rating'].'/5</span></h5>

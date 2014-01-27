@@ -458,8 +458,7 @@ function getReviews($product_no){
                 return $details;
         }
         else {
-            $res = False;
-            return $res;
+            return FALSE;
         }
 }
 
