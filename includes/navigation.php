@@ -98,7 +98,7 @@
            </ul>
            <form class="navbar-form navbar-left search_form" role="search" style="max-width: 250px;" action="actions/process_search.php" method="POST">
              <div class="input-group">
-                <input type="text" class="form-control" id="search" name="search">
+                <input type="text" class="form-control" id="search" name="search" required>
                 <span class="input-group-addon submit_search btn"><i class="icon-search"></i></span>
               </div>
            </form>
