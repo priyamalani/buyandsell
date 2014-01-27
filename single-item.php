@@ -82,7 +82,7 @@ require_once 'actions/functions.php';
                                        </span>
                                      </div>  -->
                                      <?php
-                                     if(isset($_SESSION['id'])){
+                                     if(isset($_SESSION['id']) && $detail['members_id']!=$_SESSION['id']){
                                      ?>
                                     <!-- Add to wish list -->
                                     <form role="form" class="" action='actions/add_wishlist.php' method='POST'>
