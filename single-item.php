@@ -74,23 +74,30 @@ require_once 'actions/functions.php';
                             <p><strong>Total Views</strong> : <?=$detail['visits']?></p><br>
                             
 
-                                    
-                                     <!-- Quantity and add to cart button -->
-                                    
-<!--                                    <div class="input-group">
-                                       <input class="form-control" placeholder="1" type="text">
+                                    <?php
+                                     if($detail['members_id']!=$_SESSION['id']){
+                                     ?> 
+                                      <!-- Quantity and add to cart button -->
+                                    <form role="form" class="" action='actions/place_order.php' method='POST'>
+                                    <input type="hidden" name="buyer_id" value="<?=$_SESSION['id']?>">   
+                                    <input type="hidden" name="seller_id" value="<?=$detail['members_id']?>">   
+                                    <input type="hidden" name="productNo" value="<?=$detail['product_no']?>">  
+                                    <div class="input-group">
+                                       <input class="form-control" name="quantity" placeholder="1" type="text">
                                        <span class="input-group-btn">
-                                         <button class="btn btn-info" type="button">Go!</button>
+                                         <input type="submit" class="btn btn-info" value="Go!"/>
                                        </span>
-                                     </div>  -->
+                                     </div>  
+                                    </form>
                                      <?php
+                                     }
                                      if(isset($_SESSION['id']) && $detail['members_id']!=$_SESSION['id']){
-                                     ?>
+                                     ?> 
                                     <!-- Add to wish list -->
                                     <form role="form" class="" action='actions/add_wishlist.php' method='POST'>
                                     <input type="hidden" name="members_id" value="<?=$_SESSION['id']?>">   
                                     <input type="hidden" name="productNo" value="<?=$detail['product_no']?>">   
-                                    <input type="submit" class="btn" value="+ Add to Wish List"/>
+                                    <input type="submit" class="btn btn-info" value="+ Add to Wish List"/>
                                     </form>
                                      <?}
                                      elseif(!isset($_SESSION['id'])){

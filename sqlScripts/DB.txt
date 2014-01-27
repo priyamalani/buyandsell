@@ -103,7 +103,8 @@ CREATE TABLE order_history (
     id INT NOT NULL AUTO_INCREMENT,
     product_no INT NOT NULL,
     seller_id INT NOT NULL,
-    buyer_id INT NOT NULL,
+    buyer_id INT,
+    quantity INT NOT NULL,
     order_date TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     
 

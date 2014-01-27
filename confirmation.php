@@ -12,20 +12,20 @@
       <!-- Page title -->
       <div class="page-title">
          <div class="container">
-            <h2><i class="icon-shopping-cart color"></i> We received payment Successfully...</h2>
+            <h2><i class="icon-shopping-cart color"></i> We received order Successfully...</h2>
             <hr>
             <h5>Thanks for buying from ShopAndSell!!!</h5>
-            <h5>Your Order #id is <span class="color">43454354</span>. Use this for further communication.</h5>
+            <h5>Your Order #id is <span class="color"><?=$_SESSION['confirmation']?></span>. Use this for further communication.</h5>
             <div class="sep-bor"></div>
-            <form class="form-inline" role="form">
+            <form class="form-inline" role="search" action="actions/process_search.php" method="POST">
               <div class="form-group">
-                <input class="form-control" id="search" placeholder="Type Something..." type="email">
+                <input type="text" class="form-control" id="search" name="search" required>
               </div>
-              <button type="submit" class="btn btn-info">Search</button>
+              <button type="submit" class="btn btn-info submit_search">Search</button>
             </form>
                     <div class="link-list">
                       <h4><strong>Take a look around our site</strong></h4>
-                      <a href="#">Home</a> <a href="#">About us</a> <a href="#">Support</a> <a href="#">Contact Us</a> <a href="#">Disclaimer</a>
+                      <a href="index.php">Home</a> <a href="aboutus.php">About us</a> <a href="support">Support</a> <a href="contactus.php">Contact Us</a> <a href="faq.php">FAQ</a>
                     </div>
 
             <div class="sep-bor"></div>
