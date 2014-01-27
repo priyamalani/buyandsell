@@ -97,7 +97,7 @@
              
                 for ($j = 0 ; $j < count($details) ; ++$j){ 
                     echo '
-                        <div class="col-md-4">
+                        <div class="col-md-3">
                         <div class="thumbs">
                         <div class="item-icon"><span>HOT</span></div>
                                             <img class="img-responsive change-image" src="images/ads/' . $details[$j]['members_id']. '/' . $details[$j]['info_1']. '" alt="Image Size 430x280">
