@@ -9,7 +9,7 @@ require_once 'functions.php';
 $email = getParameter('email');
 
 $to = $email;
-$subject = 'With reference to your posting on ShopAndSell';
+$subject = 'With reference to your posting on ShopSellRent';
 $name = $_REQUEST['name'];
 $from = $_REQUEST['userEmail'];
 $message = $_REQUEST['userMessage'];
@@ -25,12 +25,12 @@ Time : '.date('l jS \of F Y h:i:s A').'
 '.$message.'
     
 
-With reference to your posting on ShopAndSell. Below is the link to your posting.        
+With reference to your posting on ShopSellRent. Below is the link to your posting.        
 '.$actual_link;
 }
 else{
     $to = 'priya.n.malani@gmail.com';
-    $subject = 'Mail from contact us page ShopAndSell';
+    $subject = 'Mail from contact us page ShopSellRent';
     $subject = $important. $subject;
     $message = "From : ".$name.' 
         

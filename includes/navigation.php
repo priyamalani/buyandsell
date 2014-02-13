@@ -6,7 +6,7 @@
                <div class="col-md-2 col-sm-2">
                    Logo 
                   <div class="logo">
-                     <h1><a href="index.php">ShopAndSell</a></h1>
+                     <h1><a href="index.php">ShopSellRent</a></h1>
                   </div>
                </div>
                <div class="col-md-6 col-sm-5">
@@ -54,7 +54,7 @@
              <span class="icon-bar"></span>
              <span class="icon-bar"></span>
            </button>
-           <a class="navbar-brand" href="index.php">ShopAndSell</a>
+           <a class="navbar-brand" href="index.php">ShopSellRent</a>
          </div>
 
          <!-- Collect the nav links, forms, and other content for toggling -->

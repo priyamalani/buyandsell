@@ -9,7 +9,7 @@ require_once 'actions/functions.php';
                <div class="col-md-12">
                   <!-- Section title -->
                   <div class="section-title">
-                     <h4><i class="icon-desktop color"></i> &nbsp;Whats New at <span class="color">ShopAndSell</span></h4>
+                     <h4><i class="icon-desktop color"></i> &nbsp;Whats New at <span class="color">ShopSellRent</span></h4>
                   </div>    
                   
                   <div class="row">

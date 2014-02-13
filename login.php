@@ -25,7 +25,7 @@ if(!isset($_SESSION['id'])){
                      <div class="">
                         <div class="">
                             <h3></h3>
-                           <h3 class="text-center">New to ShopAndSell</h3>
+                           <h3 class="text-center">New to ShopSellRent</h3>
                            <form class="form-horizontal" role="form" action="register.php" method="POST">
                              <div class="form-group">
                                  <div class="col-lg-12">

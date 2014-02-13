@@ -11,7 +11,7 @@ if(isset($_SESSION['id']) && $_SESSION['seller']=='admin'){
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>ShopAndSell Admin</title>
+    <title>ShopSellRent Admin</title>
 
     <!-- Core CSS - Include with every page -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -37,7 +37,7 @@ if(isset($_SESSION['id']) && $_SESSION['seller']=='admin'){
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="index.php">ShopAndSell Admin</a>
+                <a class="navbar-brand" href="index.php">ShopSellRent Admin</a>
             </div>
             <!-- /.navbar-header -->
 

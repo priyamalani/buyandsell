@@ -15,8 +15,8 @@ if (isset($_POST['seller_id'], $_POST['productNo'])) {
     
     $to = $seller_email;
     $subject = 'An Order has been placed for your item id : '.$product_id;
-    $name = 'ShopAndSell';
-    $from = 'ShopAndSell';
+    $name = 'ShopSellRent';
+    $from = 'ShopSellRent';
     $message = $name.'
         
 An Order has been placed for your item id = '.$product_id.'

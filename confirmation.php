@@ -14,7 +14,7 @@
          <div class="container">
             <h2><i class="icon-shopping-cart color"></i> We received order Successfully...</h2>
             <hr>
-            <h5>Thanks for buying from ShopAndSell!!!</h5>
+            <h5>Thanks for buying from ShopSellRent!!!</h5>
             <h5>Your Order #id is <span class="color"><?=$_SESSION['confirmation']?></span>. Use this for further communication.</h5>
             <div class="sep-bor"></div>
             <form class="form-inline" role="search" action="actions/process_search.php" method="POST">

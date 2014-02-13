@@ -34,7 +34,7 @@
                    <div class="col-md-3 col-sm-3">
                            <div class="fwidget">
                            
-                              <h4>About <span class="color">ShopAndSell</span></h4>
+                              <h4>About <span class="color">ShopSellRent</span></h4>
                               
                               <hr>
                             <ul class="">
@@ -78,7 +78,7 @@
             <hr>
             
             <div class="copy text-center">
-               Copyright 2014 <a href="index.php">ShopAndSell</a>
+               Copyright 2014 <a href="index.php">ShopSellRent</a>
             </div>
          </div>
       </footer>

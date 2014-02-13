@@ -5,9 +5,9 @@ require_once 'actions/functions.php';
 <head>
 <meta http-equiv="content-type" content="text/html; charset=windows-1252">
 		<!-- Title here -->
-		<title>ShopAndSell - Shop and sell electronics, home decors, fashion apparel, sporting goods, digital items, coupons, and many more on ShopAndSell, the world's online classifieds.</title>
+		<title>ShopSellRent - Shop and sell electronics, home decors, fashion apparel, sporting goods, digital items, coupons, and many more on ShopSellRent, the world's online classifieds.</title>
 		<!-- Description, Keywords and Author -->
-		<meta name="description" content="Shop and sell electronics, home decors, fashion apparel, sporting goods, digital items, coupons, and many more on ShopAndSell, the world's online classifieds.">
+		<meta name="description" content="Shop and sell electronics, home decors, fashion apparel, sporting goods, digital items, coupons, and many more on ShopSellRent, the world's online classifieds.">
 		<meta name="keywords" content="Shop, Buy, Sell, Online selling, Online Buying, India, Used goods, Used stuff">
 		<meta name="author" content="Priya malani">
 		

@@ -71,10 +71,10 @@
             <div class="row">
                <div class="col-md-12">
                   <!-- Catchy title -->
-                  <h3>Welcome to <span class="color">ShopAndSell</span> - Online  <span class="color">Classifieds</span></h3>
+                  <h3>Welcome to <span class="color">ShopSellRent</span> - Online  <span class="color">Classifieds</span></h3>
                   <p>Buy and sell electronics, home decors, fashion apparel, 
                       sporting goods, digital items, coupons, and many more on 
-                      <span class="color">ShopAndSell</span>, the world's online classifieds.</p>
+                      <span class="color">ShopSellRent</span>, the world's online classifieds.</p>
                </div>
             </div>
           <div class="sep-bor"></div>

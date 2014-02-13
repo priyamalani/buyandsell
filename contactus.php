@@ -56,7 +56,7 @@
                                        <div class="address">
                                            <address>
                                               <!-- Company name -->
-                                              <h6>ShopAndSell</h6>
+                                              <h6>ShopSellRent</h6>
                                               <!-- Address -->
                                               Nagpur,<br>
                                               India<br>
