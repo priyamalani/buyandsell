@@ -363,8 +363,8 @@ strong{
 
 .header .logo h1, .navbar-default .navbar-brand{
    font-size:40px;
-   margin:0px;
-   padding:10px 0px;
+   margin: -15px 10px 0 0;
+   padding:0px;
    margin-right: 10px;
 }
 
