@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset
+      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+
+<url>
+  <loc>http://shopsellrent.com/</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/single-item.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/checkout.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/index.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/items.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/support.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/login.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/register.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/single-item.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/aboutus.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/contactus.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/blog.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/faq.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/confirmation.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/404.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/careers.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/items.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/members-ads.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+<url>
+  <loc>http://shopsellrent.com/blogsingle.php</loc>
+  <changefreq>daily</changefreq>
+</url>
+</urlset>
