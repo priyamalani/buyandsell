@@ -47,6 +47,45 @@ if (isset($_POST['username'], $_POST['email'], $_POST['password'])) {
             header('Location: ../error.php');
         }
         else {
+
+            $subject = 'Welcome to ShopSellRent - Online Classifieds';
+
+            $headers = "From: info@shopsellrent.com \r\n";
+            $headers .= "Reply-To: info@shopsellrent.com \r\n";
+            $headers .= "MIME-Version: 1.0\r\n";
+            $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+            $message = "<html>
+            <head>
+            <style>
+            body {
+             font-family: 'Open Sans',sans-serif;
+            }
+            #logo{
+            background: #1ABC9C;
+            width: 100%;
+            }
+            .color {
+                color: #1ABC9C;
+            }
+            </style>
+            </head>
+            <body>
+            <img id='logo' src='http://www.shopsellrent.com/images/green_logo.png' alt='ShopSellRent'/>
+            <h3>Welcome to <span class='color'>ShopSellRent</span> - Online  <span class='color'>Classifieds</span></h3>
+            <p>Hello ".$username.",</p>
+            <p>You have been registered with the following information:</p><table>
+            <tr>
+            <td>Login: </td>
+            <td>".$email."</td>
+            </tr>
+            <tr>
+            <td>Password: </td>
+            <td>".$password."</td>
+            </tr>
+            </table><p>To login use this link: 
+                    <a href='http://www.shopsellrent.com/login.php'>www.ShopSellRent.com/login.php</a></p>
+            </body></html>";
+            mail($email,$subject,$message,$headers);
             header('Location: ../login.php');
         }
     }
